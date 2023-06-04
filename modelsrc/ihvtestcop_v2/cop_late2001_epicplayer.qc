@@ -1,5 +1,6 @@
 //======================================
-//   Metropolice
+//   Old 2001-2002 Metropolice remake
+//	 Model edits, QCs and custom animations by Epicplayer
 //======================================
 
 $modelname "police.mdl"
