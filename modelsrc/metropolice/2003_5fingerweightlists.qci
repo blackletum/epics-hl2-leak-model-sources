@@ -1,0 +1,3 @@
+$weightlist smg1fingers "Valvebiped.bip01_pelvis" 0.0 "ValveBiped.Bip01_L_Finger3" 0.5 "ValveBiped.Bip01_L_Finger4" 0.5 "ValveBiped.Bip01_R_Finger3" 1.0 "ValveBiped.Bip01_R_Finger4" 0.3 "ValveBiped.Bip01_R_Finger41" 1.0
+$weightlist batonfingers "Valvebiped.bip01_pelvis" 0.0 "ValveBiped.Bip01_R_Finger3" 1.0 "ValveBiped.Bip01_R_Finger4" 1.0
+$weightlist allfingers "Valvebiped.bip01_pelvis" 0.0 "ValveBiped.Bip01_L_Finger3" 1.0 "ValveBiped.Bip01_L_Finger4" 1.0 "ValveBiped.Bip01_R_Finger3" 1.0 "ValveBiped.Bip01_R_Finger4" 1.0 "ValveBiped.Bip01_R_Finger41" 1.0
