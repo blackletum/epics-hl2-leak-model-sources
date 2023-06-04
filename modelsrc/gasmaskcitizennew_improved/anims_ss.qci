@@ -1,0 +1,512 @@
+
+$sequence LineIdle01 citizen_anims\a_LineIdle01 loop
+$sequence LineIdle02 citizen_anims\a_LineIdle02 loop
+$sequence LineIdle03 citizen_anims\a_LineIdle03 loop
+$sequence LineIdle04 citizen_anims\a_LineIdle04 loop
+
+$animation "a_Stand_to_run" "male_anims\Stand_to_run.smd" {
+	fps 30
+	walkframe 30 LX
+}
+
+
+$animation "a_Run_to_stand" "male_anims\Run_to_stand.smd" {
+	fps 30
+}
+
+$animation "a_Stand_to_walk" "male_anims\Stand_to_walk.smd" {
+	fps 30
+	walkframe 32 LX
+}
+
+$animation "a_Walk_to_stand" "male_anims\Walk_to_stand.smd" {
+	fps 30
+}
+
+$animation "a_Stand_to_crouch" "male_anims\Stand_to_crouch.smd" {
+	fps 30 LX LY
+}
+
+$animation "a_Crouch_to_stand" "male_anims\Crouch_to_stand.smd" {
+	fps 30
+}
+
+$animation "a_Crouch_to_run" "male_anims\Crouch_to_run.smd" {
+	fps 30
+	walkframe 24 LX LY
+}
+
+$animation "a_Run_to_crouch" "male_anims\Run_to_crouch.smd" {
+	fps 30
+	walkframe 36 LX
+}
+
+$animation "a_stairs_up" "male_anims\stairs_up.smd" {
+	fps 30
+	walkframe 40 LX LZ
+}
+
+$animation "a_stairs_down" "male_anims\stairs_down.smd" {
+	fps 30
+	walkframe 40 LX LZ
+}
+
+$animation "a_ladder_up" "male_anims\ladder_up.smd" {
+	fps 30
+	walkframe 42 LZ
+}
+
+$animation "a_ladder_down" "male_anims\ladder_down.smd" {
+	fps 30
+	walkframe 42 LZ
+}
+
+$animation "a_Open_door_away" "male_anims\Open_door_away.smd" {
+	fps 30
+}
+
+$animation "a_Open_door_towards_right" "male_anims\Open_door_towards_right.smd" {
+	fps 30
+}
+
+$animation "a_Open_door_towards_left" "male_anims\Open_door_towards_left.smd" {
+	fps 30
+}
+
+$animation "a_Startle_behind" "male_anims\Startle_behind.smd" {
+	fps 30
+}
+
+$animation "a_Cover_R" "male_anims\Cover_R.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_Cover_L" "male_anims\Cover_L.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_CoverLow_R" "male_anims\CoverLow_R.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_CoverLow_L" "male_anims\CoverLow_L.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_ThrowItem" "male_anims\ThrowItem.smd" {
+	fps 30
+}
+
+
+$animation "a_DuckUnder" "male_anims\DuckUnder.smd" {
+	fps 30
+	walkframe 62 LX
+}
+
+$animation "a_crouchidlehide" "male_anims\crouchidlehide.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_standtocrouchhide" "male_anims\standtocrouchhide.smd" {
+	fps 30
+}
+
+$animation "a_crouchhidetostand" "male_anims\crouchhidetostand.smd" {
+	fps 30
+}
+
+$animation "a_scaredidle" "male_anims\scaredidle.smd" {
+	fps 30
+	loop
+}
+
+$animation "a_preSkewer" "male_anims\preSkewer.smd" {
+	fps 30
+}
+
+$animation "a_Fear_Reaction" "male_anims\Fear_Reaction.smd" {
+	fps 30
+}
+
+$sequence "Stand_to_run" {
+	"a_Stand_to_run"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Run_to_stand" {
+	"a_Run_to_stand"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Stand_to_walk" {
+	"a_Stand_to_walk"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Walk_to_stand" {
+	"a_Walk_to_stand"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Stand_to_crouch" {
+	"a_Stand_to_crouch"
+	activity "ACT_TRANSITION" 1
+	fadein 0.2
+	fadeout 0.2
+	transition 1 2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Crouch_to_stand" {
+	"a_Crouch_to_stand"
+	activity "ACT_TRANSITION" 1
+	fadein 0.2
+	fadeout 0.2
+	transition 2 1
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Crouch_to_run" {
+	"a_Crouch_to_run"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Run_to_crouch" {
+	"a_Run_to_crouch"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+
+$sequence "stairs_up" {
+	"a_stairs_up"
+	activity "ACT_STAIRS_UP" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "stairs_down" {
+	"a_stairs_down"
+	activity "ACT_STAIRS_DOWN" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ladder_up" {
+	"a_ladder_up"
+	activity "ACT_CLIMB_UP" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ladder_down" {
+	"a_ladder_down"
+	activity "ACT_CLIMB_DOWN" 1
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Open_door_away" {
+	"a_Open_door_away"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Open_door_towards_right" {
+	"a_Open_door_towards_right"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Open_door_towards_left" {
+	"a_Open_door_towards_left"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Startle_behind" {
+	"a_Startle_behind"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Cover_R" {
+	"a_Cover_R"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Cover_L" {
+	"a_Cover_L"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_R" {
+	"a_CoverLow_R"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_L" {
+	"a_CoverLow_L"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ThrowItem" {
+	"a_ThrowItem"
+	{ event 1 32 "" }
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+
+$sequence "DuckUnder" {
+	"a_DuckUnder"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouchidlehide" {
+	"a_crouchidlehide"
+	fadein 0.2
+	fadeout 0.2
+	node 7
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "standtocrouchhide" {
+	"a_standtocrouchhide"
+	fadein 0.2
+	fadeout 0.2
+	transition 1 7
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouchhidetostand" {
+	"a_crouchhidetostand"
+	fadein 0.2
+	fadeout 0.2
+	transition 7 1
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "scaredidle" {
+	"a_scaredidle"
+	fadein 0.2
+	fadeout 0.2
+	node 1
+	fps 30
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "preSkewer" {
+	"a_preSkewer"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Fear_Reaction" {
+	"a_Fear_Reaction"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+
+$sequence "Cover_LToShootSMG1" {
+	"a_Cover_LToShootSMG1"
+	fadein 0.2
+	fadeout 0.2
+	transition 9 8
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Cover_RToShootSMG1" {
+	"a_Cover_RToShootSMG1"
+	fadein 0.2
+	fadeout 0.2
+	transition 10 8
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_LToShootSMG1" {
+	"a_CoverLow_LToShootSMG1"
+	fadein 0.2
+	fadeout 0.2
+	transition 9 8
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_RToShootSMG1" {
+	"a_CoverLow_RToShootSMG1"
+	fadein 0.2
+	fadeout 0.2
+	transition 10 8
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCover_L" {
+	"a_ShootSMG1ToCover_L"
+	fadein 0.2
+	fadeout 0.2
+	transition 8 9
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCover_R" {
+	"a_ShootSMG1ToCover_R"
+	fadein 0.2
+	fadeout 0.2
+	transition 8 10
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCoverLow_L" {
+	"a_ShootSMG1ToCoverLow_L"
+	fadein 0.2
+	fadeout 0.2
+	transition 8 11
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCoverLow_R" {
+	"a_ShootSMG1ToCoverLow_R"
+	fadein 0.2
+	fadeout 0.2
+	transition 8 12
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+
+$sequence "MeleeAttack01" {
+	"a_MeleeAttack01"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+
+$sequence "plazaidle1" {
+	"ss\plazaidle1.smd"
+	fps 30
+	loop
+}
+
+$sequence "plazaidle2" {
+	"ss\plazaidle2.smd"
+	fps 30
+	loop
+}
+
+$sequence "plazaidle3" {
+	"ss\plazaidle3.smd"
+	fps 30
+	loop
+}
+
+$sequence "plazaidle4" {
+	"ss\plazaidle4.smd"
+	fps 30
+	loop
+}
+
+$sequence "plazastand1" {
+	"ss\plazastand1.smd"
+	fps 30
+	walkframe 25 LX LY LZR
+	walkframe 63 LX LY LZR
+}
+
+$sequence "plazastand2" {
+	"ss\plazastand2.smd"
+	fps 30
+	walkframe 9 LX LY LZR
+	walkframe 65 LX LY LZR
+}
+
+$sequence "plazastand3" {
+	"ss\plazastand3.smd"
+	fps 30
+}
+
+$sequence "plazastand4" {
+	"ss\plazastand4.smd"
+	fps 30
+	walkframe 32 LX LY LZR
+	walkframe 69 LX LY LZR
+}

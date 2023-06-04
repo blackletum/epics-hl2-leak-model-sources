@@ -1,0 +1,30 @@
+$sequence angry_idle idle ACT_IDLE_ANGRY 1 node 1 loop
+$sequence victory victory
+
+$sequence "run_all" {
+	a_RunS a_RunSE a_RunE
+	a_RunNE striderrun a_RunNW
+	a_RunW a_RunSW a_RunS
+	ACT_RUN 1 blend "move_yaw" -180 180 blendwidth 9 node 4 loop
+}
+
+$animation walks test\a_walks
+$animation walkn test\a_walkn
+$animation walkw test\a_walkw
+$animation walke test\a_walke
+
+$animation walkse test\a_walkse
+$animation walkne test\a_walkne
+$animation walksw test\a_walksw
+$animation walknw test\a_walknw
+
+$sequence "walk_all" {
+	walks walkse walke
+	walkne walkn walknw
+	walkw walksw walks
+	ACT_WALK 1 blend "move_yaw" -180 180 blendwidth 9
+	{ event 2051 9 }
+	{ event 2050 23 }
+	node 3
+	loop
+}

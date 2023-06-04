@@ -1,0 +1,115 @@
+// Created by Crowbar 0.51.0.0
+version 1
+nodes
+  0 "ValveBiped.Bip01_Pelvis" -1
+  1 "ValveBiped.Bip01_L_Thigh" 0
+  2 "ValveBiped.Bip01_L_Calf" 1
+  3 "ValveBiped.Bip01_L_Foot" 2
+  4 "ValveBiped.Bip01_L_Toe0" 3
+  5 "ValveBiped.Bip01_R_Thigh" 0
+  6 "ValveBiped.Bip01_R_Calf" 5
+  7 "ValveBiped.Bip01_R_Foot" 6
+  8 "ValveBiped.Bip01_R_Toe0" 7
+  9 "ValveBiped.Bip01_Spine" 0
+  10 "ValveBiped.Bip01_Spine1" 9
+  11 "ValveBiped.Bip01_Spine2" 10
+  12 "ValveBiped.Bip01_Spine4" 11
+  13 "ValveBiped.Bip01_Neck1" 12
+  14 "ValveBiped.Bip01_Head1" 13
+  15 "ValveBiped.Bip01_L_Clavicle" 12
+  16 "ValveBiped.Bip01_L_UpperArm" 15
+  17 "ValveBiped.Bip01_L_Forearm" 16
+  18 "ValveBiped.Bip01_L_Hand" 17
+  19 "ValveBiped.Bip01_L_Finger4" 18
+  20 "ValveBiped.Bip01_L_Finger41" 19
+  21 "ValveBiped.Bip01_L_Finger42" 20
+  22 "ValveBiped.Bip01_L_Finger3" 18
+  23 "ValveBiped.Bip01_L_Finger31" 22
+  24 "ValveBiped.Bip01_L_Finger32" 23
+  25 "ValveBiped.Bip01_L_Finger2" 18
+  26 "ValveBiped.Bip01_L_Finger21" 25
+  27 "ValveBiped.Bip01_L_Finger22" 26
+  28 "ValveBiped.Bip01_L_Finger1" 18
+  29 "ValveBiped.Bip01_L_Finger11" 28
+  30 "ValveBiped.Bip01_L_Finger12" 29
+  31 "ValveBiped.Bip01_L_Finger0" 18
+  32 "ValveBiped.Bip01_L_Finger01" 31
+  33 "ValveBiped.Bip01_L_Finger02" 32
+  34 "ValveBiped.Bip01_R_Clavicle" 12
+  35 "ValveBiped.Bip01_R_UpperArm" 34
+  36 "ValveBiped.Bip01_R_Forearm" 35
+  37 "ValveBiped.Bip01_R_Hand" 36
+  38 "ValveBiped.Bip01_R_Finger4" 37
+  39 "ValveBiped.Bip01_R_Finger41" 38
+  40 "ValveBiped.Bip01_R_Finger42" 39
+  41 "ValveBiped.Bip01_R_Finger3" 37
+  42 "ValveBiped.Bip01_R_Finger31" 41
+  43 "ValveBiped.Bip01_R_Finger32" 42
+  44 "ValveBiped.Bip01_R_Finger2" 37
+  45 "ValveBiped.Bip01_R_Finger21" 44
+  46 "ValveBiped.Bip01_R_Finger22" 45
+  47 "ValveBiped.Bip01_R_Finger1" 37
+  48 "ValveBiped.Bip01_R_Finger11" 47
+  49 "ValveBiped.Bip01_R_Finger12" 48
+  50 "ValveBiped.Bip01_R_Finger0" 37
+  51 "ValveBiped.Bip01_R_Finger01" 50
+  52 "ValveBiped.Bip01_R_Finger02" 51
+  53 "ValveBiped.Annabelle_Null" 37
+end
+skeleton
+  time 0
+    0 0.355293 3.185004 32.201900 1.704276 0.016950 -0.377837   # pos: pos   rot: rot
+    1 3.890447 -0.000001 0.000001 -2.138327 -0.809951 -0.983688   # pos: pos   rot: rot
+    2 17.848177 0.000000 -0.000001 0.000000 0.000000 1.042387   # pos: pos   rot: rot
+    3 16.525255 0.000000 0.000000 -0.150963 0.083608 -1.214047   # pos: pos   rot: rot
+    4 6.879456 0.000000 0.000000 -0.007299 -0.002951 -0.584373   # pos: pos   rot: rot
+    5 -3.890446 0.000002 -0.000001 -1.252700 -0.264648 -2.048359   # pos: pos   rot: rot
+    6 17.848175 0.000000 -0.000001 0.000000 0.000000 0.876685   # pos: pos   rot: rot
+    7 16.525253 0.000000 -0.000001 0.469539 -0.078881 -1.568918   # pos: pos   rot: rot
+    8 6.879454 0.000000 0.000002 -0.081334 -0.002949 -0.584373   # pos: pos   rot: rot
+    9 -0.000001 3.345133 -2.981898 1.556144 -0.058700 1.557830   # pos: pos   rot: rot
+    10 3.995835 -0.000001 0.000000 0.006079 0.007565 0.189356   # pos: pos   rot: rot
+    11 3.520299 0.000001 0.000000 0.014433 -0.016439 0.316405   # pos: pos   rot: rot
+    12 8.921476 0.000000 0.000000 0.001172 0.002773 0.198701   # pos: pos   rot: rot
+    13 3.306360 0.000001 0.000000 3.141590 0.000000 0.406109   # pos: pos   rot: rot
+    14 3.602000 0.000000 -0.000001 0.282912 -0.329083 0.692182   # pos: pos   rot: rot
+    15 2.059529 0.977925 1.937661 2.620902 -1.136454 1.878371   # pos: pos   rot: rot
+    16 6.028141 -0.000001 0.000001 -2.839898 -1.048055 0.154565   # pos: pos   rot: rot
+    17 11.692554 -0.000001 0.000001 0.000000 0.000000 -0.859312   # pos: pos   rot: rot
+    18 11.481671 0.000001 -0.000032 1.038241 0.323729 0.002595   # pos: pos   rot: rot
+    19 3.850414 0.126097 -1.223440 -0.449529 -0.213504 -1.502195   # pos: pos   rot: rot
+    20 1.312562 -0.000001 0.000000 0.000000 0.184257 -0.756137   # pos: pos   rot: rot
+    21 0.729363 0.000000 0.000000 0.000000 0.002402 -1.130233   # pos: pos   rot: rot
+    22 3.926344 0.316489 -0.462516 -0.159027 -0.128608 -1.500866   # pos: pos   rot: rot
+    23 1.539098 0.000000 0.000000 0.000000 0.083293 -1.128414   # pos: pos   rot: rot
+    24 1.196319 0.000000 -0.000001 0.000000 0.004791 -1.316733   # pos: pos   rot: rot
+    25 3.881374 0.214695 0.400259 0.023947 -0.021726 -1.562943   # pos: pos   rot: rot
+    26 1.719578 -0.000001 -0.000002 0.000000 0.005005 -1.252382   # pos: pos   rot: rot
+    27 1.209177 0.000001 -0.000002 0.000000 0.002798 -1.102299   # pos: pos   rot: rot
+    28 3.871290 0.117423 1.300903 0.192436 0.061258 -1.578014   # pos: pos   rot: rot
+    29 1.719427 0.000001 0.000002 0.000000 0.005107 -1.248893   # pos: pos   rot: rot
+    30 1.099660 0.000001 -0.000002 0.000000 0.003255 -1.130219   # pos: pos   rot: rot
+    31 0.838832 -0.300277 1.312775 -1.253665 -0.300792 -0.782444   # pos: pos   rot: rot
+    32 1.789785 -0.000001 0.000000 0.000000 0.300697 0.663323   # pos: pos   rot: rot
+    33 1.207002 -0.000001 -0.000001 0.000000 -0.003300 1.086704   # pos: pos   rot: rot
+    34 2.059530 0.977924 -1.937662 -2.370954 1.347500 2.228550   # pos: pos   rot: rot
+    35 6.028141 -0.000003 -0.000005 1.823200 1.010889 -0.087027   # pos: pos   rot: rot
+    36 11.692548 -0.000002 -0.000001 0.000000 0.000000 -1.888035   # pos: pos   rot: rot
+    37 11.481694 0.000002 -0.000002 -0.750791 0.080446 0.886020   # pos: pos   rot: rot
+    38 3.850383 0.136249 1.222352 0.494324 -0.097757 -1.141926   # pos: pos   rot: rot
+    39 1.312562 -0.000001 0.000000 0.000000 -0.007085 -0.936362   # pos: pos   rot: rot
+    40 0.729364 -0.000002 0.000001 0.000000 -0.003644 -0.567388   # pos: pos   rot: rot
+    41 3.926313 0.320319 0.459873 0.166730 -0.127389 -1.076963   # pos: pos   rot: rot
+    42 1.539099 -0.000003 0.000003 0.000000 -0.004401 -0.757451   # pos: pos   rot: rot
+    43 1.196320 0.000002 -0.000001 0.000000 -0.007264 -1.258563   # pos: pos   rot: rot
+    44 3.881344 0.211368 -0.402025 -0.077949 -0.287342 -0.840908   # pos: pos   rot: rot
+    45 1.719578 -0.000002 0.000002 0.000000 0.115797 -1.062723   # pos: pos   rot: rot
+    46 1.209179 -0.000002 -0.000001 0.000000 -0.004241 -1.185399   # pos: pos   rot: rot
+    47 3.871258 0.106627 -1.301834 -0.315430 0.154371 -0.106064   # pos: pos   rot: rot
+    48 1.719428 0.000000 -0.000003 0.000000 -0.007737 -0.686547   # pos: pos   rot: rot
+    49 1.099661 -0.000002 0.000000 0.000000 -0.004929 -0.567890   # pos: pos   rot: rot
+    50 0.838805 -0.311184 -1.310236 1.202559 0.210755 -0.999952   # pos: pos   rot: rot
+    51 1.789782 -0.000001 -0.000003 0.000000 0.200220 0.487567   # pos: pos   rot: rot
+    52 1.207002 -0.000001 0.000000 0.000000 0.201951 0.966051   # pos: pos   rot: rot
+    53 3.202715 -1.851487 0.187592 0.000000 0.000000 0.000000   # pos: pos   rot: rot
+end
