@@ -1,3 +1,5 @@
+//Interpretation of Gasmask Citizen Samuel
+//Model by Epicplayer, original fixed leak citizen sources by ????
 
 $modelname "samuel.mdl"
 

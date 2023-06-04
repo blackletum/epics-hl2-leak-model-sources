@@ -1,3 +1,5 @@
+//Gasmask Citizen with Opaque Visor, made for GYFCT
+//Model by The One Epicplayer, original fixed leak citizen sources by ????
 
 $modelname "citizen_ep.mdl"
 

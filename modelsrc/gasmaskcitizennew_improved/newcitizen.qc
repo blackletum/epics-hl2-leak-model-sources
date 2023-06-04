@@ -1,3 +1,5 @@
+//Gasmask Citizen with Eyes
+//Model by The One Epicplayer, original fixed leak citizen sources by ????
 
 $modelname "citizen.mdl"
 

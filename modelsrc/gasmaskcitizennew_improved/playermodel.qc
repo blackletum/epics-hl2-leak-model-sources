@@ -1,3 +1,5 @@
+//Gasmask Citizen Playermodel experiment for Leaknet multiplayer
+//Model by The One Epicplayer, original fixed leak citizen sources by ????
 
 $modelname "Player/Citizen17.mdl"
 
