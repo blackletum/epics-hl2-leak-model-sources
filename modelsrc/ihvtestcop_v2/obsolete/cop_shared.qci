@@ -1,0 +1,14 @@
+$bbox -10.349 -19.758 -0.248 7.85 13.337 72.418
+
+$controller 0 "Bip01 Head" 8 -60 60
+
+$surfaceprop "flesh"
+
+$sequence Idle01 ihvtest_anims\Idle01.smd ACT_IDLE 1 loop
+$sequence Idle02 ihvtest_anims\Idle02.smd ACT_IDLE 2 loop
+$sequence Walk ihvtest_anims\Walk.smd ACT_WALK 1 loop LX
+$sequence Run ihvtest_anims\Run.smd ACT_RUN 1 loop LX
+
+$sequence diesimple ihvtest_anims\die_simple activity ACT_DIESIMPLE 1
+$sequence shoot shoot ACT_RANGE_ATTACK1 1
+$sequence reload reload	FPS 20 ACT_RELOAD 1 { event 2 8 }
