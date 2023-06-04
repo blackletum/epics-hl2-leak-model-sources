@@ -1,0 +1,35 @@
+$sequence ragdoll ragdoll ACT_DIERAGDOLL 1
+
+$collisionjoints "headcrab_physics.smd"
+{
+	$mass 4.5
+	$inertia 5
+	$damping 0.1
+	$rotdamping 1.5
+	$rootbone "hc_body"
+
+
+	$jointconstrain "Bone01" x limit -64 50 1
+	$jointconstrain "Bone01" y limit -28 28 1
+	$jointconstrain "Bone01" z limit -53 41 1
+
+	$jointconstrain "Bone05" x limit -66 39 1
+	$jointconstrain "Bone05" y limit -48 12 1
+	$jointconstrain "Bone05" z limit -35 75 1
+
+	$jointconstrain "Bone_Knee_L" x limit -61 53 1
+
+	$jointconstrain "Bone_UpArm_R" x limit -57 59 1
+	$jointconstrain "Bone_UpArm_R" y limit -57 97 1
+	$jointconstrain "Bone_UpArm_R" z limit -44 23 1
+
+	$jointconstrain "Bone_Finger_R" x limit -41 90 1
+
+	$jointconstrain "Bone_UppArm_L" x limit -55 73 1
+	$jointconstrain "Bone_UppArm_L" y limit -46 44 1
+	$jointconstrain "Bone_UppArm_L" z limit -50 39 1
+
+	$jointconstrain "Bone_Finger_L" x limit -26 86 1
+
+	$jointconstrain "Bone_Knee_R" x limit -64 68 1
+}
