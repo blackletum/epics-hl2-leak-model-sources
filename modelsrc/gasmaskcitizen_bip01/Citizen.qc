@@ -1,3 +1,10 @@
+/*
+==============================================================================
+
+Citizen
+
+==============================================================================
+*/
 
 $modelname Citizen.mdl
 
@@ -9,7 +16,7 @@ $controller 0 "Bip01 Head" XR -20 20
 $poseparameter "aim_pitch" -90 90 loop 360
 
 $surfaceprop "flesh"
-
+$mostlyopaque
 $attachment "eyes" "Bip01 Head" -0.01 -7.09 67.25 absolute
 $attachment "mouth" "Bip01 Head" 0.80 -5.80 -0.15 rotate 0 -80 -90
 
@@ -36,9 +43,13 @@ $model studio "Citizen_reference.smd" {
 $sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1
 $sequence walk "Walk" fps 30 loop LX ACT_WALK 1
 $sequence run "Run" loop fps 24 LX loop ACT_RUN 1 frame 0 12
-$sequence throw "Throw" ACT_RANGE_ATTACK_THROW 1 { event 3005 28 }
-$sequence pickup "Pickup" fps 30 ACT_PICKUP_GROUND 1 { event 2040 13 }
+$sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
+$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 2 21 }
+$sequence die		"die"			fps 30							ACT_DIESIMPLE 1
+$sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 3001 18 } { event 3003 15 }
+$sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK1 1 { event 3001 15 } { event 3003 10 }
+$sequence flinch "GetPunched" FPS 40 ACT_SMALL_FLINCH 1 frames 7 77
 
 $sequence shoot_mp5 mp5_shoot ACT_RANGE_ATTACK1 1 loop {
 	addlayer Aim_all
@@ -63,7 +74,9 @@ $sequence Aim_all  {
 	delta
 }
 
-$sequence victory "Victory" frame 0 52
+$sequence victory "Victory"
+$sequence startlea "Startle01" FPS 30 ACT_CIT_MANHACKFLINCH 1
+$sequence startleb "Startle02" FPS 30 ACT_CIT_MANHACKFLINCH 1
 
 $include "hitbox.qci"
 $include "ragdoll.qci"
