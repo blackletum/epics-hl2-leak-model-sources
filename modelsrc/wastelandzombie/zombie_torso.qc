@@ -12,7 +12,7 @@ $bodygroup "headcrab"
 
 $cdmaterials "Models\Zombie\"
 
-$contents "solid"
+$mostlyopaque
 
 $hboxset "default"
 $hbox 3 "Bip01 Pelvis" -6.2 -4.48 -8 5.8 6.52 8 ""

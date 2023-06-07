@@ -13,7 +13,7 @@ $bodygroup "headcrab1"
 
 $cdmaterials "Models\Zombie\"
 
-$contents "solid"
+$mostlyopaque
 $surfaceprop "zombieflesh"
 
 $attachment "headcrab" "Bip01 Head" -4.49 -1.32 -0.02 rotate 0 20.25 29.25

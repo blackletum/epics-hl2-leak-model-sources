@@ -7,7 +7,7 @@ $model studio "wastelandzombie_torso_reference.smd"
 
 $cdmaterials "Models\Zombie\"
 
-$contents "solid"
+$mostlyopaque
 
 $sequence Idle01 torso_idle ACT_IDLE 1 loop origin 0 -10 0
 $sequence ragdoll "wastelandzombie_torso_physics" FPS 30 activity ACT_DIERAGDOLL 1

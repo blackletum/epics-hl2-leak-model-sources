@@ -11,10 +11,9 @@ $bodygroup "headcrab1"
 	studio "wastelandzombie_headcrab_bb_reference.smd"
 }
 
-$cdmaterials "Models\Zombie\"
-$cdmaterials "Models\headcrab\"
+$cdmaterials Models\Zombie Models\headcrab
 
-$contents "solid"
+$mostlyopaque
 
 $surfaceprop "flesh"
 

@@ -7,7 +7,7 @@ $model studio "wastelandzombie_reference.smd"
 
 $cdmaterials "Models\Zombie\"
 
-$contents "solid"
+$mostlyopaque
 
 $sequence Idle01 idle ACT_IDLE 1 loop
 

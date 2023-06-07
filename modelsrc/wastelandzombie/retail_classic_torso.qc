@@ -12,7 +12,7 @@ $bodygroup "headcrab1"
 
 $cdmaterials "Models\Zombie\"
 
-$contents "solid"
+$mostlyopaque
 $surfaceprop "zombieflesh"
 
 $hboxset "default"

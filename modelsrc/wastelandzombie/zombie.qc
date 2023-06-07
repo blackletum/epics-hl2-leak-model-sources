@@ -10,9 +10,9 @@ $bodygroup "headcrab"
 	studio "wastelandzombie_headcrab_reference.smd"
 }
 
-$cdmaterials "Models\Zombie\"
+$cdmaterials Models\Zombie
 
-$contents "solid"
+$mostlyopaque
 
 $attachment "headcrab" "Bip01 Head" -4.49 -1.32 -0.02 rotate 0 20.25 29.25
 $attachment "eyes" "Bip01 Head" 0 0 0 rotate 0 0 -50
