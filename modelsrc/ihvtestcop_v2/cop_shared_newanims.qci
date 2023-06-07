@@ -70,7 +70,7 @@ $sequence Run_Unarmed mp5cit_anims/mp5cit_RunUnarmed.smd ACT_RUN 1 loop LX  fram
 }
 
 $sequence draw mp5cit_anims/mp5cit_usesmg frame 0 30 ACT_ARM 1 { event 50 9 }
-$sequence draw_pistol mp5cit_anims/mp5cit_usesmg frame 0 30 ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 9 }
+$sequence draw_pistol pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 5 }
 //$sequence draw_pistol anims/pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 9 }
 $sequence flinch_small mp5cit_anims/mp5cit_usesmg frame 37 42 ACT_SMALL_FLINCH 1
 
