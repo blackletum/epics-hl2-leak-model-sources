@@ -9,4 +9,14 @@ $sequence Swat2 attack1_alt ACT_ZOM_SWATRIGHTMID 1 { event 11 15 } { event 10 20
 $sequence Swat3 attack2 ACT_ZOM_SWATLEFTLOW 1 { event 11 18 } { event 10 20 } fps 60
 $sequence Swat4 attack1 ACT_ZOM_SWATRIGHTLOW 1 { event 11 15 } { event 10 20 } fps 60
 
-$sequence Break_Trough_Window breakthroughwindow
+$sequence Break_Trough_Window breakthroughwindow {
+walkframe 15 lx
+walkframe 82 lx lz
+walkframe 94 lx lz
+walkframe 148 lx lz
+walkframe 276
+walkframe 282 lx ly lz
+walkframe 291 lx ly lz
+walkframe 300 lx ly
+}
+$sequence Break_Trough_Window_hammerref breakthroughwindow
