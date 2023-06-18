@@ -60,6 +60,11 @@ $sequence shoot_shotgun shotgun_shoot ACT_RANGE_ATTACK_SHOTGUN 1 loop {
 	fps 24
 }
 
+$sequence shootp1 "pistol_shoot" fps 4 activity ACT_RANGE_ATTACK_PISTOL 1 {
+	addlayer Aim_all
+	{ event 3014 0 }
+}
+
 $animation aim_ref mp5_aim frame 2 2
 $animation aim_straight mp5_aim frame 2 2 subtract aim_ref 0
 $animation aim_down mp5_aim frame 0 0 subtract aim_ref 0
