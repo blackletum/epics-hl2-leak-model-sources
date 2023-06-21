@@ -40,9 +40,9 @@ $model studio "Citizen_reference.smd" {
 	$include "../Humans/facerules.qci"
 }
 
-$sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1
-$sequence walk "Walk" fps 30 loop LX ACT_WALK 1
-$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 frame 0 12
+$sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1 node 1
+$sequence walk "Walk" fps 30 loop LX ACT_WALK 1 node 1
+$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 node 1
 $sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
 $sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 3015 21 }
@@ -82,6 +82,18 @@ $sequence Aim_all  {
 $sequence victory "Victory"
 $sequence startlea "Startle01" FPS 30 ACT_CIT_MANHACKFLINCH 1
 $sequence startleb "Startle02" FPS 30 ACT_CIT_MANHACKFLINCH 1
+$sequence walllean "Lean_Idle_Wall" loop FPS 30 ACT_CIT_IDLEWALL 1 node 2
+$sequence leanonwall "Lean_On_Wall" FPS 30 ACT_CIT_LEANONWALL 1 transition 1 2
+$sequence leanoffwall "Lean_Off_Wall" FPS 30 ACT_CIT_LEANOFFWALL 1 transition 2 1
+$sequence handsup "Hands_Up" FPS 30 ACT_CIT_HANDSUP 1 transition 1 3
+$sequence handsdown "Hands_Down" FPS 30 ACT_CIT_HANDSDOWN 1 transition 3 1
+$sequence handsupidle "Hands_Up_Idle" loop FPS 30 ACT_CIT_HANDSUPIDLE 1 node 3
+$sequence cower "Cower" FPS 30 ACT_CIT_COWER 1 transition 1 4
+$sequence cowerstand "Cower_Stand" FPS 30 ACT_CIT_COWERSTAND 1 transition 4 1
+$sequence coweridle "Cower_Idle" loop FPS 30 ACT_CIT_COWERIDLE 1 node 4
+$sequence cowerflinch "Cower_Flinch" FPS 30 ACT_CIT_COWERFLINCH 1 node 4
+$sequence showarmband "Show_Arm_Band" FPS 30 ACT_CIT_SHOWARMBAND 1
+$sequence blinded "Blinded" FPS 30 ACT_CIT_BLINDED 1
 
 $include "hitbox.qci"
 $include "ragdoll.qci"
