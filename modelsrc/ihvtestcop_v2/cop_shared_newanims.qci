@@ -56,8 +56,13 @@ $sequence shoot_sniper shotgun_fire frame 30 40 ACT_RANGE_ATTACK_SNIPER_RIFLE 1 
 $sequence shoot_gesture metrocopanims frame 31 34 ACT_GESTURE_RANGE_ATTACK1 1 subtract shoot 3 delta
 
 $sequence shoulderlower ihvtest_anims\Idle01.smd frame 0 0 weightlist shouldersonly
-
+/*
 $sequence Walk_Unarmed mp5cit_anims/mp5cit_WalkUnarmed.smd ACT_WALK 1 loop LX {
+	{ event 6004 2 "NPC_Citizen" }
+	{ event 6005 17 "NPC_Citizen" }
+}
+*/
+$sequence Walk_Unarmed WalkN.smd ACT_WALK 1 loop LX {
 	{ event 6004 2 "NPC_Citizen" }
 	{ event 6005 17 "NPC_Citizen" }
 }
