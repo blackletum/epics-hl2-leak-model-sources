@@ -18,8 +18,14 @@ $model studio "Elite_reference_fixed.smd" {
 	mouth 0 "mouth" "Bip01 Head" 0 -1 0		// mouth illumination
 
 	flexfile "ce_expressions" {
+		$include "../Humans/standardflex.qci"
 	}
+
+	$include "../Humans/facerules.qci"
 }
+
+$eyeposition 0 0 67
+$attachment "eyes" "Bip01 Head" -0.01 -12.09 67.25 absolute
 
 $cdmaterials "Models\Combine_Elite\"
 
