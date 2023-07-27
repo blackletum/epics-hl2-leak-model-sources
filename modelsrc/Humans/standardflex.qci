@@ -1,3 +1,6 @@
+//Standardflex.qci remake used to compile vta files for the leak.
+//Made by the one epicplayer!!!!
+
 defaultflex frame 20		// baseline mouth closed expression
 
 flex "AU42"	frame 5				// eyes		half_closed
