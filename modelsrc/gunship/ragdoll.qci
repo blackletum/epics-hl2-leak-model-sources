@@ -1,0 +1,51 @@
+
+$collisionjoints ragdoll {
+
+	$mass 2275.0
+	$inertia 10.00
+	$damping 0.01
+	$rotdamping 1.00
+	$rootbone "gunship.body"
+	$noselfcollisions
+
+	$jointconstrain "gunship.spine" x limit -12.00 12.00 1.00
+	$jointconstrain "gunship.spine" y limit -35.00 35.00 1.00
+	$jointconstrain "gunship.spine" z limit -26.00 55.00 1.00
+
+	$jointconstrain "gunship.humerus_r" x limit -32.00 32.00 1.00
+	$jointconstrain "gunship.humerus_r" y limit -35.00 35.00 1.00
+	$jointconstrain "gunship.humerus_r" z limit -50.00 50.00 1.00
+
+	$jointconstrain "gunship.tail" x limit -10.00 10.00 1.00
+	$jointconstrain "gunship.tail" y limit -19.00 19.00 1.00
+	$jointconstrain "gunship.tail" z limit -8.00 32.00 1.00
+
+	$jointconstrain "gunship.antenna_l" x limit -15.00 15.00 1.00
+	$jointconstrain "gunship.antenna_l" y limit -30.00 30.00 1.00
+	$jointconstrain "gunship.antenna_l" z limit -30.00 30.00 1.00
+
+	$jointconstrain "gunship.nose" x limit -19.00 19.00 1.00
+	$jointconstrain "gunship.nose" y limit -35.00 35.00 1.00
+	$jointconstrain "gunship.nose" z limit -26.00 39.00 1.00
+
+	$jointconstrain "gunship.nose_weapon" x limit 0.00 0.00 1.00
+	$jointconstrain "gunship.nose_weapon" y limit -10.00 10.00 1.00
+	$jointconstrain "gunship.nose_weapon" z limit -3.00 15.00 1.00
+
+	$jointconstrain "gunship.humerus_l" x limit -30.00 30.00 1.00
+	$jointconstrain "gunship.humerus_l" y limit -37.00 37.00 1.00
+	$jointconstrain "gunship.humerus_l" z limit -50.00 50.00 1.00
+
+	$jointconstrain "gunship.carpals_l" x limit -10.00 10.00 1.00
+	$jointconstrain "gunship.carpals_l" y limit -10.00 10.00 1.00
+	$jointconstrain "gunship.carpals_l" z limit -30.00 41.00 1.00
+
+	$jointconstrain "gunship.carpalsr" x limit -10.00 10.00 1.00
+	$jointconstrain "gunship.carpalsr" y limit -10.00 10.00 1.00
+	$jointconstrain "gunship.carpalsr" z limit -30.00 41.00 1.00
+
+	$jointconstrain "gunship.antenna_r" x limit -12.00 12.00 1.00
+	$jointconstrain "gunship.antenna_r" y limit -30.00 30.00 1.00
+	$jointconstrain "gunship.antenna_r" z limit -30.00 30.00 1.00
+}
+$sequence ragdoll 		"ragdoll_pose" 		FPS 30 		activity ACT_DIERAGDOLL 1
