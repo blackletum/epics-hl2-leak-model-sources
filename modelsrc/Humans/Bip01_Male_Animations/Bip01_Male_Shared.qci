@@ -1,0 +1,76 @@
+//Shared Citizen Bip01 Animations for different humans.
+//By The One Epicplayer
+
+$poseparameter "aim_pitch" -90 90 loop 360
+
+
+$sequence Idle01 Idle01.smd ACT_IDLE 1 loop
+$sequence Idle02 Idle02.smd ACT_IDLE 2 loop
+$sequence Walk WalkN.smd ACT_WALK 1 loop LX
+$sequence Run RunN.smd ACT_RUN 1 loop LX
+$sequence throw "Throw" ACT_RANGE_ATTACK_THROW 1 { event 3005 22 }
+$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
+$sequence reload metrocopanims FPS 16 frame 34 55 ACT_RELOAD 1 { event 2 1 }
+$sequence reload_pistol "pistol_reload" fps 30 activity ACT_RELOAD_PISTOL 1 { event 3015 0 }
+$sequence die_simple		"die_simple"	fps 30					ACT_DIESIMPLE 1
+$sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 3001 18 } { event 3003 15 }
+$sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK1 1 { event 3001 15 } { event 3003 10 }
+$sequence flinch "GetPunched" FPS 40 ACT_SMALL_FLINCH 1 frames 7 77
+
+$sequence Walk_MP5 WalkN_MP5.smd ACT_WALK_RIFLE 1 loop LX
+$sequence Run_MP5 RunN_MP5.smd ACT_RUN_RIFLE 1 loop LX frame 0 21
+
+$sequence shoot metrocopanims frame 31 34 ACT_RANGE_ATTACK1 1 loop {
+	addlayer Aim_all
+}
+
+$sequence shootp1 "pistol_shoot" fps 5 activity ACT_RANGE_ATTACK_PISTOL 1 {
+	addlayer Aim_all
+	{ event 3014 0 }
+}
+
+$sequence shoot_shotgun shotgun_fire frame 30 50 ACT_RANGE_ATTACK_SHOTGUN 1 loop {
+	addlayer Aim_all
+	fps 24
+}
+
+$sequence shoot_sniper shotgun_fire frame 30 40 ACT_RANGE_ATTACK_SNIPER_RIFLE 1 loop {
+	addlayer Aim_all
+	fps 10
+	{ event 3011 0 }
+}
+
+$sequence shoot_gesture metrocopanims frame 31 34 ACT_GESTURE_RANGE_ATTACK1 1 subtract shoot 3 delta
+
+
+$animation aim_ref usesmg frame 34 34
+$animation aim_straight usesmg frame 34 34 subtract aim_ref 0
+$animation aim_down usesmg frame 35 35 subtract aim_ref 0
+$animation aim_up usesmg frame 36 36 subtract aim_ref 0
+
+$sequence Aim_all  {
+	aim_up
+	aim_straight
+	aim_down
+	blendwidth 3
+	blend aim_pitch -45 45
+	delta
+}
+
+$sequence victory "Victory"
+$sequence startlea "Startle01" FPS 30 ACT_CIT_MANHACKFLINCH 1
+$sequence startleb "Startle02" FPS 30 ACT_CIT_MANHACKFLINCH 1
+/*
+$sequence walllean "Lean_Idle_Wall" loop FPS 30 ACT_CIT_IDLEWALL 1 node 2
+$sequence leanonwall "Lean_On_Wall" FPS 30 ACT_CIT_LEANONWALL 1 transition 1 2
+$sequence leanoffwall "Lean_Off_Wall" FPS 30 ACT_CIT_LEANOFFWALL 1 transition 2 1
+$sequence handsup "Hands_Up" FPS 30 ACT_CIT_HANDSUP 1 transition 1 3
+$sequence handsdown "Hands_Down" FPS 30 ACT_CIT_HANDSDOWN 1 transition 3 1
+$sequence handsupidle "Hands_Up_Idle" loop FPS 30 ACT_CIT_HANDSUPIDLE 1 node 3
+$sequence cower "Cower" FPS 30 ACT_CIT_COWER 1 transition 1 4
+$sequence cowerstand "Cower_Stand" FPS 30 ACT_CIT_COWERSTAND 1 transition 4 1
+$sequence coweridle "Cower_Idle" loop FPS 30 ACT_CIT_COWERIDLE 1 node 4
+$sequence cowerflinch "Cower_Flinch" FPS 30 ACT_CIT_COWERFLINCH 1 node 4
+$sequence showarmband "Show_Arm_Band" FPS 30 ACT_CIT_SHOWARMBAND 1
+$sequence blinded "Blinded" FPS 30 ACT_CIT_BLINDED 1
+*/
