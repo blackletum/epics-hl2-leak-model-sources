@@ -5,8 +5,8 @@ $modelname Worker.mdl
 
 $model "worker" "Worker_reference.smd" {
 
-	eyeball "eye_right" "Bip01 Head" -1.272652 -3.803348 67.202854 "[unknown_texture]" 1 4 "iris_unused" 0.64
-	eyeball "eye_left" "Bip01 Head" 1.229364 -3.803364 67.155714 "[unknown_texture]" 1 -4 "iris_unused" 0.64
+	eyeball "eye_right" "Bip01 Head" -1.272652 -3.803348 67.202854 "eyeball_r" 1 4 "pupil_r" 0.64
+	eyeball "eye_left" "Bip01 Head" 1.229364 -3.803364 67.155714 "eyeball_L" 1 -4 "pupil_l" 0.64
 /*
 	eyelid upper_right "Worker_01.vta" lowerer 1 -0.17 neutral 0 0.16 raiser 2 0.25 split 1 eyeball "eye_right"
 	eyelid lower_right "Worker_01.vta" lowerer 3 -0.26 neutral 0 -0.19 raiser 4 -0.04 split 1 eyeball "eye_right"
@@ -169,7 +169,7 @@ $eyeposition 0 0 67
 
 $cdmaterials models\Citizen\Worker
 $cdmaterials models\extras
-
+/*
 $cbox 0 0 0 0 0 0
 
 $bbox -9.132 -18.631 -0.039 8.427 12.677 72.2
@@ -228,5 +228,5 @@ $definebone "Bip01 R Thigh" "Bip01 Spine" -3.994541 0.033841 -3.473618 0.79925 -
 $definebone "Bip01 R Calf" "Bip01 R Thigh" 19.479506 0 0 0 -1.959171 0 0 0 0 0 0 0
 $definebone "Bip01 R Foot" "Bip01 R Calf" 16.250048 0 0 0.800193 4.929557 10.603099 0 0 0 0 0 0
 $definebone "Bip01 R Toe0" "Bip01 R Foot" 3.618352 5.737838 0 0.000001 89.999982 0 0 0 0 0 0 0
-
+*/
 $sequence Idle01 Idle01.smd ACT_IDLE 1 loop
