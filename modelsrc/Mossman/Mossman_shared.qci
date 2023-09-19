@@ -1,0 +1,2660 @@
+
+$hboxset "default"
+$hbox 0 "ValveBiped.Bip01_Pelvis" -5.25 -3.88 -6.25 5.75 4.12 3.75
+$hbox 0 "ValveBiped.Bip01_L_Thigh" 0.5 -3.5 -3.25 17.5 4.5 3.25
+$hbox 0 "ValveBiped.Bip01_L_Calf" 0.74 -2.35 -2.15 17.74 3.65 2.35
+$hbox 0 "ValveBiped.Bip01_L_Foot" -2 -1.8 -1.45 6 3.2 2.05
+$hbox 0 "ValveBiped.Bip01_L_Toe0" -0.17 -1.5 -1.3 2.57 0.3 1.7
+$hbox 0 "ValveBiped.Bip01_R_Thigh" 0.5 -3.5 -3 17.5 4.5 3
+$hbox 0 "ValveBiped.Bip01_R_Calf" 0.74 -2.35 -2.35 17.74 3.65 2.15
+$hbox 0 "ValveBiped.Bip01_R_Foot" -2 -1.75 -2.15 6 3.25 1.35
+$hbox 0 "ValveBiped.Bip01_R_Toe0" 0 -1.38 -1.63 2.74 0.38 1.63
+$hbox 0 "ValveBiped.Bip01_Spine1" -4.5 -2 -4.98 3.5 6 4.97
+$hbox 0 "ValveBiped.Bip01_Spine2" -0.5 -2.5 -6 10.5 7.5 6
+$hbox 0 "ValveBiped.Bip01_Head1" -2.25 -5 -3.15 7.25 5 3.35
+$hbox 0 "ValveBiped.Bip01_L_UpperArm" -0.81 -2.25 -3.05 11.19 2.75 1.2
+$hbox 0 "ValveBiped.Bip01_L_Forearm" -1.25 -1.88 -2 11.75 1.62 1
+$hbox 0 "ValveBiped.Bip01_L_Hand" 0 -1.07 -1.5 6 0.68 3
+$hbox 0 "ValveBiped.Bip01_R_UpperArm" -1.5 -2.25 -1.25 11.5 2.75 2.75
+$hbox 0 "ValveBiped.Bip01_R_Forearm" -0.82 -1.9 -1.15 11.18 1.6 1.85
+$hbox 0 "ValveBiped.Bip01_R_Hand" -0.5 -1.13 -3.25 5.5 0.63 1.75
+$skipboneinbbox
+
+$poseparameter "move_yaw" -180 180 loop 360
+$poseparameter "body_trans_Y" -6.053574 6.000146 loop 0
+$poseparameter "body_trans_X" -10.16209 5.162459 loop 0
+$poseparameter "body_lift" -10.29325 2.039452 loop 0
+$poseparameter "body_yaw" -57.10017 56.34973 loop 0
+$poseparameter "body_pitch" -20.50603 43.03373 loop 0
+$poseparameter "body_roll" -17.94991 15.80009 loop 0
+$poseparameter "spine_yaw" -40.78002 40.76493 loop 0
+$poseparameter "spine_pitch" -28.09835 52.63799 loop 0
+$poseparameter "spine_roll" -21.96959 21.96447 loop 0
+$poseparameter "neck_trans" -0.404954 0.621497 loop 0
+$poseparameter "head_yaw" -59.74281 59.74252 loop 0
+$poseparameter "head_pitch" -30.00009 36.13286 loop 0
+$poseparameter "head_roll" -18.27115 18.28406 loop 0
+
+$ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0 0 0
+$ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0 0 0
+$ikchain "rfoot" "ValveBiped.Bip01_R_Foot" knee 0 0 0
+$ikchain "lfoot" "ValveBiped.Bip01_L_Foot" knee 0 0 0
+
+$ikautoplaylock "rhand" 0.5 0.8
+$ikautoplaylock "lhand" 0.5 0.8
+$ikautoplaylock "rfoot" 1 0.1
+$ikautoplaylock "lfoot" 1 0.1
+
+$weightlist "weights_body_trans_y" {
+	 "ValveBiped.Bip01" 1
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+	 "ValveBiped.Bip01_L_Trapezius" 0
+	 "ValveBiped.Bip01_L_Ulna" 0
+	 "ValveBiped.Bip01_R_Ulna" 0
+	 "ValveBiped.Bip01_L_Wrist" 0
+	 "ValveBiped.Bip01_L_Bicep" 0
+	 "ValveBiped.Bip01_L_Latt" 1
+	 "ValveBiped.Bip01_L_Pectoral" 1
+	 "ValveBiped.Bip01_R_Elbow" 0
+	 "ValveBiped.Bip01_R_Pectoral" 1
+	 "ValveBiped.Bip01_R_Latt" 1
+	 "ValveBiped.Bip01_L_Shoulder" 0
+	 "ValveBiped.Bip01_R_Wrist" 0
+	 "ValveBiped.Bip01_L_Elbow" 0
+	 "ValveBiped.Bip01_R_Trapezius" 0
+	 "ValveBiped.Bip01_R_Shoulder" 0
+	 "ValveBiped.Bip01_R_Bicep" 0
+}
+
+$weightlist "weights_spine_rot_z" {
+	 "ValveBiped.Bip01" 0
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+	 "ValveBiped.Bip01_L_Trapezius" 0
+	 "ValveBiped.Bip01_L_Ulna" 0
+	 "ValveBiped.Bip01_R_Ulna" 0
+	 "ValveBiped.Bip01_L_Wrist" 0
+	 "ValveBiped.Bip01_L_Bicep" 0
+	 "ValveBiped.Bip01_L_Latt" 1
+	 "ValveBiped.Bip01_L_Pectoral" 1
+	 "ValveBiped.Bip01_R_Elbow" 0
+	 "ValveBiped.Bip01_R_Pectoral" 1
+	 "ValveBiped.Bip01_R_Latt" 1
+	 "ValveBiped.Bip01_L_Shoulder" 0
+	 "ValveBiped.Bip01_R_Wrist" 0
+	 "ValveBiped.Bip01_L_Elbow" 0
+	 "ValveBiped.Bip01_R_Trapezius" 0
+	 "ValveBiped.Bip01_R_Shoulder" 0
+	 "ValveBiped.Bip01_R_Bicep" 0
+}
+
+$weightlist "weights_neck_trans_x" {
+	 "ValveBiped.Bip01" 0
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+	 "ValveBiped.Bip01_L_Trapezius" 0
+	 "ValveBiped.Bip01_L_Ulna" 0
+	 "ValveBiped.Bip01_R_Ulna" 0
+	 "ValveBiped.Bip01_L_Wrist" 0
+	 "ValveBiped.Bip01_L_Bicep" 0
+	 "ValveBiped.Bip01_L_Latt" 1
+	 "ValveBiped.Bip01_L_Pectoral" 1
+	 "ValveBiped.Bip01_R_Elbow" 0
+	 "ValveBiped.Bip01_R_Pectoral" 1
+	 "ValveBiped.Bip01_R_Latt" 1
+	 "ValveBiped.Bip01_L_Shoulder" 0
+	 "ValveBiped.Bip01_R_Wrist" 0
+	 "ValveBiped.Bip01_L_Elbow" 0
+	 "ValveBiped.Bip01_R_Trapezius" 0
+	 "ValveBiped.Bip01_R_Shoulder" 0
+	 "ValveBiped.Bip01_R_Bicep" 0
+}
+
+$weightlist "weights_bodygesture01" {
+	 "ValveBiped.Bip01" 1
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+	 "ValveBiped.Bip01_L_Trapezius" 1
+	 "ValveBiped.Bip01_L_Ulna" 1
+	 "ValveBiped.Bip01_R_Ulna" 1
+	 "ValveBiped.Bip01_L_Wrist" 1
+	 "ValveBiped.Bip01_L_Bicep" 1
+	 "ValveBiped.Bip01_L_Latt" 1
+	 "ValveBiped.Bip01_L_Pectoral" 1
+	 "ValveBiped.Bip01_R_Elbow" 1
+	 "ValveBiped.Bip01_R_Pectoral" 1
+	 "ValveBiped.Bip01_R_Latt" 1
+	 "ValveBiped.Bip01_L_Shoulder" 1
+	 "ValveBiped.Bip01_R_Wrist" 1
+	 "ValveBiped.Bip01_L_Elbow" 1
+	 "ValveBiped.Bip01_R_Trapezius" 1
+	 "ValveBiped.Bip01_R_Shoulder" 1
+	 "ValveBiped.Bip01_R_Bicep" 1
+}
+
+$weightlist "weights_armpose01B" {
+	 "ValveBiped.Bip01" 0
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+	 "ValveBiped.Bip01_L_Trapezius" 1
+	 "ValveBiped.Bip01_L_Ulna" 1
+	 "ValveBiped.Bip01_R_Ulna" 1
+	 "ValveBiped.Bip01_L_Wrist" 1
+	 "ValveBiped.Bip01_L_Bicep" 1
+	 "ValveBiped.Bip01_L_Latt" 0
+	 "ValveBiped.Bip01_L_Pectoral" 0
+	 "ValveBiped.Bip01_R_Elbow" 1
+	 "ValveBiped.Bip01_R_Pectoral" 0
+	 "ValveBiped.Bip01_R_Latt" 0
+	 "ValveBiped.Bip01_L_Shoulder" 1
+	 "ValveBiped.Bip01_R_Wrist" 1
+	 "ValveBiped.Bip01_L_Elbow" 1
+	 "ValveBiped.Bip01_R_Trapezius" 1
+	 "ValveBiped.Bip01_R_Shoulder" 1
+	 "ValveBiped.Bip01_R_Bicep" 1
+}
+
+$weightlist "weights_gesture01B" {
+	 "ValveBiped.Bip01" 0
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+	 "ValveBiped.Bip01_L_Trapezius" 0
+	 "ValveBiped.Bip01_L_Ulna" 0
+	 "ValveBiped.Bip01_R_Ulna" 0
+	 "ValveBiped.Bip01_L_Wrist" 0
+	 "ValveBiped.Bip01_L_Bicep" 0
+	 "ValveBiped.Bip01_L_Latt" 0
+	 "ValveBiped.Bip01_L_Pectoral" 0
+	 "ValveBiped.Bip01_R_Elbow" 0
+	 "ValveBiped.Bip01_R_Pectoral" 0
+	 "ValveBiped.Bip01_R_Latt" 0
+	 "ValveBiped.Bip01_L_Shoulder" 0
+	 "ValveBiped.Bip01_R_Wrist" 0
+	 "ValveBiped.Bip01_L_Elbow" 0
+	 "ValveBiped.Bip01_R_Trapezius" 0
+	 "ValveBiped.Bip01_R_Shoulder" 0
+	 "ValveBiped.Bip01_R_Bicep" 0
+}
+
+$weightlist "weights_gesture01" {
+	 "ValveBiped.Bip01" 1
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+	 "ValveBiped.Bip01_L_Trapezius" 1
+	 "ValveBiped.Bip01_L_Ulna" 1
+	 "ValveBiped.Bip01_R_Ulna" 1
+	 "ValveBiped.Bip01_L_Wrist" 1
+	 "ValveBiped.Bip01_L_Bicep" 1
+	 "ValveBiped.Bip01_L_Latt" 1
+	 "ValveBiped.Bip01_L_Pectoral" 1
+	 "ValveBiped.Bip01_R_Elbow" 1
+	 "ValveBiped.Bip01_R_Pectoral" 1
+	 "ValveBiped.Bip01_R_Latt" 1
+	 "ValveBiped.Bip01_L_Shoulder" 1
+	 "ValveBiped.Bip01_R_Wrist" 1
+	 "ValveBiped.Bip01_L_Elbow" 1
+	 "ValveBiped.Bip01_R_Trapezius" 1
+	 "ValveBiped.Bip01_R_Shoulder" 1
+	 "ValveBiped.Bip01_R_Bicep" 1
+}
+
+$animation "a_body_trans_lt_corrective_animation" "Mossman_anims\a_body_trans_lt_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_corrective_animation" "Mossman_anims\a_body_trans_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_rt_corrective_animation" "Mossman_anims\a_body_trans_rt_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_fwd_corrective_animation" "Mossman_anims\a_body_trans_fwd_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_bwd_corrective_animation" "Mossman_anims\a_body_trans_bwd_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_dwn_corrective_animation" "Mossman_anims\a_body_trans_dwn_corrective_animation.smd" {
+}
+
+$animation "a_body_trans_up_corrective_animation" "Mossman_anims\a_body_trans_up_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_z_lt_corrective_animation" "Mossman_anims\a_body_rot_z_lt_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_corrective_animation" "Mossman_anims\a_body_rot_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_z_rt_corrective_animation" "Mossman_anims\a_body_rot_z_rt_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_back_corrective_animation" "Mossman_anims\a_body_rot_back_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_fwd_corrective_animation" "Mossman_anims\a_body_rot_fwd_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_lt_corrective_animation" "Mossman_anims\a_body_rot_lt_corrective_animation.smd" {
+}
+
+$animation "a_body_rot_rt_corrective_animation" "Mossman_anims\a_body_rot_rt_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_z_lt_corrective_animation" "Mossman_anims\a_spine_rot_z_lt_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_corrective_animation" "Mossman_anims\a_spine_rot_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_z_rt_corrective_animation" "Mossman_anims\a_spine_rot_z_rt_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_back_corrective_animation" "Mossman_anims\a_spine_rot_back_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_fwd_corrective_animation" "Mossman_anims\a_spine_rot_fwd_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_lt_corrective_animation" "Mossman_anims\a_spine_rot_lt_corrective_animation.smd" {
+}
+
+$animation "a_spine_rot_rt_corrective_animation" "Mossman_anims\a_spine_rot_rt_corrective_animation.smd" {
+}
+
+$animation "a_neck_trans_back_corrective_animation" "Mossman_anims\a_neck_trans_back_corrective_animation.smd" {
+}
+
+$animation "a_neck_trans_corrective_animation" "Mossman_anims\a_neck_trans_corrective_animation.smd" {
+}
+
+$animation "a_neck_trans_fwd_corrective_animation" "Mossman_anims\a_neck_trans_fwd_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_z_lt_corrective_animation" "Mossman_anims\a_head_rot_z_lt_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_corrective_animation" "Mossman_anims\a_head_rot_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_z_rt_corrective_animation" "Mossman_anims\a_head_rot_z_rt_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_dwn_corrective_animation" "Mossman_anims\a_head_rot_dwn_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_up_corrective_animation" "Mossman_anims\a_head_rot_up_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_lt_corrective_animation" "Mossman_anims\a_head_rot_lt_corrective_animation.smd" {
+}
+
+$animation "a_head_rot_rt_corrective_animation" "Mossman_anims\a_head_rot_rt_corrective_animation.smd" {
+}
+
+$animation "@bodygesture01_corrective_animation" "Mossman_anims\@bodygesture01_corrective_animation.smd" {
+}
+
+$animation "@bodygesture02_corrective_animation" "Mossman_anims\@bodygesture02_corrective_animation.smd" {
+}
+
+$animation "@bodygesture03_corrective_animation" "Mossman_anims\@bodygesture03_corrective_animation.smd" {
+}
+
+$animation "@bodygesture04_corrective_animation" "Mossman_anims\@bodygesture04_corrective_animation.smd" {
+}
+
+$animation "@bodygesture05_corrective_animation" "Mossman_anims\@bodygesture05_corrective_animation.smd" {
+}
+
+$animation "@bodygesture06_corrective_animation" "Mossman_anims\@bodygesture06_corrective_animation.smd" {
+}
+
+$animation "@bodygesture07_corrective_animation" "Mossman_anims\@bodygesture07_corrective_animation.smd" {
+}
+
+$animation "@bodygesture08_corrective_animation" "Mossman_anims\@bodygesture08_corrective_animation.smd" {
+}
+
+$animation "@bodygesture09_corrective_animation" "Mossman_anims\@bodygesture09_corrective_animation.smd" {
+}
+
+$animation "@bodygesture10_corrective_animation" "Mossman_anims\@bodygesture10_corrective_animation.smd" {
+}
+
+$animation "a_armpose01A_corrective_animation" "Mossman_anims\a_armpose01A_corrective_animation.smd" {
+}
+
+$animation "a_armpose02A_corrective_animation" "Mossman_anims\a_armpose02A_corrective_animation.smd" {
+}
+
+$animation "a_armpose03A_corrective_animation" "Mossman_anims\a_armpose03A_corrective_animation.smd" {
+}
+
+$animation "a_armpose04A_corrective_animation" "Mossman_anims\a_armpose04A_corrective_animation.smd" {
+}
+
+$animation "a_armpose05A_corrective_animation" "Mossman_anims\a_armpose05A_corrective_animation.smd" {
+}
+
+$animation "a_armpose06A_corrective_animation" "Mossman_anims\a_armpose06A_corrective_animation.smd" {
+}
+
+$animation "a_armpose07A_corrective_animation" "Mossman_anims\a_armpose07A_corrective_animation.smd" {
+}
+
+$animation "a_armpose08A_corrective_animation" "Mossman_anims\a_armpose08A_corrective_animation.smd" {
+}
+
+$animation "a_armpose09A_corrective_animation" "Mossman_anims\a_armpose09A_corrective_animation.smd" {
+}
+
+$animation "a_armpose10A_corrective_animation" "Mossman_anims\a_armpose10A_corrective_animation.smd" {
+}
+
+$animation "a_armpose11A_corrective_animation" "Mossman_anims\a_armpose11A_corrective_animation.smd" {
+}
+
+$animation "a_armpose12A_corrective_animation" "Mossman_anims\a_armpose12A_corrective_animation.smd" {
+}
+
+$animation "a_armpose13A_corrective_animation" "Mossman_anims\a_armpose13A_corrective_animation.smd" {
+}
+
+$animation "a_fidgetidle02A_corrective_animation" "Mossman_anims\a_fidgetidle02A_corrective_animation.smd" {
+}
+
+$animation "a_gesture01A_corrective_animation" "Mossman_anims\a_gesture01A_corrective_animation.smd" {
+}
+
+$animation "a_gesture02A_corrective_animation" "Mossman_anims\a_gesture02A_corrective_animation.smd" {
+}
+
+$animation "a_gesture03A_corrective_animation" "Mossman_anims\a_gesture03A_corrective_animation.smd" {
+}
+
+$animation "a_gesture04A_corrective_animation" "Mossman_anims\a_gesture04A_corrective_animation.smd" {
+}
+
+$animation "a_gesture05A_corrective_animation" "Mossman_anims\a_gesture05A_corrective_animation.smd" {
+}
+
+$animation "a_gesture06A_corrective_animation" "Mossman_anims\a_gesture06A_corrective_animation.smd" {
+}
+
+$animation "a_gesture07A_corrective_animation" "Mossman_anims\a_gesture07A_corrective_animation.smd" {
+}
+
+$animation "a_gesture08A_corrective_animation" "Mossman_anims\a_gesture08A_corrective_animation.smd" {
+}
+
+$animation "a_gesture09A_corrective_animation" "Mossman_anims\a_gesture09A_corrective_animation.smd" {
+}
+
+$animation "a_gesture10A_corrective_animation" "Mossman_anims\a_gesture10A_corrective_animation.smd" {
+}
+
+$animation "a_gesture11A_corrective_animation" "Mossman_anims\a_gesture11A_corrective_animation.smd" {
+}
+
+$animation "a_gesture12A_corrective_animation" "Mossman_anims\a_gesture12A_corrective_animation.smd" {
+}
+
+$animation "a_gesture13A_corrective_animation" "Mossman_anims\a_gesture13A_corrective_animation.smd" {
+}
+
+$animation "a_gesture14A_corrective_animation" "Mossman_anims\a_gesture14A_corrective_animation.smd" {
+}
+
+$animation "a_gesture15A_corrective_animation" "Mossman_anims\a_gesture15A_corrective_animation.smd" {
+}
+
+$animation "a_gesture17A_corrective_animation" "Mossman_anims\a_gesture17A_corrective_animation.smd" {
+}
+
+$animation "a_WalkS" "Mossman_anims\a_WalkS.smd" {
+	
+	loop
+	walkframe 32 LX LY
+}
+
+$animation "a_WalkSE" "Mossman_anims\a_WalkSE.smd" {
+	
+	loop
+	walkframe 27 LX LY
+}
+
+$animation "a_WalkE" "Mossman_anims\a_WalkE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkNE" "Mossman_anims\a_WalkNE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkN" "Mossman_anims\a_WalkN.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkNW" "Mossman_anims\a_WalkNW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkW" "Mossman_anims\a_WalkW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkSW" "Mossman_anims\a_WalkSW.smd" {
+	
+	loop
+	walkframe 27 LX LY
+}
+
+$animation "a_RunS" "Mossman_anims\a_RunS.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunSE" "Mossman_anims\a_RunSE.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunE" "Mossman_anims\a_RunE.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunNE" "Mossman_anims\a_RunNE.smd" {
+	
+	loop
+	walkframe 20 LX LY
+}
+
+$animation "a_RunN" "Mossman_anims\a_RunN.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunNW" "Mossman_anims\a_RunNW.smd" {
+	
+	loop
+	walkframe 20 LX LY
+}
+
+$animation "a_RunW" "Mossman_anims\a_RunW.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunSW" "Mossman_anims\a_RunSW.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_pose_neutral" "Mossman_anims\a_pose_neutral.smd" {
+	
+}
+
+$animation "a_body_trans" "Mossman_anims\a_body_trans.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_rt" "Mossman_anims\a_body_trans_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_rt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_lt" "Mossman_anims\a_body_trans_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_lt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_fwd" "Mossman_anims\a_body_trans_fwd.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_fwd_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_bwd" "Mossman_anims\a_body_trans_bwd.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_bwd_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_dwn" "Mossman_anims\a_body_trans_dwn.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_dwn_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_trans_up" "Mossman_anims\a_body_trans_up.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_trans_up_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot" "Mossman_anims\a_body_rot.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_back" "Mossman_anims\a_body_rot_back.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_back_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_fwd" "Mossman_anims\a_body_rot_fwd.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_fwd_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_rt" "Mossman_anims\a_body_rot_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_rt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_lt" "Mossman_anims\a_body_rot_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_lt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_z_rt" "Mossman_anims\a_body_rot_z_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_z_rt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_body_rot_z_lt" "Mossman_anims\a_body_rot_z_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_body_rot_z_lt_corrective_animation" 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_spine_rot" "Mossman_anims\a_spine_rot.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_fwd" "Mossman_anims\a_spine_rot_fwd.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_fwd_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_back" "Mossman_anims\a_spine_rot_back.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_back_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_lt" "Mossman_anims\a_spine_rot_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_lt_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_rt" "Mossman_anims\a_spine_rot_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_rt_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_z_rt" "Mossman_anims\a_spine_rot_z_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_z_rt_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_spine_rot_z_lt" "Mossman_anims\a_spine_rot_z_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_spine_rot_z_lt_corrective_animation" 0
+	weightlist "weights_spine_rot_z"
+}
+
+$animation "a_head_rot" "Mossman_anims\a_head_rot.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_head_rot_lt" "Mossman_anims\a_head_rot_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_lt_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_head_rot_rt" "Mossman_anims\a_head_rot_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_rt_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_neck_trans" "Mossman_anims\a_neck_trans.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_neck_trans_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_neck_trans_fwd" "Mossman_anims\a_neck_trans_fwd.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_neck_trans_fwd_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_neck_trans_back" "Mossman_anims\a_neck_trans_back.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_neck_trans_back_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_head_rot_dwn" "Mossman_anims\a_head_rot_dwn.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_dwn_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_head_rot_up" "Mossman_anims\a_head_rot_up.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_up_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_shoulder_shrug" "Mossman_anims\a_shoulder_shrug.smd" {
+	
+}
+
+$animation "a_head_rot_z_rt" "Mossman_anims\a_head_rot_z_rt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_z_rt_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_head_rot_z_lt" "Mossman_anims\a_head_rot_z_lt.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_head_rot_z_lt_corrective_animation" 0
+	weightlist "weights_neck_trans_x"
+}
+
+$animation "a_armposeneutral" "Mossman_anims\a_armposeneutral.smd" {
+	
+}
+
+$animation "a_armposeneutral2" "Mossman_anims\a_armposeneutral2.smd" {
+	
+}
+
+$animation "a_armposeneutral3" "Mossman_anims\a_armposeneutral3.smd" {
+	
+}
+
+$animation "a_armposeneutral4" "Mossman_anims\a_armposeneutral4.smd" {
+	
+}
+
+$animation "a_armpose01A" "Mossman_anims\a_armpose01A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose01A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 160 160 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 160 160 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose01B" "Mossman_anims\a_armpose01B.smd" {
+	
+	ikrule "lhand" touch "ValveBiped.Bip01_Spine2" contact 40 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 10 40 140 155 target 0
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose02A" "Mossman_anims\a_armpose02A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose02A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose02B" "Mossman_anims\a_armpose02B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose03A" "Mossman_anims\a_armpose03A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose03A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose03B" "Mossman_anims\a_armpose03B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose04A" "Mossman_anims\a_armpose04A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose04A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose04B" "Mossman_anims\a_armpose04B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose05A" "Mossman_anims\a_armpose05A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose05A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose05B" "Mossman_anims\a_armpose05B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose06A" "Mossman_anims\a_armpose06A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose06A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 150 150 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 150 150 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose06B" "Mossman_anims\a_armpose06B.smd" {
+	
+	ikrule "lhand" touch "ValveBiped.Bip01_Head1" contact 30 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 5 30 70 120 target 0
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose07A" "Mossman_anims\a_armpose07A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose07A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose07B" "Mossman_anims\a_armpose07B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose08A" "Mossman_anims\a_armpose08A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose08A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose08B" "Mossman_anims\a_armpose08B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose09A" "Mossman_anims\a_armpose09A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose09A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose09B" "Mossman_anims\a_armpose09B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose10A" "Mossman_anims\a_armpose10A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose10A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose10B" "Mossman_anims\a_armpose10B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose11A" "Mossman_anims\a_armpose11A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose11A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose11B" "Mossman_anims\a_armpose11B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose12A" "Mossman_anims\a_armpose12A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose12A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose12B" "Mossman_anims\a_armpose12B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose13A" "Mossman_anims\a_armpose13A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose13A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose13B" "Mossman_anims\a_armpose13B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_fidgetidle02A" "Mossman_anims\a_fidgetidle02A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_fidgetidle02A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 450 450 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 450 450 target 0
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_fidgetidle02B" "Mossman_anims\a_fidgetidle02B.smd" {
+	
+	ikrule "rhand" touch "ValveBiped.Bip01_Pelvis" contact 60 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 20 60 270 290 target 0
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_gesture01A" "Mossman_anims\a_gesture01A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture01A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture01B" "Mossman_anims\a_gesture01B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture02A" "Mossman_anims\a_gesture02A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture02A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture02B" "Mossman_anims\a_gesture02B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture03A" "Mossman_anims\a_gesture03A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture03A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture03B" "Mossman_anims\a_gesture03B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture04A" "Mossman_anims\a_gesture04A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture04A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture04B" "Mossman_anims\a_gesture04B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture05A" "Mossman_anims\a_gesture05A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture05A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture05B" "Mossman_anims\a_gesture05B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture06A" "Mossman_anims\a_gesture06A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture06A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture06B" "Mossman_anims\a_gesture06B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture07A" "Mossman_anims\a_gesture07A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture07A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 46 46 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 46 46 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture07B" "Mossman_anims\a_gesture07B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture08A" "Mossman_anims\a_gesture08A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture08A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 54 54 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 54 54 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture08B" "Mossman_anims\a_gesture08B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture09A" "Mossman_anims\a_gesture09A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture09A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture09B" "Mossman_anims\a_gesture09B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture10A" "Mossman_anims\a_gesture10A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture10A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 58 58 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 58 58 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture10B" "Mossman_anims\a_gesture10B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture11A" "Mossman_anims\a_gesture11A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture11A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 24 24 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 24 24 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture11B" "Mossman_anims\a_gesture11B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture12A" "Mossman_anims\a_gesture12A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture12A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture12B" "Mossman_anims\a_gesture12B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture13A" "Mossman_anims\a_gesture13A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture13A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 33 33 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 33 33 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture13B" "Mossman_anims\a_gesture13B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture14A" "Mossman_anims\a_gesture14A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture14A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 52 52 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 52 52 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture14B" "Mossman_anims\a_gesture14B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture15A" "Mossman_anims\a_gesture15A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture15A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 49 49 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 49 49 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture15B" "Mossman_anims\a_gesture15B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture17A" "Mossman_anims\a_gesture17A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture17A_corrective_animation" 0
+	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture17B" "Mossman_anims\a_gesture17B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "test" {
+	"Mossman_anims\test.smd"
+
+	
+	
+}
+
+$sequence "idle_angry" {
+	"Mossman_anims\idle_angry.smd"
+	activity "ACT_IDLE_ANGRY" 1
+
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "idle_subtle" {
+	"Mossman_anims\idle_subtle.smd"
+	activity "ACT_IDLE" 1
+
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "idle01" {
+	"Mossman_anims\idle01.smd"
+	activity "ACT_IDLE" 1
+
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "Idle02" {
+	"Mossman_anims\Idle02.smd"
+	activity "ACT_IDLE" 1
+
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "Idle03" {
+	"Mossman_anims\Idle03.smd"
+	activity "ACT_IDLE" 1
+
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "walk_all" {
+	"a_WalkS"
+	"a_WalkSE"
+	"a_WalkE"
+	"a_WalkNE"
+	"a_WalkN"
+	"a_WalkNW"
+	"a_WalkW"
+	"a_WalkSW"
+	"a_WalkS"
+	activity "ACT_WALK" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	{ event 2051 9 "" }
+	{ event 2050 23 "" }
+
+	
+	node "node1"
+}
+
+$sequence "run_all" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_RunN"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	
+	node "node2"
+}
+
+$sequence "Stand_to_run" {
+	"Mossman_anims\Stand_to_run.smd"
+
+	
+	
+	walkframe 30 LX
+}
+
+$sequence "Run_to_stand" {
+	"Mossman_anims\Run_to_stand.smd"
+
+	
+	
+}
+
+$sequence "Stand_to_walk" {
+	"Mossman_anims\Stand_to_walk.smd"
+
+	
+	
+	walkframe 32 LX
+}
+
+$sequence "Walk_to_stand" {
+	"Mossman_anims\Walk_to_stand.smd"
+
+	
+	
+}
+
+$sequence "body_trans_y" {
+	"a_body_trans_lt"
+	"a_body_trans"
+	"a_body_trans_rt"
+	autoplay
+	blend "body_trans_Y" 6.000146 -6.053574
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "body_trans_x" {
+	"a_body_trans_fwd"
+	"a_body_trans"
+	"a_body_trans_bwd"
+	autoplay
+	blend "body_trans_X" 5.162459 -10.16209
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "body_trans_z" {
+	"a_body_trans_dwn"
+	"a_body_trans"
+	"a_body_trans_up"
+	autoplay
+	blend "body_lift" -10.29325 2.039452
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "body_rot_z" {
+	"a_body_rot_z_lt"
+	"a_body_rot"
+	"a_body_rot_z_rt"
+	autoplay
+	blend "body_yaw" 56.34973 -57.10017
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "body_rot_y" {
+	"a_body_rot_back"
+	"a_body_rot"
+	"a_body_rot_fwd"
+	autoplay
+	blend "body_pitch" -20.50603 43.03373
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "body_rot_x" {
+	"a_body_rot_lt"
+	"a_body_rot"
+	"a_body_rot_rt"
+	autoplay
+	blend "body_roll" -17.94991 15.80009
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "spine_rot_z" {
+	"a_spine_rot_z_lt"
+	"a_spine_rot"
+	"a_spine_rot_z_rt"
+	autoplay
+	blend "spine_yaw" 40.76493 -40.78002
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "spine_rot_y" {
+	"a_spine_rot_back"
+	"a_spine_rot"
+	"a_spine_rot_fwd"
+	autoplay
+	blend "spine_pitch" -28.09835 52.63799
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "spine_rot_x" {
+	"a_spine_rot_lt"
+	"a_spine_rot"
+	"a_spine_rot_rt"
+	autoplay
+	blend "spine_roll" -21.96959 21.96447
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "neck_trans_x" {
+	"a_neck_trans_back"
+	"a_neck_trans"
+	"a_neck_trans_fwd"
+	autoplay
+	blend "neck_trans" -0.404954 0.621497
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "head_rot_z" {
+	"a_head_rot_z_lt"
+	"a_head_rot"
+	"a_head_rot_z_rt"
+	autoplay
+	blend "head_yaw" -59.74281 59.74252
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "head_rot_y" {
+	"a_head_rot_dwn"
+	"a_head_rot"
+	"a_head_rot_up"
+	autoplay
+	blend "head_pitch" 36.13286 -30.00009
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "head_rot_x" {
+	"a_head_rot_lt"
+	"a_head_rot"
+	"a_head_rot_rt"
+	autoplay
+	blend "head_roll" -18.27115 18.28406
+	blendwidth 3
+	delta
+
+	
+}
+
+$sequence "ragdoll" {
+	"Mossman_anims\ragdoll.smd"
+	activity "ACT_DIERAGDOLL" 1
+
+	
+	
+}
+
+$sequence "posture01" {
+	"Mossman_anims\posture01.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture02" {
+	"Mossman_anims\posture02.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture05" {
+	"Mossman_anims\posture05.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture06" {
+	"Mossman_anims\posture06.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture07" {
+	"Mossman_anims\posture07.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture08" {
+	"Mossman_anims\posture08.smd"
+
+	
+	
+}
+
+$sequence "posture09" {
+	"Mossman_anims\posture09.smd"
+
+	
+	
+	loop
+}
+
+$sequence "posture10" {
+	"Mossman_anims\posture10.smd"
+
+	
+	
+	loop
+}
+
+$sequence "bodygesture01" {
+	"Mossman_anims\bodygesture01.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture01_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture02" {
+	"Mossman_anims\bodygesture02.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture02_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture03" {
+	"Mossman_anims\bodygesture03.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture03_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture04" {
+	"Mossman_anims\bodygesture04.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture04_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture05" {
+	"Mossman_anims\bodygesture05.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture05_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture06" {
+	"Mossman_anims\bodygesture06.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture06_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture07" {
+	"Mossman_anims\bodygesture07.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture07_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture08" {
+	"Mossman_anims\bodygesture08.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture08_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture09" {
+	"Mossman_anims\bodygesture09.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture09_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "bodygesture10" {
+	"Mossman_anims\bodygesture10.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture10_corrective_animation" 0
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_bodygesture01"
+}
+
+$sequence "armpose01B" {
+	"a_armpose01B"
+
+	
+}
+
+$sequence "armpose01" {
+	"a_armpose01A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose01B"
+}
+
+$sequence "armpose02B" {
+	"a_armpose02B"
+
+	
+}
+
+$sequence "armpose02" {
+	"a_armpose02A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose02B"
+}
+
+$sequence "armpose03B" {
+	"a_armpose03B"
+
+	
+}
+
+$sequence "armpose03" {
+	"a_armpose03A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose03B"
+}
+
+$sequence "armpose04B" {
+	"a_armpose04B"
+
+	
+}
+
+$sequence "armpose04" {
+	"a_armpose04A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose04B"
+}
+
+$sequence "armpose05B" {
+	"a_armpose05B"
+
+	
+}
+
+$sequence "armpose05" {
+	"a_armpose05A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose05B"
+}
+
+$sequence "armpose06B" {
+	"a_armpose06B"
+
+	
+}
+
+$sequence "armpose06" {
+	"a_armpose06A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose06B"
+}
+
+$sequence "armpose07B" {
+	"a_armpose07B"
+
+	
+}
+
+$sequence "armpose07" {
+	"a_armpose07A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose07B"
+}
+
+$sequence "armpose08B" {
+	"a_armpose08B"
+
+	
+}
+
+$sequence "armpose08" {
+	"a_armpose08A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose08B"
+}
+
+$sequence "armpose09B" {
+	"a_armpose09B"
+
+	
+}
+
+$sequence "armpose09" {
+	"a_armpose09A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose09B"
+}
+
+$sequence "armpose10B" {
+	"a_armpose10B"
+
+	
+}
+
+$sequence "armpose10" {
+	"a_armpose10A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose10B"
+}
+
+$sequence "armpose11B" {
+	"a_armpose11B"
+
+	
+}
+
+$sequence "armpose11" {
+	"a_armpose11A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose11B"
+}
+
+$sequence "armpose12B" {
+	"a_armpose12B"
+
+	
+}
+
+$sequence "armpose12" {
+	"a_armpose12A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose12B"
+}
+
+$sequence "armpose13B" {
+	"a_armpose13B"
+
+	
+}
+
+$sequence "armpose13" {
+	"a_armpose13A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose13B"
+}
+
+$sequence "fidgetidle02B" {
+	"a_fidgetidle02B"
+
+	
+}
+
+$sequence "fidgetidle02" {
+	"a_fidgetidle02A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "fidgetidle02B"
+}
+
+$sequence "gesture01B" {
+	"a_gesture01B"
+
+	
+}
+
+$sequence "gesture01" {
+	"a_gesture01A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 27 "apex" }
+	{ event 8001 42 "accent" }
+	{ event 8001 68 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture01B"
+}
+
+$sequence "gesture02B" {
+	"a_gesture02B"
+
+	
+}
+
+$sequence "gesture02" {
+	"a_gesture02A"
+	activity "ACT_GESTURE" 1
+	delta
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture02B"
+}
+
+$sequence "gesture03B" {
+	"a_gesture03B"
+
+	
+}
+
+$sequence "gesture03" {
+	"a_gesture03A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 24 "apex" }
+	{ event 8001 35 "accent" }
+	{ event 8001 49 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture03B"
+}
+
+$sequence "gesture04B" {
+	"a_gesture04B"
+
+	
+}
+
+$sequence "gesture04" {
+	"a_gesture04A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 20 "apex" }
+	{ event 8001 25 "accent" }
+	{ event 8001 32 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture04B"
+}
+
+$sequence "gesture05B" {
+	"a_gesture05B"
+
+	
+}
+
+$sequence "gesture05" {
+	"a_gesture05A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 21 "apex" }
+	{ event 8001 28 "accent" }
+	{ event 8001 36 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture05B"
+}
+
+$sequence "gesture06B" {
+	"a_gesture06B"
+
+	
+}
+
+$sequence "gesture06" {
+	"a_gesture06A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 10 "apex" }
+	{ event 8001 21 "accent" }
+	{ event 8001 30 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture06B"
+}
+
+$sequence "gesture07B" {
+	"a_gesture07B"
+
+	
+}
+
+$sequence "gesture07" {
+	"a_gesture07A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 19 "apex" }
+	{ event 8001 29 "accent" }
+	{ event 8001 39 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture07B"
+}
+
+$sequence "gesture08B" {
+	"a_gesture08B"
+
+	
+}
+
+$sequence "gesture08" {
+	"a_gesture08A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 22 "apex" }
+	{ event 8001 29 "accent" }
+	{ event 8001 41 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture08B"
+}
+
+$sequence "gesture09B" {
+	"a_gesture09B"
+
+	
+}
+
+$sequence "gesture09" {
+	"a_gesture09A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 12 "apex" }
+	{ event 8001 20 "accent" }
+	{ event 8001 30 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture09B"
+}
+
+$sequence "gesture10B" {
+	"a_gesture10B"
+
+	
+}
+
+$sequence "gesture10" {
+	"a_gesture10A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 22 "apex" }
+	{ event 8001 32 "accent" }
+	{ event 8001 42 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture10B"
+}
+
+$sequence "gesture11B" {
+	"a_gesture11B"
+
+	
+}
+
+$sequence "gesture11" {
+	"a_gesture11A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 8 "apex" }
+	{ event 8001 15 "accent" }
+	{ event 8001 22 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture11B"
+}
+
+$sequence "gesture12B" {
+	"a_gesture12B"
+
+	
+}
+
+$sequence "gesture12" {
+	"a_gesture12A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 19 "apex" }
+	{ event 8001 27 "accent" }
+	{ event 8001 40 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture12B"
+}
+
+$sequence "gesture13B" {
+	"a_gesture13B"
+
+	
+}
+
+$sequence "gesture13" {
+	"a_gesture13A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 12 "apex" }
+	{ event 8001 20 "accent" }
+	{ event 8001 27 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture13B"
+}
+
+$sequence "gesture14B" {
+	"a_gesture14B"
+
+	
+}
+
+$sequence "gesture14" {
+	"a_gesture14A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 24 "apex" }
+	{ event 8001 39 "accent" }
+	{ event 8001 47 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture14B"
+}
+
+$sequence "gesture15B" {
+	"a_gesture15B"
+
+	
+}
+
+$sequence "gesture15" {
+	"a_gesture15A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 17 "apex" }
+	{ event 8001 33 "accent" }
+	{ event 8001 43 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture15B"
+}
+
+$sequence "gesture17B" {
+	"a_gesture17B"
+
+	
+}
+
+$sequence "gesture17" {
+	"a_gesture17A"
+	activity "ACT_GESTURE" 1
+	delta
+	{ event 8001 17 "apex" }
+	{ event 8001 20 "accent" }
+	{ event 8001 24 "followthrough" }
+
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture17B"
+}
+
+$sequence "handgesture01" {
+	"Mossman_anims\handgesture01.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture02" {
+	"Mossman_anims\handgesture02.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture03" {
+	"Mossman_anims\handgesture03.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture04" {
+	"Mossman_anims\handgesture04.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture05" {
+	"Mossman_anims\handgesture05.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture06" {
+	"Mossman_anims\handgesture06.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture07" {
+	"Mossman_anims\handgesture07.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture08" {
+	"Mossman_anims\handgesture08.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture09" {
+	"Mossman_anims\handgesture09.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture10" {
+	"Mossman_anims\handgesture10.smd"
+
+	
+	
+	weightlist "weights_gesture01B"
+}
