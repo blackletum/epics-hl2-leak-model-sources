@@ -18,7 +18,6 @@ $hbox 0 "ValveBiped.Bip01_L_Hand" 0 -1.07 -1.5 6 0.68 3
 $hbox 0 "ValveBiped.Bip01_R_UpperArm" -1.5 -2.25 -1.25 11.5 2.75 2.75
 $hbox 0 "ValveBiped.Bip01_R_Forearm" -0.82 -1.9 -1.15 11.18 1.6 1.85
 $hbox 0 "ValveBiped.Bip01_R_Hand" -0.5 -1.13 -3.25 5.5 0.63 1.75
-$skipboneinbbox
 
 $poseparameter "move_yaw" -180 180 loop 360
 $poseparameter "body_trans_Y" -6.053574 6.000146 loop 0
@@ -1111,14 +1110,14 @@ $animation "a_armpose01A" "Mossman_anims\a_armpose01A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose01A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 160 160 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 160 160 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 160 160 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 160 160 
 	weightlist "weights_body_trans_y"
 }
 
 $animation "a_armpose01B" "Mossman_anims\a_armpose01B.smd" {
 	
-	ikrule "lhand" touch "ValveBiped.Bip01_Spine2" contact 40 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 10 40 140 155 target 0
+	ikrule "lhand" touch "ValveBiped.Bip01_Spine2" contact 40  floor 0 height 0  range 10 40 140 155 
 	weightlist "weights_armpose01B"
 }
 
@@ -1127,8 +1126,8 @@ $animation "a_armpose02A" "Mossman_anims\a_armpose02A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose02A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 120 120 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 120 120 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1142,8 +1141,8 @@ $animation "a_armpose03A" "Mossman_anims\a_armpose03A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose03A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1157,8 +1156,8 @@ $animation "a_armpose04A" "Mossman_anims\a_armpose04A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose04A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1172,8 +1171,8 @@ $animation "a_armpose05A" "Mossman_anims\a_armpose05A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose05A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1186,14 +1185,14 @@ $animation "a_armpose06A" "Mossman_anims\a_armpose06A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose06A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 150 150 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 150 150 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 150 150 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 150 150 
 	weightlist "weights_body_trans_y"
 }
 
 $animation "a_armpose06B" "Mossman_anims\a_armpose06B.smd" {
 	
-	ikrule "lhand" touch "ValveBiped.Bip01_Head1" contact 30 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 5 30 70 120 target 0
+	ikrule "lhand" touch "ValveBiped.Bip01_Head1" contact 30  floor 0 height 0  range 5 30 70 120 
 	weightlist "weights_armpose01B"
 }
 
@@ -1202,8 +1201,8 @@ $animation "a_armpose07A" "Mossman_anims\a_armpose07A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose07A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1217,8 +1216,8 @@ $animation "a_armpose08A" "Mossman_anims\a_armpose08A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose08A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1232,8 +1231,8 @@ $animation "a_armpose09A" "Mossman_anims\a_armpose09A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose09A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1247,8 +1246,8 @@ $animation "a_armpose10A" "Mossman_anims\a_armpose10A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose10A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1262,8 +1261,8 @@ $animation "a_armpose11A" "Mossman_anims\a_armpose11A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose11A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1277,8 +1276,8 @@ $animation "a_armpose12A" "Mossman_anims\a_armpose12A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose12A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1292,8 +1291,8 @@ $animation "a_armpose13A" "Mossman_anims\a_armpose13A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_armpose13A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 5 5 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5 
 	weightlist "weights_body_trans_y"
 }
 
@@ -1307,14 +1306,14 @@ $animation "a_fidgetidle02A" "Mossman_anims\a_fidgetidle02A.smd" {
 	loop
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_fidgetidle02A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 450 450 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 450 450 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 450 450 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 450 450 
 	weightlist "weights_body_trans_y"
 }
 
 $animation "a_fidgetidle02B" "Mossman_anims\a_fidgetidle02B.smd" {
 	
-	ikrule "rhand" touch "ValveBiped.Bip01_Pelvis" contact 60 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 20 60 270 290 target 0
+	ikrule "rhand" touch "ValveBiped.Bip01_Pelvis" contact 60  floor 0 height 0  range 20 60 270 290 
 	weightlist "weights_armpose01B"
 }
 
@@ -1322,8 +1321,8 @@ $animation "a_gesture01A" "Mossman_anims\a_gesture01A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture01A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 120 120 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 120 120 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 120 120 
 	weightlist "weights_gesture01"
 }
 
@@ -1336,8 +1335,8 @@ $animation "a_gesture02A" "Mossman_anims\a_gesture02A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture02A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 70 70 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 70 70 
 	weightlist "weights_gesture01"
 }
 
@@ -1350,8 +1349,8 @@ $animation "a_gesture03A" "Mossman_anims\a_gesture03A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture03A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 70 70 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 70 70 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 70 70 
 	weightlist "weights_gesture01"
 }
 
@@ -1364,8 +1363,8 @@ $animation "a_gesture04A" "Mossman_anims\a_gesture04A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture04A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 41 41 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 41 41 
 	weightlist "weights_gesture01"
 }
 
@@ -1378,8 +1377,8 @@ $animation "a_gesture05A" "Mossman_anims\a_gesture05A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture05A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 40 40 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 40 40 
 	weightlist "weights_gesture01"
 }
 
@@ -1392,8 +1391,8 @@ $animation "a_gesture06A" "Mossman_anims\a_gesture06A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture06A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30 
 	weightlist "weights_gesture01"
 }
 
@@ -1406,8 +1405,8 @@ $animation "a_gesture07A" "Mossman_anims\a_gesture07A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture07A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 46 46 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 46 46 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 46 46 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 46 46 
 	weightlist "weights_gesture01"
 }
 
@@ -1420,8 +1419,8 @@ $animation "a_gesture08A" "Mossman_anims\a_gesture08A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture08A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 54 54 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 54 54 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 54 54 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 54 54 
 	weightlist "weights_gesture01"
 }
 
@@ -1434,8 +1433,8 @@ $animation "a_gesture09A" "Mossman_anims\a_gesture09A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture09A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 40 40 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 40 40 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 40 40 
 	weightlist "weights_gesture01"
 }
 
@@ -1448,8 +1447,8 @@ $animation "a_gesture10A" "Mossman_anims\a_gesture10A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture10A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 58 58 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 58 58 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 58 58 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 58 58 
 	weightlist "weights_gesture01"
 }
 
@@ -1462,8 +1461,8 @@ $animation "a_gesture11A" "Mossman_anims\a_gesture11A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture11A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 24 24 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 24 24 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 24 24 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 24 24 
 	weightlist "weights_gesture01"
 }
 
@@ -1476,8 +1475,8 @@ $animation "a_gesture12A" "Mossman_anims\a_gesture12A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture12A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 41 41 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 41 41 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 41 41 
 	weightlist "weights_gesture01"
 }
 
@@ -1490,8 +1489,8 @@ $animation "a_gesture13A" "Mossman_anims\a_gesture13A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture13A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 33 33 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 33 33 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 33 33 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 33 33 
 	weightlist "weights_gesture01"
 }
 
@@ -1504,8 +1503,8 @@ $animation "a_gesture14A" "Mossman_anims\a_gesture14A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture14A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 52 52 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 52 52 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 52 52 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 52 52 
 	weightlist "weights_gesture01"
 }
 
@@ -1518,8 +1517,8 @@ $animation "a_gesture15A" "Mossman_anims\a_gesture15A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture15A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 49 49 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 49 49 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 49 49 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 49 49 
 	weightlist "weights_gesture01"
 }
 
@@ -1532,8 +1531,8 @@ $animation "a_gesture17A" "Mossman_anims\a_gesture17A.smd" {
 	
 	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
 	subtract "a_gesture17A_corrective_animation" 0
-	ikrule "rhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
-	ikrule "lhand" release contact 0 fakeorigin 0 0 0 fakerotate 0 0 0 floor 0 height 0 radius 0 range 0 0 30 30 target 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30 
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30 
 	weightlist "weights_gesture01"
 }
 

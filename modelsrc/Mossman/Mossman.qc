@@ -4,8 +4,8 @@ $modelname "mossman.mdl"
 
 $model "mossman" "mossman_reference.smd" {
 
-	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.334100 -3.321600 65.315306 "eyeball_r" 1 4 "iris_unused" 0.63
-	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.162600 -3.321600 65.325109 "eyeball_l" 1 -4 "iris_unused" 0.63
+	eyeball "eye_right" "ValveBiped.Bip01_Head1" -1.334100 -3.321600 65.315306 "eyeball_r" 1 4 "pupil_r" 0.63
+	eyeball "eye_left" "ValveBiped.Bip01_Head1" 1.162600 -3.321600 65.325109 "eyeball_l" 1 -4 "pupil_l" 0.63
 
 	eyelid upper_right "Mossman_01.vta" lowerer 39 -0.22 neutral 0 0.17 raiser 40 0.29 split 1 eyeball "eye_right"
 	eyelid lower_right "Mossman_01.vta" lowerer 41 -0.34 neutral 0 -0.23 raiser 42 -0.06 split 1 eyeball "eye_right"
