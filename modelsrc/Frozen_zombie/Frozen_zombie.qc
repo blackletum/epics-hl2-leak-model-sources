@@ -18,6 +18,6 @@ $keyvalues
 	"prop_data"
 	{
 		"base" "Glass.Small"
-		"health" "200"
+		"health" "500"
 	}
 }
