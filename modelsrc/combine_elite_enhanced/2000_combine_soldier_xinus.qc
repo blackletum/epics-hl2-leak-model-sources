@@ -1,5 +1,5 @@
 //A remake of Combine soldiers prior to 2001
-//Original assets by Valve, model and edits by Epicplayer
+//Original assets by Valve, older head mesh by xinus22, model and edits by Epicplayer
 
 //$modelname Combine_Soldier_2000.mdl
 $modelname Combine_Soldier.mdl
@@ -38,16 +38,7 @@ $hbox 1 "Bip01 Head" -2.70 -5.22 -4.59  6.00 1.00 6.01
 $hbox 1  "Bip01 Head" -2.70  1.00 -4.59  6.00 7.56 6.01
 
 //$scale 1.2
-$model studio "2000_combine_soldier_body_reference.smd"
-
-$bodygroup studio
-{
-	studio Combine_Soldier_head4	
-	studio Combine_Soldier_head
-	studio Combine_Soldier_head2
-	studio Combine_Soldier_head3
-
-}
+$model studio "Combine_Soldier_xinus_reference.smd"
 
 //$scale 1
 
