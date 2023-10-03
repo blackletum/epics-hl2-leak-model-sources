@@ -42,11 +42,10 @@ $model studio "2000_combine_soldier_body_reference.smd"
 
 $bodygroup studio
 {
-	studio Combine_Soldier_head4	
-	studio Combine_Soldier_head
+	studio Combine_Soldier_head4
 	studio Combine_Soldier_head2
 	studio Combine_Soldier_head3
-
+	studio Combine_Soldier_head	
 }
 
 //$scale 1
