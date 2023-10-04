@@ -46,29 +46,9 @@ $surfaceprop "flesh"
 $mostlyopaque
 $cdmaterials Models\Combine_soldier_2000 Models\Combine_Elite Models\Conscript
 
-/*
-$animation CS_Refpose "2000_soldier_animations/CS_Animation_Fix" frame 1 1
-$animation CS_Animation_Fix "2000_soldier_animations/CS_Animation_Fix" frame 0 0 subtract CS_Refpose 0
-$sequence CS_Anim_Fix CS_Animation_Fix delta
-
-$sequence CS_Walk 2000_soldier_animations/Walk ACT_WALK 15 addlayer CS_Anim_Fix LX loop
-
-$include "anims_classic.qci"
-
-$sequence shoot "CE_shootcycleup"		"CE_shootcycledown"   			FPS 30 blend aim_pitch -50 50	ACT_RANGE_ATTACK1 1 { event 4 0 }
-
-$include "ragdoll_fixed.qci"
-*/
-
-$animation Elite_Refpose "2000_soldier_animations/CS_Animation_Fix" frame 0 0
-$animation CS_Animation_Fix "2000_soldier_animations/CS_Animation_Fix" frame 1 1 subtract Elite_Refpose 0
-
-$include "anims_classic.qci"
+$include "anims_fixed.qci"
 
 $sequence walk_soldier "CE_walktest" fps 30 loop LX ACT_WALK 99
-
-$sequence shoot "CE_shootcycleup"		"CE_shootcycledown"   			FPS 30 blend aim_pitch -50 50	ACT_RANGE_ATTACK1 1 { event 4 0 }
-
-//$sequence pistoltest ar1_physbox
+//$sequence shoot "CE_shootcycleup"		"CE_shootcycledown"   			FPS 30 blend aim_pitch -50 50	ACT_RANGE_ATTACK1 1 { event 4 0 }
 
 $include "2000_soldier_animations/ragdoll.qci"
