@@ -11,7 +11,7 @@ $surfaceprop "alienflesh"
 
 $eyeposition 0 0 27
 
-$cdmaterials models\houndeye
+$mostlyopaque
 
 $sequence idle1 "idle1" ACT_IDLE 1 
 $sequence idle2 "idle2" LOOP ACT_IDLE 20 
