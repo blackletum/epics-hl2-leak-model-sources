@@ -25,25 +25,25 @@ $attachment "0" "Muzzle" 0 0 0 rotate -90 0 0 rigid
 //$attachment 1 "Shotgun" 0.40 4.60 6.10 rotate 0 0 0
 $attachment 1 "Shotgun" 0.27 3.11 4.12 rotate 0 0 0
  
-$sequence idle1 "V_Shotgun_anims" frames 0 0 loop fps 1 activity ACT_VM_IDLE 1 node 0
+$sequence idle1 "V_Shotgun_anims" frames 116 150 loop fps 30 activity ACT_VM_IDLE 80 node 0
 $sequence fire "V_Shotgun_anims" frames 31 55 snap activity ACT_VM_PRIMARYATTACK 1 { event 5001 0 "1" } { event 6001 1 "2" } node 2
 $sequence altfire "V_Shotgun_anims" frames 56 85 snap activity ACT_VM_SECONDARYATTACK 1 { event 5001 0 "1" } { event 6001 1 "2" } node 2
 $sequence reload "V_Shotgun_anims" frames 95 107 activity ACT_VM_RELOAD 1 node 0
-$sequence reload_end "V_Shotgun_anims" frames 108 116 activity ACT_SHOTGUN_RELOAD_FINISH 1 node 0
+$sequence reload_end "V_Shotgun_anims" frames 108 116 fps 20 activity ACT_SHOTGUN_RELOAD_FINISH 1 node 0
 $sequence start_reload "V_Shotgun_anims" frames 85 94 activity ACT_SHOTGUN_RELOAD_START 1 node 0
 $sequence draw "V_Shotgun_anims" frames 1 31 snap activity ACT_VM_DRAW 1 node 0
 
 //HL1 animations
-//$sequence reholster "reholster" fps 30
-//$sequence idle4 "idle4" fps 9 loop
-//$sequence deepidle "deep_idle" fps 12 loop
+$sequence reholster "V_Shotgun_anims" frames 240 260 fps 30		activity ACT_VM_HOLSTER 1
+$sequence fidget "V_Shotgun_anims" frames 150 200 fps 20		activity ACT_VM_IDLE 1
+$sequence deepidle "V_Shotgun_anims" frames 200 240 fps 20	activity ACT_VM_IDLE 1
 
 $sequence pump "V_Shotgun_anims" frames 0 0 fps 30 activity ACT_SHOTGUN_PUMP 1 node 0
 $sequence dryfire "V_Shotgun_anims" frames 55 56 fps 10 activity ACT_VM_DRYFIRE 1 node 2
 /*
-$sequence lowered "Non_threat_idle01" loop activity ACT_VM_IDLE_LOWERED 1 node 1 
-$sequence lowered_to_idle "Non_threat_to_idle01" activity ACT_VM_LOWERED_TO_IDLE 1 transition 1 0
-$sequence idle_to_lowered "Idle01_to_non_threat" activity ACT_VM_IDLE_TO_LOWERED 1 transition 0 1
+$sequence lowered "V_Shotgun_anims" frames 219 219 loop activity ACT_VM_IDLE_LOWERED 1 node 1 
+$sequence lowered_to_idle "V_Shotgun_anims" frames 219 240 activity ACT_VM_LOWERED_TO_IDLE 1 transition 1 0
+$sequence idle_to_lowered "V_Shotgun_anims" frames 200 219 activity ACT_VM_IDLE_TO_LOWERED 1 transition 0 1
 */
 
 // ==========================
