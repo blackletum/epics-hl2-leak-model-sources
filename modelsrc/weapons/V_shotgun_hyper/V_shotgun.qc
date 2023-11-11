@@ -1,7 +1,8 @@
 /*
 ==============================================================================
 
-View model shotgun
+View model hyper shotgun for leak HL2
+Hyper hands and old shotgun by Xinus. Model stuff and animations by epicplayer.
 
 ==============================================================================
 */
