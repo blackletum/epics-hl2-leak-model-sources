@@ -160,17 +160,26 @@ $model "samuel" "samuel_reference.smd" {
 	%mouth = %AU27R * 0.5 + %AU27L * 0.5 + %AU22R * 0.35 + %AU22L * 0.35 + %AU18R * 0.25 + %AU18L * 0.25 + %AU25R * 0.35 + %AU25L * 0.35 + %AU32 * 0.5
 }
 
-
-$surfaceprop "default"
-
-$contents "solid"
+$surfaceprop "flesh"
 
 $illumposition 0.288 0.225 35.619
 
-$cdmaterials "models\samuel\"
+$cdmaterials models\samuel
 
 $cbox 0 0 0 0 0 0
 
 $bbox -7.137 -13.232 -0.203 6.687 13.807 71.441
 
 $sequence idle01 idle01 ACT_IDLE 1 node "node0" loop
+
+$sequence breakerstyle "../nightclub/Breakdance" fps 50 frames 60 107 loop alignto idle01
+//$sequence breakerstyle_start "../nightclub/Breakdance" fps 50 frames 0 60 LX LY alignto idle01
+//$sequence breakerstyle_end "../nightclub/Breakdance" fps 30 frames 107 143 LX LY alignto idle01
+
+$pushd "../gasmaskcitizen_bip01"
+$sequence walk "WalkN" fps 30 loop LX ACT_WALK 1 node 1
+$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 node 1
+$sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
+$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
+$sequence die		"die"			fps 30							ACT_DIESIMPLE 1
+$popd
