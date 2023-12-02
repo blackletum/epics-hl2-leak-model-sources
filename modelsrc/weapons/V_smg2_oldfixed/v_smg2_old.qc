@@ -24,13 +24,13 @@ $attachment 1 "Bip01 R Hand" 9 0 4 rotate 0 -90 0
 //Single fire mode animations
 $sequence idle1 "Idle_2hand" loop fps 30 activity ACT_VM_IDLE -1 node auto
 $sequence fire1 "Fire_2hand" fps 30 snap activity ACT_VM_PRIMARYATTACK -1 { event 5001 0 "0" } { event 6001 0 "0" } node auto
-//$sequence fire2 "Fire_2hand" fps 2 snap activity ACT_VM_SECONDARYATTACK 1 { event 5001 0 "2" }
+$sequence firemode "Fire_2hand" fps 5 activity ACT_VM_SECONDARYATTACK 1
 
 $sequence draw1 "Draw_2hand" fps 30 snap activity ACT_VM_DRAW -1 node auto
 $sequence reload1 "Reload_2hand" fps 30 activity ACT_VM_RELOAD -1 node auto
 $sequence dryfire1 "Dryfire_2hand" fps 30 snap activity ACT_VM_DRYFIRE -1 node auto
 
-$sequence Auto_to_single "Auto_to_single" fps 30 activity ACT_VM_SECONDARYATTACK -1 transition auto single
+$sequence Auto_to_single "Auto_to_single" fps 30 //activity ACT_VM_SECONDARYATTACK -1 transition auto single
 $sequence Single_to_auto "Single_to_auto" fps 30 //activity ACT_TRANSITION 1 transition single auto
 
 
