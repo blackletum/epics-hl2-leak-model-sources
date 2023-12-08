@@ -22,7 +22,7 @@ $attachment "mouth" "Bip01 Head" 0.80 -5.80 -0.15 rotate 0 -80 -90
 
 $cdmaterials models/citizen_17
 
-$model studio "Citizen_reference.smd" {
+$model studio "Citizen" {
 	eyeball righteye "Bip01 Head" -1.24 -6.38 67.26 "eyeball_r" 1.00 4 "pupil_r" 0.63
 	eyeball lefteye "Bip01 Head" 1.22 -6.40 67.24 "eyeball_l" 1.00 -4 "pupil_l" 0.63
 
