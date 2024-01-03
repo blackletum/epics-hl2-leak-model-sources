@@ -1,32 +1,21 @@
-// Created by Crowbar 0.71
+// Wasteland Scanner (Tri)
 
-$modelname "wscanner_tri.mdl"
+$modelname WScanner_Tri.mdl
 
-$bodygroup "Body"
-{
-	studio "WScanner_Tri_Reference.smd"
-}
+$model Body WScanner_Tri_Reference.smd
+$cdmaterials models\obsolete\waste_scanner
 
-
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition -1.77 7.318 -51.033
-
-$cdmaterials "models\obsolete\waste_scanner\"
+$mostlyopaque
+$surfaceprop "metal"
 
 $attachment "0" "Pupilz" 0 0 0 rotate 0 0 0
 $attachment "1" "bPupilz" 0 0 0 rotate 0 0 0
 $attachment "2" "cPupilz" 0 0 0 rotate 0 0 0
 $attachment "3" "beamconverge" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
-$bbox -25.964 -31.691 -22.79 18.664 26.667 35.525
-
 $controller 0 "Base Dummy" ZR 0 360
 
+/*
 $definebone "Base Dummy" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Dummy (Root)" "Base Dummy" -15.287279 2.060522 -3.435295 -7.639304 -16.286438 6.250913 0 0 0 0 0 0
 $definebone "Eye1 Base" "Dummy (Root)" -8.58799 -4.985116 3.192251 0 -89.999982 89.999982 0 0 0 0 0 0
@@ -71,99 +60,38 @@ $definebone "cPupil" "cPupil Base" 0 -4.156281 0 0 0 0 0 0 0 0 0 0
 $definebone "cPupilz" "cPupil" 0.000001 -4.462045 0.000001 0 0 0 0 0 0 0 0 0
 $definebone "cAntenna Base" "cDummy (Root)" -2.424739 6.138014 -4.458283 0 0 0 0 0 0 0 0 0
 $definebone "beamconverge" "Base Dummy" 0.118909 -30.920042 0.33968 0 0 89.999982 0 0 0 0 0 0
+*/
 
+$pushd wscanner_tri_anims
 
-$sequence "hover" {
-	"wscanner_tri_anims\hover.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
+$sequence hover 	hover 	ACT_IDLE 1 loop
+$sequence hover2 	hover2 	ACT_IDLE 2 loop
+$sequence hover3 	hover3 	ACT_IDLE 3 loop
+$sequence hover4 	hover4 	ACT_IDLE 4 loop
+$sequence hover5 	hover5 	ACT_IDLE 5 loop
+
+$sequence join1 join1 ACT_WSCANNER_JOIN 1 {
+	{ event 2 77 }
+	{ event 2 90 }
 }
 
-$sequence "hover2" {
-	"wscanner_tri_anims\hover2.smd"
-	activity "ACT_IDLE" 2
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
+$sequence join2 join2 ACT_WSCANNER_JOIN 2 {
+	{ event 2 80 }
+	{ event 2 90 }
 }
 
-$sequence "hover3" {
-	"wscanner_tri_anims\hover3.smd"
-	activity "ACT_IDLE" 3
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
+$sequence join3 join3 ACT_WSCANNER_JOIN 3 {
+	{ event 2 85 }
+	{ event 2 90 }
 }
 
-$sequence "hover4" {
-	"wscanner_tri_anims\hover4.smd"
-	activity "ACT_IDLE" 4
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
+$sequence join4 join4 ACT_WSCANNER_JOIN 4 {
+	{ event 2 80 }
+	{ event 2 90 }
 }
 
-$sequence "hover5" {
-	"wscanner_tri_anims\hover5.smd"
-	activity "ACT_IDLE" 5
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
+$sequence join5 join5 ACT_WSCANNER_JOIN 5 {
+	{ event 2 45 }
+	{ event 2 70 }
 }
-
-$sequence "join1" {
-	"wscanner_tri_anims\join1.smd"
-	activity "ACT_WSCANNER_JOIN" 1
-	{ event 2 77 "" }
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
-$sequence "join2" {
-	"wscanner_tri_anims\join2.smd"
-	activity "ACT_WSCANNER_JOIN" 2
-	{ event 2 80 "" }
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
-$sequence "join3" {
-	"wscanner_tri_anims\join3.smd"
-	activity "ACT_WSCANNER_JOIN" 3
-	{ event 2 85 "" }
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
-$sequence "join4" {
-	"wscanner_tri_anims\join4.smd"
-	activity "ACT_WSCANNER_JOIN" 4
-	{ event 2 80 "" }
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
-$sequence "join5" {
-	"wscanner_tri_anims\join5.smd"
-	activity "ACT_WSCANNER_JOIN" 5
-	{ event 2 45 "" }
-	{ event 2 70 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
+$popd

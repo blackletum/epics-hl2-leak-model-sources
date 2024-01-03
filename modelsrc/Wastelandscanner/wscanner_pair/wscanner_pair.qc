@@ -1,31 +1,20 @@
-// Created by Crowbar 0.71
+// Wasteland Scanner (Pair)
 
-$modelname "wscanner_pair.mdl"
+$modelname WScanner_Pair.mdl
 
-$bodygroup "Body"
-{
-	studio "Wscanner_pair_Reference.smd"
-}
+$model Body Wscanner_pair_Reference.smd
+$cdmaterials models\obsolete\waste_scanner
 
-
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition -1.942 -0.122 -41.251
-
-$cdmaterials "models\obsolete\waste_scanner\"
+$mostlyopaque
+$surfaceprop "metal"
 
 $attachment "0" "BombStart" 0 0 0 rotate 0 0 0
 $attachment "1" "Dummy (Root)" 0 0 0 rotate 0 0 0
 $attachment "2" "bDummy (Root)" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
-$bbox -20.205 -24.873 -22.592 16.401 31.555 25.67
-
 $controller 0 "Base Dummy" ZR 0 360
 
+/*
 $definebone "Base Dummy" "" 0 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Dummy (Root)" "Base Dummy" -11.923171 -0.001123 8.284714 0 0 0 0 0 0 0 0 0
 $definebone "Eye1 Base" "Dummy (Root)" -8.587989 -4.985116 3.192251 0 -89.999982 89.999982 0 0 0 0 0 0
@@ -54,118 +43,23 @@ $definebone "bEye3b" "bEye3a" 2.824685 -1.174781 0 0 -0.000001 0 0 0 0 0 0 0
 $definebone "bPupil Base" "bDummy (Root)" 0.000001 -5.269411 -0.000001 0 0 0.000001 0 0 0 0 0 0
 $definebone "bPupil" "bPupil Base" -0.000001 -4.15628 0 0 0 0.000001 0 0 0 0 0 0
 $definebone "bAntenna Base" "bDummy (Root)" -2.42474 6.138013 -4.458282 0 0 0.000001 0 0 0 0 0 0
+*/
 
+$pushd wscanner_pair_anims
 
-$sequence "hover" {
-	"wscanner_pair_anims\hover.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence hover 	hover 	ACT_IDLE 1 loop
+$sequence hover2 	hover2 	ACT_IDLE 2 loop
+$sequence hover3 	hover3 	ACT_IDLE 3 loop
+$sequence hover4 	hover4 	ACT_IDLE 4 loop
+$sequence hover5 	hover5 	ACT_IDLE 5 loop
 
-$sequence "hover2" {
-	"wscanner_pair_anims\hover2.smd"
-	activity "ACT_IDLE" 2
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence rangeattack rangeattack ACT_RANGE_ATTACK1 1 { event 1 8 }
 
-$sequence "hover3" {
-	"wscanner_pair_anims\hover3.smd"
-	activity "ACT_IDLE" 3
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence join1 join1 ACT_WSCANNER_JOIN 1 snap { event 2 90 }
+$sequence join2 join2 ACT_WSCANNER_JOIN 2 snap { event 2 90 }
+$sequence join3 join3 ACT_WSCANNER_JOIN 3 snap { event 2 90 }
+$sequence join4 join4 ACT_WSCANNER_JOIN 4 snap { event 2 90 }
+$sequence join5 join5 ACT_WSCANNER_JOIN 5 snap { event 2 90 }
+$sequence join6 join6 ACT_WSCANNER_JOIN 6 snap { event 2 90 }
 
-$sequence "hover4" {
-	"wscanner_pair_anims\hover4.smd"
-	activity "ACT_IDLE" 4
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-$sequence "hover5" {
-	"wscanner_pair_anims\hover5.smd"
-	activity "ACT_IDLE" 5
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-$sequence "rangeattack" {
-	"wscanner_pair_anims\rangeattack.smd"
-	activity "ACT_RANGE_ATTACK1" 1
-	{ event 1 8 "" }
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-}
-
-$sequence "join1" {
-	"wscanner_pair_anims\join1.smd"
-	activity "ACT_WSCANNER_JOIN" 1
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "join2" {
-	"wscanner_pair_anims\join2.smd"
-	activity "ACT_WSCANNER_JOIN" 2
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "join3" {
-	"wscanner_pair_anims\join3.smd"
-	activity "ACT_WSCANNER_JOIN" 3
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "join4" {
-	"wscanner_pair_anims\join4.smd"
-	activity "ACT_WSCANNER_JOIN" 4
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "join5" {
-	"wscanner_pair_anims\join5.smd"
-	activity "ACT_WSCANNER_JOIN" 5
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "join6" {
-	"wscanner_pair_anims\join6.smd"
-	activity "ACT_WSCANNER_JOIN" 6
-	{ event 2 90 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
+$popd

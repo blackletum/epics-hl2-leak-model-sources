@@ -1,31 +1,20 @@
-// Created by Crowbar 0.71
+// Wasteland Scanner (Single)
 
-$modelname "wscanner_single.mdl"
+$modelname WScanner_Single.mdl
 
-$bodygroup "Body"
-{
-	studio "Waste_Scanner_Reference.smd"
-}
+$model Body Waste_Scanner_Reference.smd
+$cdmaterials models\obsolete\waste_scanner
 
-
-$surfaceprop "default"
-
-$contents "solid"
-
-$illumposition 2.207 3.648 2.62
-
-$cdmaterials "models\obsolete\waste_scanner\"
+$mostlyopaque
+$surfaceprop "metal"
 
 $attachment "0" "BombStart" 0 0 0 rotate 0 0 0
 $attachment "1" "Antenna" 0 0 0 rotate 0 0 0
 
-$cbox 0 0 0 0 0 0
-
-$bbox -20.207 -13.05 -13.809 14.78 15.821 16.838
-
 $controller 0 "Dummy (Root)" ZR 0 360
 $controller 1 "Antenna Base" Y 0 24
 
+/*
 $definebone "Dummy (Root)" "" -0.085233 0 0 0 0 0 0 0 0 0 0 0
 $definebone "Eye1 Base" "Dummy (Root)" -8.587989 -4.985116 3.192251 0 -89.999982 89.999982 0 0 0 0 0 0
 $definebone "Eye1a" "Eye1 Base" 2.856932 0.843401 0 0 0 0 0 0 0 0 0 0
@@ -41,104 +30,22 @@ $definebone "Pupil" "Pupil Base" 0 -4.156281 0 0 0 0 0 0 0 0 0 0
 $definebone "Antenna Base" "Dummy (Root)" -2.42474 6.138015 -4.458282 0 0 0 0 0 0 0 0 0
 $definebone "Antenna" "Antenna Base" 5.281212 -1.931063 -6.397323 0 0 0 0 0 0 0 0 0
 $definebone "BombStart" "Dummy (Root)" 9.669836 -9.297738 -1.540296 0 0 0 0 0 0 0 0 0
+*/
 
+$pushd wscanner_single_anims
 
-$sequence "fly1" {
-	"wscanner_single_anims\fly1.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence fly1 fly1.smd ACT_IDLE 1 loop
+$sequence fly2 fly2.smd ACT_IDLE 1 loop
+$sequence fly3 fly3.smd ACT_IDLE 1 loop
+$sequence fly4 fly4.smd ACT_IDLE 1 loop
+$sequence fly5 fly5.smd ACT_IDLE 1 loop
+$sequence fly6 fly6.smd ACT_IDLE 1 loop
 
-$sequence "fly2" {
-	"wscanner_single_anims\fly2.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence flinchback flinchback ACT_WSCANNER_FLINCH_BACK 1 snap
+$sequence flinchfront flinchfront ACT_WSCANNER_FLINCH_FRONT 1 snap
+$sequence flinchleft flinchleft ACT_WSCANNER_FLINCH_LEFT 1 snap
+$sequence flinchright flinchright ACT_WSCANNER_FLINCH_RIGHT 1 snap
 
-$sequence "fly3" {
-	"wscanner_single_anims\fly3.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
+$sequence rangeattack rangeattack ACT_RANGE_ATTACK1 1 snap { event 1 8 }
 
-$sequence "fly4" {
-	"wscanner_single_anims\fly4.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-$sequence "fly5" {
-	"wscanner_single_anims\fly5.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-$sequence "fly6" {
-	"wscanner_single_anims\fly6.smd"
-	activity "ACT_IDLE" 1
-	fadein 0.2
-	fadeout 0.2
-	fps 30
-	loop
-}
-
-$sequence "flinchback" {
-	"wscanner_single_anims\flinchback.smd"
-	activity "ACT_WSCANNER_FLINCH_BACK" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "flinchfront" {
-	"wscanner_single_anims\flinchfront.smd"
-	activity "ACT_WSCANNER_FLINCH_FRONT" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "flinchleft" {
-	"wscanner_single_anims\flinchleft.smd"
-	activity "ACT_WSCANNER_FLINCH_LEFT" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "flinchright" {
-	"wscanner_single_anims\flinchright.smd"
-	activity "ACT_WSCANNER_FLINCH_RIGHT" 1
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
-
-$sequence "rangeattack" {
-	"wscanner_single_anims\rangeattack.smd"
-	activity "ACT_RANGE_ATTACK1" 1
-	{ event 1 8 "" }
-	fadein 0.2
-	fadeout 0.2
-	snap
-	fps 30
-}
+$popd
