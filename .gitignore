@@ -3,3 +3,7 @@
 *.blend1
 *.blend2
 *.cmd
+
+modelsrc\Wastelandscanner\wscanner_pair\Projectedtextures\*
+modelsrc\Wastelandscanner\wscanner_tri\Projectedtextures\*
+modelsrc\Wastelandscanner\wscanner_single\Projectedtextures\*
