@@ -31,7 +31,7 @@ $sequence fire01 "Fire01" fps 30 snap activity ACT_VM_PRIMARYATTACK 1 node Fire 
 }
 */
 
-$sequence fire02 "Fire02" fps 30 snap activity ACT_VM_RECOIL1 1 node Fire {
+$sequence fire02 "Fire02" fps 30 snap activity ACT_VM_PRIMARYATTACK 1 node Fire {
 { event AE_MUZZLEFLASH 0 "SMG1 MUZZLE" } 
 { event 6001 0 "0" }
 }
