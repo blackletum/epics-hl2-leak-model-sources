@@ -8,7 +8,7 @@ $collisionjoints ragdoll {
 	$damping 0.01
 	$rotdamping 0.4
 	$rootbone "valvebiped.bip01_pelvis"
-	$animatedfriction 1 1000 0.8 0.0 0.5
+	//$animatedfriction 1 1000 0.8 0.0 0.5
 
 	$jointmerge "valvebiped.bip01_pelvis" "valvebiped.bip01"
 	$jointmerge "valvebiped.bip01_pelvis" "valvebiped.bip01_spine1"
@@ -77,7 +77,7 @@ $collisionjoints ragdoll {
 	$jointconstrain "valvebiped.bip01_r_foot" x limit 0.00 0.00 0.00
 	$jointconstrain "valvebiped.bip01_r_foot" y limit -21.00 6.00 1.00
 	$jointconstrain "valvebiped.bip01_r_foot" z limit -15.00 35.00 1.00
-
+/*
 	$jointcollide "valvebiped.bip01_l_forearm" "valvebiped.bip01_Pelvis"
 	$jointcollide "valvebiped.bip01_r_forearm" "valvebiped.bip01_Pelvis"
 	$jointcollide "valvebiped.bip01_l_forearm" "valvebiped.bip01_spine2"
@@ -92,7 +92,7 @@ $collisionjoints ragdoll {
 	$jointcollide "valvebiped.bip01_l_forearm" "valvebiped.bip01_r_thigh"
 	$jointcollide "valvebiped.bip01_r_forearm" "valvebiped.bip01_l_thigh"
 	$jointcollide "valvebiped.bip01_r_forearm" "valvebiped.bip01_r_thigh"
-
+*/
 }
 $sequence ragdoll 		"ragdoll_pose" 		FPS 30 		activity ACT_DIERAGDOLL 1
 

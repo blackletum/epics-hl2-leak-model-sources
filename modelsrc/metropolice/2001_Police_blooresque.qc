@@ -1,10 +1,10 @@
 //======================================
-//   2001 Metropolice remade by The One Epicplayer
+//   2001 Metropolice remade by Qleebsooru
 //======================================
 
 $ModelName "police.mdl"
 
-$model police "2001_Police_reference.smd" {
+$model police "2001_Police_blooresque_reference.smd" {
 $include "bodyrules_xsi.qci"
 }
 
@@ -12,9 +12,7 @@ $Contents "solid"
 
 $EyePosition 0 0 72
 
-$bbox -9.056 -12.364 -0.808 6.847 15.679 72.205
-
-$cdmaterials models\police\
+$cdmaterials models/Police_Qleebsooru models/police
 $surfaceprop "flesh"
 $jointsurfaceprop "ValveBiped.Bip01_Head1" "no_decal"
 
@@ -50,5 +48,5 @@ $include "../humans/standardhierarchy_leak.qci"
 $include "hitbox.qci"
 $include "ragdoll.qci"
 
-$include "2003_5fingerweightlists.qci"
+$include "2003_3fingerweightlists.qci"
 $include "2003_Police_shared.qci"

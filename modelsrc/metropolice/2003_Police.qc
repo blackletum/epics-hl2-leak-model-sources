@@ -77,7 +77,7 @@ $shadowlod
 
 //$include "weaponmacros.qci"
 //$include "standardikchains.qci"
-//$include "standardhierarchy.qci"
+$include "../humans/standardhierarchy_leak.qci"
 //$include "commonbones.qci"
 //$include "body_poses_lean.qci"
 
