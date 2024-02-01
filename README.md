@@ -8,3 +8,10 @@ Most of these model sources are made by me, however they may contain remakes or 
 I suggest that you check the QC files of whatever you are using to make sure you are aware of which assets belong to external contributors.
 
 When uploading your own creations made with these modelsrc files, be sure to credit me and anyone else who may be involved.
+
+## Downloading
+
+To download a specific folder from this Gitlab page:
+Open the folder you want to download
+Click the blue "Code" button in the top right
+Click "Download this directory" with whatever file format you want
