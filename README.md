@@ -12,7 +12,6 @@ When uploading your own creations made with these modelsrc files, be sure to cre
 ## Downloading
 
 To download a specific folder from this Gitlab page:
-
-> Open the folder you want to download,
-> Click the blue "Code" button in the top right,
-> Click "Download this directory" with whatever file format you want.
+- Open the folder you want to download,
+- Click the blue "Code" button in the top right,
+- Click "Download this directory" with whatever file format you want.
