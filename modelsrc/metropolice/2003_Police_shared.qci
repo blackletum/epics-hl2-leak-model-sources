@@ -136,6 +136,7 @@ $sequence crouch_reload_pistol "Crouch_Pistol_reload" fps 30 activity ACT_RELOAD
 	
 }
 
+$sequence overwatch WeaponAnims_Shared/Pistol_idle01 ACT_METROPOLICE_OVERWATCH 1 //Fixes leak AI behavior - epicplayer
 
 $sequence lowcover_shoot_pistol "2003_animations/Lowcover_shoot_pistol" loop addlayer pistol_Aim_all fps 30 activity ACT_RANGE_ATTACK_PISTOL_LOW 1 { event 3014 3 } node "lowcover_pistol" addlayer pistol_fingers_fix 
 $sequence lowcover_aim_pistol "Lowcover_idle_pistol" loop addlayer pistol_Aim_all fps 30 activity ACT_RANGE_AIM_PISTOL_LOW 1 node "lowcover_pistol" 
