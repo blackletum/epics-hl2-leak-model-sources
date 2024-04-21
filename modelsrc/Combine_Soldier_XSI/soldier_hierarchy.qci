@@ -1,0 +1,6 @@
+$heirarchy "valvebiped.Bip01_Pelvis" ""
+$heirarchy "Valvebiped.bip01_Spine" "valvebiped.Bip01_Pelvis"
+$root "valvebiped.Bip01_Pelvis"
+$alwayscollapse "Valvebiped.bip01"
+$alwayscollapse "Valvebiped.Soldier"
+

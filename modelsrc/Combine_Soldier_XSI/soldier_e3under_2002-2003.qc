@@ -34,7 +34,7 @@ $sequence Idle1	"Idle01" loop FPS 30 ACT_IDLE 1
 
 
 $include "hitbox.qci"
-$include "ragdoll_2003.qci"
+$include "2003_ragdoll.qci"
 
 
 
