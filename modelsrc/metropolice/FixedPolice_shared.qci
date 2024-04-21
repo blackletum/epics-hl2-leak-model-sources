@@ -198,6 +198,9 @@ $weightlist batonfingers "Valvebiped.bip01_pelvis" 0.0 "ValveBiped.Bip01_R_Finge
 
 //====================  NON-COMBAT ANIMATIONS =============================================
 
+
+$sequence idle1 "Baton_idle01" loop FPS 30 //Fixes cyclers t-posing in wc maps
+
 $sequence smg1_fingers_fix point_player frame 0 0 weightlist smg1fingers hidden
 $sequence baton_fingers_fix Push_button_front frame 0 0 weightlist batonfingers hidden
 
