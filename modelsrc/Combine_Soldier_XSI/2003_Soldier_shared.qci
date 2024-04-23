@@ -550,6 +550,8 @@ $animation a_WalkSW WalkSW startloop 8 LX LY alignto Idle1 rotateto 135 fps 29 {
 }
 */
 
+//This QC used to use these episode 2 versions of the easy walk, but turns out they're slightly modified from the 2003 ones - epicplayer
+/*
 $animation a_WalkEasy_S Walk_Easy_S startloop 2 LX LY alignto Idle1 rotateto -180 fps 28 {
 //	//ikrule lfoot footstep range .. 7  24 ..
 //	//ikrule rfoot footstep range .. 23  7 ..
@@ -582,6 +584,16 @@ $animation a_WalkEasy_SW Walk_Easy_SW startloop 7 LX LY alignto Idle1 rotateto 1
 //	//ikrule lfoot footstep range .. 7  24 ..
 //	//ikrule rfoot footstep range .. 23  7 ..
 }
+*/
+
+$animation a_WalkEasy_S 2003_anims/Walk_Easy_S LX LY loop
+$animation a_WalkEasy_SE 2003_anims/Walk_Easy_SE LX LY loop
+$animation a_WalkEasy_E 2003_anims/Walk_Easy_E LX LY loop
+$animation a_WalkEasy_NE 2003_anims/Walk_Easy_NE LX LY loop
+$animation a_WalkEasy_N 2003_anims/Walk_Easy_N LX LY loop
+$animation a_WalkEasy_NW 2003_anims/Walk_Easy_NW LX LY loop
+$animation a_WalkEasy_W 2003_anims/Walk_Easy_W LX LY loop
+$animation a_WalkEasy_SW 2003_anims/Walk_Easy_SW LX LY loop
 
 $sequence Walk_all {
 	ACT_WALK_RIFLE 1
