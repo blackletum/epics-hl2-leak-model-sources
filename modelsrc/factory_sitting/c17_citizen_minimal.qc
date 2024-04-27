@@ -8,6 +8,8 @@ $model citizen_minimal factory_sitting
 $bodygroup "chair"
 {
 	studio "factory_chair1"
+	studio "factory_chair2"
+	blank
 }
 
 $origin 0 8 12
