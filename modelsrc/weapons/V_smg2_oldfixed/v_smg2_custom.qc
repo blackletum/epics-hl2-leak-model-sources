@@ -27,7 +27,7 @@ $sequence fire1 "Fire_2hand" fps 30 snap activity ACT_VM_PRIMARYATTACK 1 { event
 $sequence firemode "Fire_2hand" fps 5 activity ACT_VM_SECONDARYATTACK 1
 
 $sequence draw1 "Draw_2hand" fps 30 snap activity ACT_VM_DRAW 1 node auto
-$sequence reload1 "Reload_2hand" fps 30 activity ACT_VM_RELOAD 1 node auto
+$sequence reload1 "Reload_2hand" fps 30 activity ACT_VM_RELOAD 1 node auto { event 5004  0 "Weapon_SMG2.Reload" }
 $sequence dryfire1 "Dryfire_2hand" fps 30 snap activity ACT_VM_DRYFIRE 1 node auto
 
 $sequence Auto_to_single "Auto_to_single" fps 30 activity ACT_SMG2_TOBURST 1 //transition auto single
@@ -39,5 +39,5 @@ $sequence fire2 "Fire_1hand" fps 30 snap node single activity ACT_SMG2_FIRE2 1 {
 //$sequence fire3 "Fire_1hand" fps 2 snap node single //activity ACT_VM_SECONDARYATTACK -1 { event 5001 0 "2" }
 
 $sequence draw2 "Draw_1hand" fps 30 snap node single activity ACT_SMG2_DRAW2 1
-$sequence reload2 "Reload_1hand" fps 30 node single activity ACT_SMG2_RELOAD2 1
+$sequence reload2 "Reload_1hand" fps 30 node single activity ACT_SMG2_RELOAD2 1 { event 5004  0 "Weapon_SMG2.Reload" }
 $sequence dryfire2 "Dryfire_1hand" fps 30 snap node single activity ACT_SMG2_DRYFIRE2 1
