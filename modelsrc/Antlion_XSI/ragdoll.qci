@@ -1,0 +1,100 @@
+$collisionjoints ragdoll {
+
+	$mass 115.0
+	$inertia 10.00
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "antlion.body_bone"
+
+	
+	$jointconstrain "antlion.wingl_bone" y limit -55.00 0.00 3.00
+	$jointconstrain "antlion.wingl_bone" z limit -75.00 68.00 3.00
+
+	$jointconstrain "antlion.wingr_bone" y limit  0.00 55.00 3.00
+	$jointconstrain "antlion.wingr_bone" z limit -75.00 68.00 3.00
+
+	$jointconstrain "antlion.head_bone" x limit -17.00 17.00 1.00
+	$jointconstrain "antlion.head_bone" y limit -59.00 59.00 1.00
+	$jointconstrain "antlion.head_bone" z limit -73.00 55.00 1.00
+
+	//$jointconstrain "antlion.back_bone" x limit -17.00 17.00 1.00
+	$jointconstrain "antlion.back_bone" y limit -26.00 26.00 1.00
+	$jointconstrain "antlion.back_bone" z limit -84.00 35.00 1.00
+
+	
+
+	
+
+	$jointconstrain "antlion.legr1_bone" x limit -44.00 44.00 1.00
+	$jointconstrain "antlion.legr1_bone" y limit -44.00 28.00 1.00
+	$jointconstrain "antlion.legr1_bone" z limit -82.00 82.00 1.00
+
+	$jointconstrain "antlion.legr2_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legr2_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legr2_bone" z limit -59.00 68.00 1.00
+
+	$jointconstrain "antlion.legl1_bone" x limit -30.00 30.00 1.00
+	$jointconstrain "antlion.legl1_bone" y limit -28.00 44.00 1.00
+	$jointconstrain "antlion.legl1_bone" z limit -82.00 82.00 1.00
+
+	$jointconstrain "antlion.legl2_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legl2_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legl2_bone" z limit -59.00 68.00 1.00
+
+	$jointconstrain "antlion.legl3_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legl3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legl3_bone" z limit -100.00 44.00 1.00
+
+	$jointconstrain "antlion.legr3_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legr3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legr3_bone" z limit -100.00 44.00 1.00
+
+	$jointconstrain "antlion.legmidr1_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidr1_bone" y limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidr1_bone" z limit -28.00 64.00 1.00
+
+	$jointconstrain "antlion.legmidr2_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidr2_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legmidr2_bone" z limit -97.00 41.00 1.00
+
+	$jointconstrain "antlion.legmidr3_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidr3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legmidr3_bone" z limit -41.00 100.00 1.00
+
+	$jointconstrain "antlion.legmidl1_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidl1_bone" y limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidl1_bone" z limit -64.00 28.00 1.00
+
+	$jointconstrain "antlion.legmidl2_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidl2_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legmidl2_bone" z limit -41.00 97.00 1.00
+
+	$jointconstrain "antlion.legmidl3_bone" x limit 0.00 0.00 1.00
+	$jointconstrain "antlion.legmidl3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.legmidl3_bone" z limit -100.00 41.00 1.00
+
+	
+
+	$jointconstrain "antlion.arml1_bone" x limit 0.00 0.00 0.00
+	$jointconstrain "antlion.arml1_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.arml1_bone" z limit 0.00 0.00 0.00
+
+	$jointconstrain "antlion.arml3_bone" x limit 0.00 0.00 0.00
+	$jointconstrain "antlion.arml3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.arml3_bone" z limit 0.00 0.00 0.00
+
+	$jointconstrain "antlion.armr1_bone" x limit 0.00 0.00 0.00
+	$jointconstrain "antlion.armr1_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.armr1_bone" z limit 0.00 0.00 0.00
+
+	$jointconstrain "antlion.armr3_bone" x limit 0.00 0.00 0.00
+	$jointconstrain "antlion.armr3_bone" y limit 0.00 0.00 0.00
+	$jointconstrain "antlion.armr3_bone" z limit 0.00 0.00 0.00
+
+	
+
+}
+$sequence ragdoll 		"ragdoll_pose" 		FPS 30 		activity ACT_DIERAGDOLL 1
+
+
+

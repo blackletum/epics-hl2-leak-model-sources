@@ -1,0 +1,316 @@
+
+//==================================================
+// 2003 Antlion Animations QC Remake by epicplayer
+//==================================================
+
+
+//$animblocksize 32
+
+//Base Idle
+$cmdlist lockfeet {
+/* FIXME: IK disabled until bugs corrected - jdw
+	ikrule ltftfoot footstep
+	ikrule rtftfoot footstep
+	ikrule ltbkfoot footstep
+	ikrule rtbkfoot footstep
+*/
+}
+
+//Idles
+$sequence Idle		"DistractIdle01"	loop FPS 30 activity ACT_IDLE 1 cmdlist lockfeet
+$sequence DistractIdle2		"DistractIdle02"	loop FPS 30 activity ACT_IDLE 1 cmdlist lockfeet
+$sequence DistractIdle3		"DistractIdle03"	loop FPS 30 activity ACT_IDLE 1 cmdlist lockfeet
+$sequence DistractIdle4		"DistractIdle04"	loop FPS 30 activity ACT_IDLE 1 cmdlist lockfeet
+
+//$sequence Idle			"Idle01"		loop FPS 30 activity ACT_IDLE 5 cmdlist lockfeet
+
+//Movement
+
+$cmdlist walkik {
+/* FIXME: IK disabled until bugs corrected - jdw
+	alignto idle
+	ikrule ltftfoot footstep range .. 11  1 ..
+	ikrule rtftfoot footstep range ..  1 11 ..
+	ikrule ltbkfoot footstep range ..  0  9 ..
+	ikrule rtbkfoot footstep range ..  9 19 ..
+*/
+}
+
+$animation a_WalkS WalkS loop LX LY rotateto -180 cmdlist walkik //fps 60
+$animation a_WalkSE WalkSE loop LX LY  rotateto -135 cmdlist walkik //fps 60
+$animation a_WalkE WalkE loop LX LY rotateto -90 cmdlist walkik
+$animation a_WalkNE WalkNE loop LX LY  rotateto -45 cmdlist walkik
+$animation a_WalkN WalkN loop LX LY rotateto 0 cmdlist walkik
+$animation a_WalkNW WalkNW loop LX LY rotateto 45 cmdlist walkik
+$animation a_WalkW WalkW loop LX LY rotateto 90 cmdlist walkik
+$animation a_WalkSW WalkSW loop LX LY rotateto 135 cmdlist walkik //fps 60
+
+//$sequence Walk	a_WalkN { event AE_ANTLION_WALK_FOOTSTEP 5 } { event AE_ANTLION_FOOTSTEP_SOFT 10 } { event AE_ANTLION_WALK_FOOTSTEP 15 } { event AE_ANTLION_FOOTSTEP_SOFT 20 } activity ACT_WALK 1
+
+$sequence walk_all {
+	a_walkS a_walkSE a_walkE a_walkNE a_walkN a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9 blend move_yaw -180 180 loop ACT_WALK 1 node "walking"
+//	{ event AE_ANTLION_WALK_FOOTSTEP  1 } 
+//	{ event AE_ANTLION_FOOTSTEP_SOFT 9 } 
+//	{ event AE_ANTLION_WALK_FOOTSTEP  11 } 
+//	{ event AE_ANTLION_FOOTSTEP_SOFT 19 }
+	{ event 13 5 }
+	{ event 12 10 }
+	{ event 13 15 }
+	{ event 12 20 }
+
+}
+
+$animation a_RunN "Run02" loop FPS 30 LX startloop 8 alignto idle rotateto 0 fixuploop -2 2 {
+//	ikrule ltftfoot footstep range .. 4 7 ..
+//	ikrule rtftfoot footstep range .. 0 4 ..
+//	ikrule ltbkfoot footstep range .. 2 7 ..
+//	ikrule rtbkfoot footstep range .. 8 2 ..
+}
+
+
+$animation a_WalkNEfast WalkNE loop LX LY FPS 30 rotateto -45 cmdlist walkik
+$animation a_WalkNWfast WalkNW loop LX LY FPS 30 rotateto 45 cmdlist walkik
+
+
+$animation a_ScuttleRt "ScuttleRt01"	loop FPS 30 LY alignto idle fudgeloop rotateto -90 startloop 7 {
+//	ikrule ltftfoot footstep range .. 8 1 ..
+//	ikrule rtftfoot footstep range .. 1 10 ..
+//	ikrule ltbkfoot footstep range .. 12 6 ..
+//	ikrule rtbkfoot footstep range .. 10 4 ..
+}
+
+$animation a_ScuttleLeft "ScuttleLeft01" loop FPS 30 LY alignto idle fudgeloop rotateto 90 startloop 11 {
+//	ikrule ltftfoot footstep range .. 8 2 ..
+//	ikrule rtftfoot footstep range .. 0 9 ..
+//	ikrule ltbkfoot footstep range .. 3 12 ..
+//	ikrule rtbkfoot footstep range .. 10 4 ..
+}
+
+/*
+$sequence Run a_RunN activity ACT_RUN 1 {
+{ event 13 0 }
+{ event 12 2 }
+{ event 13 4 }
+{ event 12 8 }
+}
+*/
+
+$sequence run_all {
+	a_walkS a_walkSE a_ScuttleRt a_walkNEfast a_RunN a_walkNWfast a_ScuttleLeft a_walkSW a_walkS
+	blendwidth 9 blend move_yaw -180 180 ACT_RUN 1 node "walking"
+//	{ event AE_ANTLION_WALK_FOOTSTEP  1 } 
+//	{ event AE_ANTLION_FOOTSTEP_SOFT 9 } 
+//	{ event AE_ANTLION_WALK_FOOTSTEP  11 } 
+//	{ event AE_ANTLION_FOOTSTEP_SOFT 19 }
+	{ event 13 3 }
+	{ event 12 4 }
+	{ event 13 7 }
+	{ event 12 10 }
+}
+
+$sequence ScuttleRt a_ScuttleRt	{ event 13 5 } { event 12 7 } { event 13 12 } { event 12 14 } activity ACT_ANTLION_SIDESTEP_RIGHT 1
+$sequence ScuttleLeft a_ScuttleLeft { event 13 5 } { event 12 7 } { event 13 12 } { event 12 14 } activity ACT_ANTLION_SIDESTEP_LEFT 1
+
+$sequence RunAgitated		"bugbaitrun01"		loop FPS 30 LX alignto idle ACT_ANTLION_RUN_AGITATED 1
+
+//Flip over
+$sequence Flip1			"flip01"		FPS 30 activity ACT_ANTLION_FLIP 1
+//$sequence ZapFlip		"ZapFlip"		FPS 30 activity ACT_ANTLION_ZAP_FLIP 1
+
+//Attacks
+$sequence attack1		"attack_01"		FPS 30 { event 24 0 } { event 15 19 } activity ACT_MELEE_ATTACK1 1
+$sequence attack2		"attack03"		FPS 30 { event 25 0 } { event 15 17 } activity ACT_MELEE_ATTACK1 1
+$sequence attack3		"attackleft02"		FPS 30 { event 24 0 } { event 15 16 } activity ACT_MELEE_ATTACK1 1
+$sequence attack4		"attackleftstab01"	FPS 30 { event 24 0 } { event 15 16 } activity ACT_MELEE_ATTACK1 1
+$sequence attack5		"attack_fwd01"		FPS 30 lx ly { event 24 0 } { event 15 16 } activity ACT_MELEE_ATTACK1 1
+$sequence attack6		"attackfwd03"		FPS 30 lx ly { event 24 0 } { event 15 16 } activity ACT_MELEE_ATTACK1 1
+
+//Attack Transitions
+//$sequence attackin		"attackinout"		FPS 30 frame 1 10 activity ACT_ANTLION_ATTACK_IN 1
+//$sequence attackout		"attackinout"		FPS 30 frame 35 60 activity ACT_ANTLION_ATTACK_OUT 1
+
+//Charge
+$sequence charge_start		"charge02"		X FPS 30 frame 1 21 { event 26 0 } { event 14 18 } { event 14 20 } activity ACT_ANTLION_CHARGE_IN 1
+
+$animation a_charge_run		"charge02"		LX loop FPS 30 frame 22 31 alignto charge_start {
+//	ikrule ltftfoot footstep range .. 2 8 ..
+//	ikrule rtftfoot footstep range .. 8 4 ..
+//	ikrule ltbkfoot footstep range .. 0 4 ..
+//	ikrule rtbkfoot footstep range .. 7 2 ..
+}
+
+$sequence charge_run		a_charge_run { event 14 1 } { event 14 3 } { event 14 7 } { event 14 9 } activity ACT_ANTLION_CHARGE_LOOP 1
+
+$sequence charge_end		"charge02"		X FPS 30 frame 32 61 alignto charge_run { event 17 9 } { event 14 1 } { event 14 3 } { event 14 4 } { event 14 19 } activity ACT_ANTLION_CHARGE_OUT 1
+
+//Pain
+//$sequence hit01			"hit01"			FPS 60 //activity ACT_SMALL_FLINCH 1
+
+//Misc
+$sequence pounce		"pounce01"		FPS 30 activity ACT_ANTLION_POUNCE 1 alignto idle {
+//	walkframe 8
+//	walkframe 13 LX 
+//	walkframe 22 LX
+//	walkalignto 31 idle LX
+	LX
+	{ event 17 18 }
+}
+
+/*
+$sequence pounce2		"charge02" FPS 30 frame 32 61 { 
+	alignto idle
+	walkalign 8 idle LX 0 28
+	event 17 9 
+	activity ACT_ANTLION_POUNCE_MOVING 1
+}
+
+
+$sequence sandthrow		"sandthrow01"		FPS 30 activity ACT_ANTLION_THROW_SAND 1
+*/
+
+$sequence distract		"distract01"		FPS 30 activity ACT_ANTLION_DISTRACT 1 {
+{ event 22 40 }
+{ event 23 60 }
+}
+
+/*
+$sequence distract_arrived	"distract01"		frames 38 84 FPS 30 activity ACT_ANTLION_DISTRACT_ARRIVED 1 {
+//{ event 22 4 }
+//{ event 23 23 }
+}
+*/
+
+// Jumping 
+$sequence jump_start	"lowfly01"		FPS 30 frame 14 33 activity ACT_JUMP 1 alignto idle { event 22 0 } X Z
+$sequence jump_glide	"lowfly01"		origin 0 0 16 loop FPS 30 frame 34 50 activity ACT_GLIDE 1 alignto idle X Z
+$sequence jump_stop		"lowfly01"		FPS 30 frame 123 144 activity ACT_LAND 1 alignto idle { event 23 10 } X Z
+
+$sequence fly_in		"lowfly01"		X Z FPS 30 frame 0 33 activity ACT_ANTLION_JUMP_START 1 { event 18 17 } { event 22 17 }
+
+//Turns
+$sequence turn_right	"ScuttleRt01"		loop X Y FPS 30 activity ACT_TURN_RIGHT 1
+$sequence turn_left		"ScuttleLeft01"		loop X Y FPS 30 activity ACT_TURN_LEFT 1
+
+//Burrowings
+$sequence digin			"digin01"			X FPS 60 activity ACT_ANTLION_BURROW_IN 1 { event 19 22 } { event 21 60 }
+//$sequence digout1		"digout01"		FPS 30 frame 21 68 activity ACT_ANTLION_BURROW_OUT 1 { event 22 17 }
+
+$sequence digout "holeout" fps 30 activity ACT_ANTLION_BURROW_OUT 1 alignto idle {
+walkframe 24 LX LY
+walkframe 38 LX LY
+{ event 20 1 }
+}
+
+/*
+//drowning
+$sequence drown "drown" loop fps 30 frames 7 21 activity ACT_ANTLION_DROWN 1
+
+
+//Explode
+$sequence explode "explode" FPS 30 fadeout 0 activity ACT_ANTLION_WORKER_EXPLODE 1 {
+	{ event AE_ANTLION_WORKER_EXPLODE_SCREAM 0 }
+	{ event AE_ANTLION_WORKER_EXPLODE_WARN 12 }
+	{ event AE_ANTLION_WORKER_EXPLODE 22 }
+}
+*/
+
+$sequence digidle		"digin01"			loop frame 99 100 FPS 30 activity ACT_ANTLION_BURROW_IDLE 1
+
+//Special Attacks
+$sequence touchtest		"touchtest"	{
+	walkframe 32
+}
+	
+$sequence frustration	"frustattack01" activity ACT_ANTLION_FRUSTRATION1 1
+
+/*
+
+//Head Turn
+$weightlist head_look { "Antlion.Chest_Bone" 1.0 "Antlion.Head_Bone" 1.0 "Antlion.FangBottomL1_Bone" 0.0 "Antlion.FangBottomR1_Bone" 0.0 "Antlion.FangTopL1_Bone" 0.0 "Antlion.FangTopR1_Bone" 0.0 "Antlion.ArmL1_Bone" 0.0 "Antlion.ArmR1_Bone" 0.0 }
+
+$sequence headturn "headturn_poses" fps 30
+$animation head_neutral headturn_poses frame 0 0 weightlist head_look
+$animation head_up headturn_poses frame 1 1 subtract head_neutral 0 weightlist head_look
+$animation head_down headturn_poses frame 2 2 subtract head_neutral 0 weightlist head_look
+$animation head_right headturn_poses frame 3 3 subtract head_neutral 0 weightlist head_look
+$animation head_left headturn_poses frame 4 4 subtract head_neutral 0 weightlist head_look
+
+$sequence head_pitch { head_up head_down blend "head_pitch" -40 40 } delta autoplay
+$sequence head_yaw { head_right head_left blend "head_yaw" -40 40 } delta autoplay
+
+$sequence spit 	"distract01"	FPS 60 frames 0 48 activity ACT_RANGE_ATTACK1 1 { event AE_ANTLION_WORKER_SPIT 35 }
+
+//==========================================================================
+//-------- dynamic interactions ------------
+//==========================================================================
+
+$sequence antlion_soldier_DI_01 "soldierattack01.smd" fps 30 {
+	walkframe 20 lx ly
+	walkframe 60 lx ly
+	walkframe 99 lx ly
+	{ event AE_CL_PLAYSOUND 1 "NPC_Antlion.MeleeAttackSingle" } 
+	{ event AE_CL_PLAYSOUND 15 "NPC_Antlion.JumpTouch" } 
+	//{ event AE_CL_PLAYSOUND 37 "NPC_Antlion.JumpTouch" } 
+}
+
+$sequence antlion_soldier_DI_02 "soldierattack02.smd" fps 30 {
+	walkframe 20 lx ly
+	walkframe 60 lx ly
+	//walkframe 99 lx ly
+	{ event AE_CL_PLAYSOUND 1 "NPC_Antlion.MeleeAttackSingle" } 
+	{ event AE_CL_PLAYSOUND 19 "NPC_Antlion.RunOverByVehicle" } 
+	//{ event AE_CL_PLAYSOUND 37 "NPC_Antlion.JumpTouch" } 
+}
+
+$sequence alyx_antlion_fight1 "attack_01.smd" fps 30
+$sequence alyx_antlion_fight2 "alyx_antlion_fight2.smd" fps 30
+
+$sequence antlion_fallbkattack "antlion_fallbkattack" fps 30 
+
+
+// VORT ANTLION INTERACTION
+
+$sequence vort_antlion_backcrack "vort_antlion_attack2.smd" FPS 30 {
+	{ event AE_ANTLION_WORKER_DONT_EXPLODE 0 }
+}
+
+$sequence vort_antlion_throw "vort_interact01" frames 0 65 FPS 30 activity ACT_VORTIGAUNT_ANTLION_THROW 1
+
+$sequence antlion_alyx_inspect "antlion_alyx_inspect.smd" fps 30 {
+	walkframe 9
+	walkframe 22 lx ly
+	walkframe 125 lx ly
+	walkframe 155 lx ly
+	walkframe 170 lx ly
+	{ event AE_CL_PLAYSOUND 65 "NPC_Antlion.MeleeAttackSingle" } 
+	{ event AE_CL_PLAYSOUND 140 "NPC_Antlion.Distracted" } 
+}
+
+*/
+
+//Bonus animations found in modelsrc
+
+$sequence bugbait01 bugbait01 alignto idle
+$sequence bugbaitrun01 bugbaitrun01 LX loop
+$sequence charge01 charge01 lx
+$sequence charge02 charge02 lx
+$sequence creep01 creep01 lx loop
+$sequence walk01 walk01 LX loop
+$sequence sneakwalk01 sneakwalk01 LX loop
+$sequence run01 run01 LX loop
+$sequence run02 run02 LX loop
+$sequence runattack01 runattack01 alignto run01 lx
+$sequence flinch01 flinch01
+$sequence flinchidle flinchidle
+$sequence flinchin flinchin
+$sequence flinchout flinchout
+$sequence flinchscud flinchscud lx
+$sequence flyattack01all flyattack01all lx
+$sequence flyattack02all flyattack02all lx
+$sequence flyattackidle flyattackidle
+$sequence flyattackidle02 flyattackidle02
+$sequence flyattackin01 flyattackin01 alignto idle LX LZ
+$sequence flyattackin02 flyattackin02 alignto idle LX LZ
+$sequence flyattackout flyattackout alignto idle LX //LZ 
+$sequence flyattackout02 flyattackout02 alignto idle LX //LZ
