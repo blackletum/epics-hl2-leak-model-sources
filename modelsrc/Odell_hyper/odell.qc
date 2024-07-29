@@ -24,15 +24,18 @@ $sequence idle animations/Laugh fps 10 ACT_IDLE 1 loop rotate -90 frames 0 32 fi
 
 $pushd "Animations"
 
+$weightlist handsonly "Bip01" 0.0 "Bip01 R Finger0" 1 "Bip01 R Finger1" 1 "Bip01 R Finger2" 1 "Bip01 R Finger3" 1 "Bip01 R Finger4" 1 "Bip01 L Finger0" 1 "Bip01 L Finger1" 1 "Bip01 L Finger2" 1 "Bip01 L Finger3" 1 "Bip01 L Finger4" 1
+$sequence walkhandslayer WalkLoop frame 0 0 weightlist handsonly hidden
+
 $sequence walk WalkLoop ACT_WALK 1 loop lx alignto idle
-$sequence walkstart walkstart lx alignto idle
-$sequence walkstop walkstop lx alignto idle
-$sequence WalkTurnL WalkTurnL alignto idle walkframe 16 lx ly walkframe 40 lx ly lzr walkframe 50 lx ly lzr walkframe 63 lx ly 
-$sequence WalkTurnR WalkTurnR alignto idle walkframe 10 lx ly walkframe 24 lx ly lzr walkframe 51 lx ly lzr walkalignto 66 walk lx ly lzr
+$sequence walkstart walkstart lx alignto idle addlayer walkhandslayer
+$sequence walkstop walkstop lx alignto idle addlayer walkhandslayer
+$sequence WalkTurnL WalkTurnL alignto idle addlayer walkhandslayer walkframe 16 lx ly walkframe 40 lx ly lzr walkframe 50 lx ly lzr walkframe 63 lx ly 
+$sequence WalkTurnR WalkTurnR alignto idle addlayer walkhandslayer walkframe 10 lx ly walkframe 24 lx ly lzr walkframe 51 lx ly lzr walkalignto 66 walk lx ly lzr
 
 $sequence run RunLoop ACT_RUN 1 loop lx alignto idle fixuploop -3 1
-$sequence runstart RunStart lx alignto idle
-$sequence runstop RunStop lx alignto idle
+$sequence runstart RunStart lx alignto idle addlayer walkhandslayer
+$sequence runstop RunStop lx alignto idle addlayer walkhandslayer
 
 $sequence Wave Wave alignto idle rotate -90
 $sequence Vault Vault lx
@@ -48,14 +51,14 @@ $sequence CS1DANCE CS1DANCE lx
 $sequence CRIPPLE CRIPPLE alignto idle rotate -90 lx
 $sequence CREEP CREEP alignto idle rotate -90 lx
 $sequence Cigarette Cigarette alignto idle rotate -90
-$sequence Cheer Cheer alignto idle rotate -90
-$sequence ChairStand ChairStand alignto idle rotate -90 lx ly
-$sequence ChairSit ChairSit alignto idle rotate -90 lx ly
+$sequence Cheer Cheer alignto idle rotate -90 addlayer walkhandslayer
+$sequence ChairStand ChairStand alignto idle rotate -90 lx ly addlayer walkhandslayer
+$sequence ChairSit ChairSit alignto idle rotate -90 lx ly addlayer walkhandslayer
 $sequence CHACHA CHACHA alignto idle rotate -90 lx
 $sequence BroadJump BroadJump alignto idle walkframe 96 lx ly walkframe 134 lx ly walkframe 165 lx ly
 $sequence BlownBack BlownBack lx ly
 $sequence Bees Bees lx ly lzr
-$sequence Banana Banana alignto idle lx ly
+$sequence Banana Banana alignto idle lx ly addlayer walkhandslayer
 $sequence Backstab Backstab alignto idle lx ly rotate 40
 $sequence GunDive GunDive alignto idle lx ly rotate 164
 $sequence GunFighter GunFighter alignto idle lx ly rotate 180
@@ -67,11 +70,11 @@ $sequence GetPunched GetPunched alignto idle lx ly rotate 5
 $sequence GetSlapped GetSlapped lx
 $sequence Grenade Grenade alignto idle lx ly rotate -25
 $sequence JumpOver JumpOver alignto idle lx ly
-$sequence JogLoop JogLoop frame 0 45 alignto idle loop lx
+$sequence JogLoop JogLoop frame 0 45 alignto idle loop lx addlayer walkhandslayer
 $sequence KOed KOed alignto idle lx ly
-$sequence LimpLoop LimpLoop loop alignto idle lx ACT_WALK_HURT 1
-$sequence LiteLimpLoop LiteLimpLoop loop alignto idle lx ACT_WALK_HURT 1
-$sequence Stagger Stagger loop alignto idle lx rotate 180
+$sequence LimpLoop LimpLoop loop alignto idle lx ACT_WALK_HURT 1 addlayer walkhandslayer
+$sequence LiteLimpLoop LiteLimpLoop loop alignto idle lx ACT_WALK_HURT 1 addlayer walkhandslayer
+$sequence Stagger Stagger loop alignto idle lx rotate 180 addlayer walkhandslayer
 
 $sequence Axekick Axekick alignto idle lx ly rotate 10
 $sequence BackLegKick BackLegKick alignto idle lx ly rotate -40
@@ -92,9 +95,9 @@ $sequence StaightKick StaightKick alignto idle lx ly rotate -20
 $sequence TornadoKick TornadoKick alignto idle lx ly rotate -40
 
 $sequence die01 BlownBack ACT_DIESIMPLE 1 alignto idle frame 30 74 lx ly
-$sequence die02 Banana ACT_DIESIMPLE 1 alignto idle frame 17 98 lx ly
-$sequence die03 Backstab ACT_DIESIMPLE 1 alignto idle lx ly rotate 40 frame 19 140
-$sequence die04 KOed ACT_DIESIMPLE 1 alignto idle lx ly frame 55 145
+$sequence die02 Banana ACT_DIESIMPLE 1 alignto idle frame 17 98 lx ly addlayer walkhandslayer
+$sequence die03 Backstab ACT_DIESIMPLE 1 alignto idle lx ly rotate 40 frame 19 140 addlayer walkhandslayer
+$sequence die04 KOed ACT_DIESIMPLE 1 alignto idle lx ly frame 55 145 addlayer walkhandslayer
 
 $sequence idle_angry JumpRndKick ACT_IDLE_ANGRY 1 fps 25 alignto idle rotate -55 frames 0 18 fixuploop -6 1
 
