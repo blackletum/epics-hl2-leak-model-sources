@@ -16,7 +16,7 @@ studio Odell_blowtorch.smd
 }
 
 $eyeposition 0 0 67
-
+$surfaceprop flesh
 //$controller Mouth "mouth" XR 0 20
 
 //$sequence idle "Odell" ACT_IDLE 1 loop
