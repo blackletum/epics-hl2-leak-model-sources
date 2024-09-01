@@ -123,7 +123,7 @@ $include "hitbox.qci"
 
 //-----Custom Animations-----
 
-$sequence crashing body_flex ACT_GUNSHIP_CRASH 1 fps 3 loop //Gunship code has an activity for crashing, so let use it.
+//$sequence crashing body_flex ACT_GUNSHIP_CRASH 1 fps 3 loop //Gunship code has an activity for crashing, so let use it.
 
 //-----LODs-----
 /*
