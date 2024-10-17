@@ -1,0 +1,51 @@
+$surfaceprop "flesh"
+
+$collisionjoints "2003_meshes/ragdoll.smd" {
+
+	$mass 40.0
+	$inertia 5.00
+	$damping 0.01
+	$rotdamping 1.50
+	$rootbone "ValveBiped.Bip01_Pelvis"
+
+
+	$jointconstrain "ValveBiped.Bip01_Spine2" x limit -30.00 30.00
+	$jointconstrain "ValveBiped.Bip01_Spine2" y limit -41.00 41.00
+	$jointconstrain "ValveBiped.Bip01_Spine2" z limit -53.00 53.00
+
+	$jointmassbias "ValveBiped.Bip01_R_UpperArm" 2.00
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" x limit -28.00 28.00
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" y limit -30.00 59.00
+	$jointconstrain "ValveBiped.Bip01_R_UpperArm" z limit -73.00 40.00
+
+	$jointmassbias "ValveBiped.Bip01_R_Forearm" 3.00
+	$jointconstrain "ValveBiped.Bip01_R_Forearm" z limit -100.00 35.00
+
+	$jointmassbias "ValveBiped.Bip01_L_UpperArm" 2.00
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" x limit -17.00 17.00
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" y limit -45.00 30.00
+	$jointconstrain "ValveBiped.Bip01_L_UpperArm" z limit -73.00 40.00
+
+	$jointmassbias "ValveBiped.Bip01_L_Forearm" 3.00
+	$jointconstrain "ValveBiped.Bip01_L_Forearm" z limit -120.00 4.00
+
+	$jointconstrain "ValveBiped.Bip01_L_hand" x limit -32.00 32.00
+	$jointconstrain "ValveBiped.Bip01_L_hand" y limit -19.00 19.00
+	$jointconstrain "ValveBiped.Bip01_L_hand" z limit -44.00 44.00
+
+	$jointconstrain "ValveBiped.Bip01_R_hand" x limit -23.00 23.00
+	$jointconstrain "ValveBiped.Bip01_R_hand" z limit -50.00 50.00
+	
+	$jointconstrain "ValveBiped.Bip01_Guts01" x limit -23 23 1
+	$jointconstrain "ValveBiped.Bip01_Guts01" y limit -17 17 1
+	$jointconstrain "ValveBiped.Bip01_Guts01" z limit -8 32 1
+
+	$jointconstrain "ValveBiped.Bip01_Spine" x limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_Spine" y limit 0 0 0
+	$jointconstrain "ValveBiped.Bip01_Spine" z limit 0 0 0
+	
+	$jointconstrain "ValveBiped.Bip01_Guts02" x limit -61 61 1
+	$jointconstrain "ValveBiped.Bip01_Guts02" z limit -19 50 1
+
+}
+$sequence ragdoll 		"ragdoll_pose" 		FPS 30 		activity ACT_DIERAGDOLL 1
