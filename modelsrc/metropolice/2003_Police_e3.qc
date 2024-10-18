@@ -27,9 +27,8 @@ $attachment "RHand" "ValveBiped.Bip01_R_Hand" 3 0 0
 $bbox -13 -13 0 13 13 72
 
 $include "../humans/standardhierarchy_leak.qci"
-
+$include "2003_5fingerweightlists.qci"
+$include "2003_Police_shared.qci"
 $include "hitbox.qci"
 $include "ragdoll.qci"
 
-$include "2003_5fingerweightlists.qci"
-$include "2003_Police_shared.qci"

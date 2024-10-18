@@ -47,8 +47,9 @@ $include "../humans/standardhierarchy_leak.qci"
 //$include "commonbones.qci"
 //$include "body_poses_lean.qci"
 
+$include "2003_5fingerweightlists.qci"
+$include "2003_Police_shared.qci"
+
 $include "hitbox.qci"
 $include "ragdoll.qci"
 
-$include "2003_5fingerweightlists.qci"
-$include "2003_Police_shared.qci"

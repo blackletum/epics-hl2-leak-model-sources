@@ -13,11 +13,6 @@ $weightlist pelvisonly "Valvebiped.bip01_Pelvis" 1.0 "Valvebiped.bip01_Spine" 0.
 
 //====================  NON-COMBAT ANIMATIONS =============================================
 
-$sequence smg1_fingers_fix point_player frame 0 0 weightlist smg1fingers 
-$sequence baton_fingers_fix Push_button_front frame 0 0 weightlist batonfingers 
-$sequence pistol_fingers_fix Lowcover_idle_pistol frame 0 0 weightlist allfingers 
-$sequence baton_swing_fingers_fix WeaponAnims_Shared/Baton_swing frame 6 6 weightlist allfingers 
-
 $sequence batonidle1 "Baton_idle01" loop FPS 30 activity ACT_IDLE 2 node "standing_baton" addlayer baton_fingers_fix
 $sequence batonidle2 "2003_animations/Baton_idle02" loop FPS 30 activity ACT_IDLE 1 node "standing_baton" addlayer baton_fingers_fix 
 $sequence smg1idle1 "SMG1_idle01" loop FPS 30 activity ACT_IDLE_SMG1 2 node "standing_smg" addlayer smg1_fingers_fix 
@@ -28,7 +23,7 @@ $sequence Idle_Baton "Idle_baton_lean" loop FPS 30 addlayer baton_fingers_fix
 $sequence BlockEntry "Idle_baton_lean_halt" FPS 30 addlayer baton_fingers_fix 
 $sequence buttonright "Push_button_right" FPS 30 
 $sequence buttonfront "Push_button_front" FPS 30 
-$sequence buttonleft "Push_button_left" FPS 30 
+$sequence buttonleft "Push_button_left" FPS 30  
 
 //==================== ACTION ANIMATIONS =============================================
 
@@ -879,5 +874,11 @@ $sequence shootflare "shoot_flare" {
 }
 
 $popd
+
+//Moved down here so the first sequence of police doesn't have it t posing
+$sequence smg1_fingers_fix point_player frame 0 0 weightlist smg1fingers 
+$sequence baton_fingers_fix Push_button_front frame 0 0 weightlist batonfingers 
+$sequence pistol_fingers_fix Lowcover_idle_pistol frame 0 0 weightlist allfingers 
+$sequence baton_swing_fingers_fix WeaponAnims_Shared/Baton_swing frame 6 6 weightlist allfingers
 
 //___________________________________________________________________________________________
