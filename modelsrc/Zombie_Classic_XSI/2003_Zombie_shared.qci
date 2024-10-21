@@ -1,0 +1,303 @@
+/*
+==============================================================================
+
+Zombie shared animations
+2003 QC remake by epicplayer
+
+==============================================================================
+*/
+
+//$animblocksize 32
+$poseparameter "move_yaw" -180 180 wrap
+
+//events
+/*
+#define ZOMBIE_AE_STEP_LEFT			16 // Footsteps/scrapes for sounds
+#define ZOMBIE_AE_STEP_RIGHT		17
+#define ZOMBIE_AE_SCUFF_LEFT		18
+#define ZOMBIE_AE_SCUFF_RIGHT		19
+*/
+
+$sequence Idle01 "zombie_Idle" loop FPS 30 activity ACT_IDLE 1 //cmdlist lockfeet
+
+$animation a_walk1 "zombie_walk2" loop fps 24 startloop 20 LX LY origin 0 -8 0 {
+	//ikrule lfoot footstep range ..  5 15 ..
+	//ikrule lfoot footstep range .. 28 38 ..
+	//ikrule rfoot footstep range .. 16 28 ..
+	//ikrule rfoot footstep range .. 39  8 ..
+}
+
+
+$animation a_walk2 "zombie_walk2mirror" loop fps 24 startloop 5 LX LY rotate 180 origin 0 7.5 0 {
+	//ikrule lfoot footstep range ..  7 23 ..
+	//ikrule lfoot footstep range .. 31 43 ..
+	//ikrule rfoot footstep range .. 21 31 ..
+	//ikrule rfoot footstep range .. 43 10 ..
+}
+
+$animation a_walk3 "zombie_walk3b" loop fps 24 startloop 20 LX LY origin 0 -8 0 {
+	//ikrule lfoot footstep range ..  7 21 ..
+	//ikrule lfoot footstep range .. 32 43 ..
+	//ikrule rfoot footstep range .. 18 31 ..
+	//ikrule rfoot footstep range .. 40 10 ..
+}
+
+$animation a_Walk4 "zombie_walk4" loop fps 24 startloop 10 lx ly origin 0 -21 0 {
+	//ikrule lfoot footstep range ..  3 10 ..
+	//ikrule lfoot footstep range .. 22 29 ..
+	//ikrule lfoot footstep range .. 43 50 ..
+	//ikrule lfoot footstep range .. 58 67 ..
+	//ikrule rfoot footstep range .. 16 20 ..
+	//ikrule rfoot footstep range .. 29 41 ..
+	//ikrule rfoot footstep range .. 50 55 ..
+	//ikrule rfoot footstep range .. 68  9 ..
+}
+
+
+$animation a_WalkS	"Zombie_Walk_S" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto -180 {
+	//ikrule lfoot footstep range ..  6 15 ..
+	//ikrule lfoot footstep range .. 27 37 ..
+	//ikrule rfoot footstep range .. 21 28 ..
+	//ikrule rfoot footstep range .. 36  4 ..
+}
+$animation a_WalkSE	"Zombie_Walk_SE" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto -135 {
+	//ikrule lfoot footstep range ..  6 15 ..
+	//ikrule lfoot footstep range .. 27 37 ..
+	//ikrule rfoot footstep range .. 20 26 ..
+	//ikrule rfoot footstep range .. 37  4 ..
+}
+$animation a_WalkE	"Zombie_Walk_E" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto -90 {
+	//ikrule lfoot footstep range ..  6 14 ..
+	//ikrule lfoot footstep range .. 27 35 ..
+	//ikrule rfoot footstep range .. 16 26 ..
+	//ikrule rfoot footstep range .. 38  4 ..
+}
+$animation a_WalkNE	"Zombie_Walk_NE" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto -45 {
+	//ikrule lfoot footstep range ..  7 15 ..
+	//ikrule lfoot footstep range .. 28 35 ..
+	//ikrule rfoot footstep range .. 17 26 ..
+	//ikrule rfoot footstep range .. 38  6 ..
+}
+$animation a_WalkNW	"Zombie_Walk_NW" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto 45 {
+	//ikrule lfoot footstep range ..  7 15 ..
+	//ikrule lfoot footstep range .. 28 35 ..
+	//ikrule rfoot footstep range .. 17 26 ..
+	//ikrule rfoot footstep range .. 38  4 ..
+}
+$animation a_WalkW	"Zombie_Walk_W" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto 90 {
+	//ikrule lfoot footstep range ..  7 15 ..
+	//ikrule lfoot footstep range .. 28 35 ..
+	//ikrule rfoot footstep range .. 17 26 ..
+	//ikrule rfoot footstep range .. 38  4 ..
+}
+$animation a_WalkSW	"Zombie_Walk_SW" alignto a_walk1 loop fps 24 startloop 20 lx ly rotateto 135 {
+	//ikrule lfoot footstep range ..  7 15 ..
+	//ikrule lfoot footstep range .. 28 35 ..
+	//ikrule rfoot footstep range .. 17 26 ..
+	//ikrule rfoot footstep range .. 38  4 ..
+}
+
+$sequence walk activity ACT_WALK 1 {
+	a_walkS a_walkSE a_walkE a_walkNE a_walk1 a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9 blend move_yaw -180 180
+	{ event 16 5 }
+	{ event 17 15 }
+	{ event 18 20 }
+	{ event 16 28 } 
+	{ event 17 38 }
+	{ event 18 40 }
+}
+
+$sequence walk2 activity ACT_WALK 1 {
+	a_walkS a_walkSE a_walkE a_walkNE a_walk2 a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9 blend move_yaw -180 180
+	{ event 16 7 }
+	{ event 19 10 }
+	{ event 17 21 }
+	{ event 16 31 }
+	{ event 19 34 }
+	{ event 17 44 }
+}
+
+$sequence walk3 activity ACT_WALK 1 {
+	a_walkS a_walkSE a_walkE a_walkNE a_walk3 a_walkNW a_walkW a_walkSW a_walkS
+	blendwidth 9 blend move_yaw -180 180
+	{ event 16 7 }
+	{ event 17 18 }
+	{ event 18 21 }
+	{ event 16 32 }
+	{ event 17 40 }
+	{ event 18 44 }
+}
+
+$sequence walk4 a_walk4 activity ACT_WALK 1 {
+	{ event 16 4 }
+	{ event 17 16 }
+	{ event 16 22 }
+	{ event 17 28 }
+	{ event 16 43 }
+	{ event 17 49 }
+	{ event 16 58 }
+	{ event 17 67 }
+}
+
+
+// Walking while on fire
+$sequence FireWalk  "FireWalk_N" loop FPS 30 lx ly alignto idle01 activity ACT_WALK_ON_FIRE 1 {
+	//ikrule lfoot footstep range ..  2 18 ..
+	//ikrule rfoot footstep range .. 17  4 ..
+}
+
+// Idling while on fire
+// The 2003 version of this animation is just firewalk but without any root movement, which looks like crap, so we'll use the retail one instead - epicplayer
+$sequence FireIdle  "FireIdle" loop FPS 30 alignto idle01 activity ACT_IDLE_ON_FIRE 1 //cmdlist lockfeet
+
+//$sequence dieback "death01" fps 30 activity ACT_DIESIMPLE 1
+
+//	----- attacks -----
+$sequence attackA	"Zombie_Attack_A" fps 30 alignto idle01 lx ly activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 } 
+	{ event 1 25 }
+	//ikrule lfoot footstep range 0 0 22 ..
+	//ikrule lfoot footstep range .. 46 56 56
+	//ikrule rfoot footstep range 0 0 22 ..
+	//ikrule rfoot footstep range .. 36 56 56
+}
+
+
+$sequence attackB	"Zombie_Attack_B" fps 30 alignto idle01 activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 }
+	{ event 1 25 }
+	//cmdlist lockfeet
+}
+
+$sequence attackC	"Zombie_Attack_C" fps 30 alignto idle01 lx ly rotate 180 activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 }
+	{ event 2 25 }
+	//ikrule lfoot footstep range 0 0 22 ..
+	//ikrule lfoot footstep range .. 34 56 56
+	//ikrule rfoot footstep range 0 0 22 ..
+	//ikrule rfoot footstep range .. 46 56 56
+}
+
+$sequence attackD	"Zombie_Attack_D2" fps 30 alignto idle01 rotate 180 activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 }
+	{ event 2 25 }
+	//cmdlist lockfeet
+}
+
+$sequence attackE	"Zombie_Attack_E" fps 30 alignto idle01 rotate 180 activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 }
+	{ event 3 25 }
+	//ikrule lfoot footstep range 0 0 41 41
+	//ikrule rfoot footstep range 0 0 6 ..
+	//ikrule rfoot footstep range .. 23 32 ..
+	//ikrule rfoot footstep range .. 38 41 41
+}
+
+$sequence attackF	"Zombie_Attack_F" fps 30 alignto idle01 activity ACT_MELEE_ATTACK1 2 {
+	{ event 20 5 }
+	{ event 3 25 }  
+	//cmdlist lockfeet
+}
+
+
+//$sequence attackMatrixTest "zombie_attack_matrixworking" loop fps 30 rotate 180
+
+//$sequence flinch "Flinch01" fps 20
+
+$sequence swatleftmid  "Zombie_swatleftmid" FPS 30 alignto idle01 rotate 180 activity ACT_ZOM_SWATLEFTMID 1 {
+	{ event 11 1 }
+	{ event 10 9 } 
+	//cmdlist lockfeet
+}
+
+$sequence swatrightmid  "Zombie_swatrightmid" FPS 30 alignto idle01 activity ACT_ZOM_SWATRIGHTMID 1 {
+	{ event 11 1 }
+	{ event 10 9 } 
+	//cmdlist lockfeet
+}
+
+$sequence swatleftlow  "Zombie_SwatLeftLow" FPS 30 rotate 180 alignto idle01 lx ly activity ACT_ZOM_SWATLEFTLOW 1 {
+	{ event 11 15 }
+	{ event 10 15 } 
+	//ikrule lfoot footstep range 0 0 17 ..
+	//ikrule lfoot footstep range .. 26 45 45
+	//ikrule rfoot footstep range 0 0 17 ..
+	//ikrule rfoot footstep range .. 39 45 45
+}
+
+
+$sequence swatrightlow  "Zombie_SwatRightLow" FPS 30 alignto idle01 lx ly activity ACT_ZOM_SWATRIGHTLOW 1 {
+	{ event 11 1 }
+	{ event 10 18 } 
+	//ikrule lfoot footstep range 0 0 15 ..
+	//ikrule lfoot footstep range .. 38 47 47
+	//ikrule rfoot footstep range 0 0 23 ..
+	//ikrule rfoot footstep range .. 29 47 47
+}
+
+
+$sequence releasecrab "zombie_crabrelease" FPS 30 alignto idle01 activity ACT_ZOM_RELEASECRAB 1 //cmdlist lockfeet
+
+//Anims not in 2003 model
+/*
+$sequence physflinch1 "PhysFlinch" FPS 30 ACT_FLINCH_PHYSICS 1 //cmdlist lockfeet
+$sequence physflinch2 "PhysFlinch2" FPS 30 ACT_FLINCH_PHYSICS 1 //cmdlist lockfeet
+$sequence physflinch3 "PhysFlinch3" FPS 30 ACT_FLINCH_PHYSICS 1 //cmdlist lockfeet
+*/
+
+//       ------ Scripted anims ------
+
+$sequence smashfall64 "smashfall64_A" FPS 30 { event 2002 10 } { event 2002 27 } { event 2002 37 } { event 21 75 }
+$sequence slump_a "slump_A"  loop FPS 30
+$sequence slumprise_a "slumprise_A" frames 0 127 FPS 30 {
+	//{ event AE_NPC_LEFTFOOT 15 } 
+	//{ event AE_NPC_RIGHTFOOT 50 } 
+	{ event 2050 6 }
+	{ event 2051 50 }
+	{ event 21 80 }
+	{ event 21 100 }
+	//alignto slump_a 
+	//walkframe 68
+	walkalignto 127 idle01 LX LY
+}
+
+/*
+$sequence slumprise_a_attack "slumprise_A_Attack" frames 0 127 FPS 30 {
+	{ event AE_NPC_LEFTFOOT 15 } 
+	{ event AE_NPC_RIGHTFOOT 50 } 
+	{ event 21 80 } 
+	{ event 20 16 } 
+	{ event 1 36 }
+	alignto slump_a 
+	walkframe 68
+	walkalignto 127 idle01 LX LY
+}
+*/
+
+$sequence slumprise_a2 "slumprise_a2" FPS 30 {
+	//{ event AE_NPC_RIGHTFOOT 16 } 
+	//{ event AE_NPC_RIGHTFOOT 22 }
+	//{ event 21 24 }
+	//alignto slump_a walkalignto 1000 idle01 LX LY 
+}
+
+$sequence slump_b "slump_B"  loop FPS 30 origin -7 -91.45 -63.87
+$sequence slumprise_b "slumprise_B" FPS 30 origin -7 -91.45 -63.87 {
+	{ event 2050 13 }
+	{ event 2051 27 }
+	{ event 21 57 }
+	LX LY
+	//align slump_b X Y Z 0 0 walkalignto 1000 idle01 LX LY 
+}
+$sequence Breakthrough "breakthrough" FPS 30 //LX LY
+
+/*
+$sequence canal5await "canal_5a_attack" FPS 30 frames 0 0
+$sequence canal5aattack "canal_5a_attack" FPS 30 snap
+
+$makeflinchgesture flinch1 "PhysFlinch" 8 12 18 ACT_GESTURE_FLINCH_HEAD 1
+$makeflinchgesture flinch2 "PhysFlinch2" 7 12 20 ACT_GESTURE_FLINCH_HEAD 1
+$makeflinchgesture flinch3 "PhysFlinch3" 10 12 20 ACT_GESTURE_FLINCH_HEAD 1
+*/
