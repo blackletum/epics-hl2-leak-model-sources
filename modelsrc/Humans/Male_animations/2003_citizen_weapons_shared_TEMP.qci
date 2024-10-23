@@ -1,0 +1,924 @@
+$weightlist upperbodyreplace "Valvebiped.bip01_spine" 1.0 
+
+$animation "a_Idle_Angry_SMG1" "male_anims\Idle_Angry_SMG1.smd" {
+	
+	loop
+}
+
+$animation "a_Idle_SMG1_Aim" "male_anims\Idle_SMG1_Aim.smd" {
+	
+	loop
+}
+
+$animation "a_shoot_ar1" "male_anims\shoot_ar1.smd" {
+	fps 25
+}
+
+$animation "a_shoot_hmg1" "male_anims\shoot_hmg1.smd" {
+	fps 25
+}
+
+$animation "a_shoot_smg1" "male_anims\shoot_smg1.smd" {
+	fps 25
+}
+
+$animation "a_shoot_smg2" "male_anims\shoot_smg2.smd" {
+	fps 25
+}
+
+$animation "a_shoot_shotgun" "male_anims\shoot_shotgun.smd" {
+	fps 25
+}
+
+$animation "a_shoot_rpg" "male_anims\shoot_rpg.smd" {
+	fps 5
+}
+
+$animation "a_reload_smg1" "male_anims\reload_smg1.smd" {
+	
+}
+
+$animation "a_gesture_shoot_ar1" "male_anims\gesture_shoot_ar1.smd" {
+	fps 25
+	  
+	
+}
+
+$animation "a_gesture_shoot_hmg1" "male_anims\gesture_shoot_hmg1.smd" {
+	fps 25
+	  
+	
+}
+
+$animation "a_gesture_shoot_smg1" "male_anims\gesture_shoot_smg1.smd" {
+	fps 25
+	  
+	
+}
+
+$animation "a_gesture_shoot_smg2" "male_anims\gesture_shoot_smg2.smd" {
+	fps 25
+	  
+	
+}
+
+$animation "a_gesture_shoot_shotgun" "male_anims\gesture_shoot_shotgun.smd" {
+	fps 25
+	  
+	
+}
+
+$animation "a_CrouchDToShoot" "male_anims\CrouchDToShoot.smd" {
+	
+}
+
+$animation "a_ShootToCrouchD" "male_anims\ShootToCrouchD.smd" {
+	
+}
+
+$animation "a_Cover_LToShootSMG1" "male_anims\Cover_LToShootSMG1.smd" {
+	
+}
+
+$animation "a_Cover_RToShootSMG1" "male_anims\Cover_RToShootSMG1.smd" {
+	
+}
+
+$animation "a_CoverLow_LToShootSMG1" "male_anims\CoverLow_LToShootSMG1.smd" {
+	
+}
+
+$animation "a_CoverLow_RToShootSMG1" "male_anims\CoverLow_RToShootSMG1.smd" {
+	
+}
+
+$animation "a_ShootSMG1ToCover_L" "male_anims\ShootSMG1ToCover_L.smd" {
+	
+}
+
+$animation "a_ShootSMG1ToCover_R" "male_anims\ShootSMG1ToCover_R.smd" {
+	
+}
+
+$animation "a_ShootSMG1ToCoverLow_L" "male_anims\ShootSMG1ToCoverLow_L.smd" {
+	
+}
+
+$animation "a_ShootSMG1ToCoverLow_R" "male_anims\ShootSMG1ToCoverLow_R.smd" {
+	
+}
+
+$animation "a_crouch_shoot_smg1" "male_anims\crouch_shoot_smg1.smd" {
+	fps 25
+}
+
+$animation "a_crouch_aim_smg1" "male_anims\crouch_aim_smg1.smd" {
+	
+	loop
+}
+
+$animation "a_crouch_reload_smg1" "male_anims\crouch_reload_smg1.smd" {
+	
+}
+
+$animation "a_shootp1" "male_anims\shootp1.smd" {
+	fps 4
+}
+
+$animation "a_reloadpistol" "male_anims\reloadpistol.smd" {
+	
+}
+
+$animation "a_drawpistol" "male_anims\drawpistol.smd" {
+	
+}
+
+$animation "a_overwatch" "male_anims\overwatch.smd" {
+	
+}
+
+$animation "a_gesture_shootp1" "male_anims\gesture_shootp1.smd" {
+	fps 4
+	  
+	
+}
+
+$animation "a_reload_pistol" "male_anims\reload_pistol.smd" {
+	
+}
+
+$animation "a_crouch_shoot_pistol" "male_anims\crouch_shoot_pistol.smd" {
+	fps 18
+}
+
+$animation "a_crouch_reload_pistol" "male_anims\crouch_reload_pistol.smd" {
+	
+}
+
+$animation "a_throw1" "male_anims\throw1.smd" {
+	
+}
+
+$animation "a_swing" "male_anims\swing.smd" {
+	fps 35
+}
+
+$animation "a_MeleeAttack01" "male_anims\MeleeAttack01.smd" {
+	
+}
+
+$animation "a_pickup" "male_anims\pickup.smd" {
+	
+}
+
+$animation "a_aim_neutral" "male_anims\a_aim_neutral.smd" {
+	
+}
+
+$animation "a_run_aim_down_left" "male_anims\a_run_aim_down_left.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_down_center" "male_anims\a_run_aim_down_center.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_down_right" "male_anims\a_run_aim_down_right.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_mid_left" "male_anims\a_run_aim_mid_left.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_mid_center" "male_anims\a_run_aim_mid_center.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_mid_right" "male_anims\a_run_aim_mid_right.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_up_left" "male_anims\a_run_aim_up_left.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_up_center" "male_anims\a_run_aim_up_center.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_up_right" "male_anims\a_run_aim_up_right.smd" {
+	
+	  
+	
+}
+
+$animation "a_run_aim_straight_up" "male_anims\a_run_aim_straight_up.smd" {
+	
+	  
+	
+}
+
+$animation "a_aimup" "male_anims\aimup.smd" {
+	
+}
+
+$animation "a_layer_walk_aiming" "male_anims\layer_walk_aiming.smd" {
+	
+}
+
+$animation "a_layer_walk_holding" "male_anims\layer_walk_holding.smd" {
+	
+}
+
+$animation "a_layer_run_aiming" "male_anims\layer_run_aiming.smd" {
+	
+}
+
+$animation "a_layer_crouch_run_aiming" "male_anims\layer_crouch_run_aiming.smd" {
+	
+}
+
+$animation "a_layer_crouch_walk_aiming" "male_anims\layer_crouch_walk_aiming.smd" {
+	
+}
+
+$animation "a_RunN_aim" "male_anims\a_RunN_aim.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_WalkN_SMG" "male_anims\a_WalkN_SMG.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_walkS_aim_delta" "male_anims\a_walkS_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkSE_aim_delta" "male_anims\a_walkSE_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkE_aim_delta" "male_anims\a_walkE_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkNE_aim_delta" "male_anims\a_walkNE_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkN_aim_delta" "male_anims\a_walkN_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkNW_aim_delta" "male_anims\a_walkNW_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkW_aim_delta" "male_anims\a_walkW_aim_delta.smd" {
+	
+	  
+	
+}
+
+$animation "a_walkSW_aim_delta" "male_anims\a_walkSW_aim_delta.smd" {
+	
+	  
+	
+}
+
+$sequence "Idle_Angry_SMG1" {
+	"a_Idle_Angry_SMG1"
+	activity "ACT_IDLE_SMG1" 1
+
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Idle_SMG1_Aim" {
+	"a_Idle_SMG1_Aim"
+	activity "ACT_IDLE_ANGRY_SMG1" 1
+
+	addlayer "layer_Aim_all"
+	node 8
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_ar1" {
+	"a_shoot_ar1"
+	activity "ACT_RANGE_ATTACK_AR1" 1
+
+	addlayer "layer_Aim_all"
+	node 8
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_hmg1" {
+	"a_shoot_hmg1"
+	activity "ACT_RANGE_ATTACK_HMG1" 1
+
+	addlayer "layer_Aim_all"
+	node 8
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_smg1" {
+	"a_shoot_smg1"
+	activity "ACT_RANGE_ATTACK_SMG1" 1
+
+	addlayer "layer_Aim_all"
+	node 8
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_smg2" {
+	"a_shoot_smg2"
+	activity "ACT_RANGE_ATTACK_SMG2" 1
+
+	addlayer "layer_Aim_all"
+	node 8
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_shotgun" {
+	"a_shoot_shotgun"
+	activity "ACT_RANGE_ATTACK_SHOTGUN" 1
+
+	node 8
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shoot_rpg" {
+	"a_shoot_rpg"
+	activity "ACT_RANGE_ATTACK_RPG" 1
+
+	node 8
+	fps 5
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "reload_smg1" {
+	"a_reload_smg1"
+	activity "ACT_RELOAD_SMG1" 1
+	{ event 3015 47 "" }
+
+	node 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shoot_ar1" {
+	"a_gesture_shoot_ar1"
+	activity "ACT_GESTURE_RANGE_ATTACK_AR1" 1
+	delta
+
+	fps 25
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shoot_hmg1" {
+	"a_gesture_shoot_hmg1"
+	activity "ACT_GESTURE_RANGE_ATTACK_HMG1" 1
+	delta
+
+	fps 25
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shoot_smg1" {
+	"a_gesture_shoot_smg1"
+	activity "ACT_GESTURE_RANGE_ATTACK_SMG1" 1
+	delta
+
+	fps 25
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shoot_smg2" {
+	"a_gesture_shoot_smg2"
+	activity "ACT_GESTURE_RANGE_ATTACK_SMG2" 1
+	delta
+
+	fps 25
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shoot_shotgun" {
+	"a_gesture_shoot_shotgun"
+	activity "ACT_GESTURE_RANGE_ATTACK_SHOTGUN" 1
+	delta
+
+	fps 25
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CrouchDToShoot" {
+	"a_CrouchDToShoot"
+	activity "ACT_TRANSITION" 1
+
+	transition 2 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootToCrouchD" {
+	"a_ShootToCrouchD"
+	activity "ACT_TRANSITION" 1
+
+	transition 8 2
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Cover_LToShootSMG1" {
+	"a_Cover_LToShootSMG1"
+
+	transition 9 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Cover_RToShootSMG1" {
+	"a_Cover_RToShootSMG1"
+
+	transition 10 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_LToShootSMG1" {
+	"a_CoverLow_LToShootSMG1"
+
+	transition 9 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "CoverLow_RToShootSMG1" {
+	"a_CoverLow_RToShootSMG1"
+
+	transition 10 8
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCover_L" {
+	"a_ShootSMG1ToCover_L"
+
+	transition 8 9
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCover_R" {
+	"a_ShootSMG1ToCover_R"
+
+	transition 8 10
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCoverLow_L" {
+	"a_ShootSMG1ToCoverLow_L"
+
+	transition 8 11
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "ShootSMG1ToCoverLow_R" {
+	"a_ShootSMG1ToCoverLow_R"
+
+	transition 8 12
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouch_shoot_smg1" {
+	"a_crouch_shoot_smg1"
+	activity "ACT_RANGE_ATTACK_SMG1_LOW" 1
+	{ event 3002 0 "" }
+
+	addlayer "layer_Aim_all"
+	node 2
+	fps 25
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouch_aim_smg1" {
+	"a_crouch_aim_smg1"
+	activity "ACT_RANGE_AIM_SMG1_LOW" 1
+
+	addlayer "layer_Aim_all"
+	node 2
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouch_reload_smg1" {
+	"a_crouch_reload_smg1"
+	activity "ACT_RELOAD_SMG1_LOW" 1
+	{ event 3015 46 "" }
+
+	node 2
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "shootp1" {
+	"a_shootp1"
+	activity "ACT_RANGE_ATTACK_PISTOL" 1
+	{ event 3014 1 "" }
+
+	fps 4
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "reloadpistol" {
+	"a_reloadpistol"
+	activity "ACT_METROPOLICE_RELOAD_PISTOL" 1
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "drawpistol" {
+	"a_drawpistol"
+	activity "ACT_METROPOLICE_DRAW_PISTOL" 1
+	{ event 50 9 "" }
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "overwatch" {
+	"a_overwatch"
+	activity "ACT_METROPOLICE_OVERWATCH" 1
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "gesture_shootp1" {
+	"a_gesture_shootp1"
+	activity "ACT_GESTURE_RANGE_ATTACK_PISTOL" 1
+	delta
+	{ event 3014 1 "" }
+
+	fps 4
+	  
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "reload_pistol" {
+	"a_reload_pistol"
+	activity "ACT_RELOAD_PISTOL" 1
+	{ event 3015 0 "" }
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouch_shoot_pistol" {
+	"a_crouch_shoot_pistol"
+	activity "ACT_RANGE_ATTACK_PISTOL_LOW" 1
+	{ event 3014 4 "" }
+
+	fps 18
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouch_reload_pistol" {
+	"a_crouch_reload_pistol"
+	activity "ACT_RELOAD_PISTOL_LOW" 1
+	{ event 3015 0 "" }
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "throw1" {
+	"a_throw1"
+	activity "ACT_RANGE_ATTACK_THROW" 1
+	{ event 3005 28 "" }
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "swing" {
+	"a_swing"
+	activity "ACT_MELEE_ATTACK_SWING" 1
+	{ event 3001 13 "" }
+
+	fps 35
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "MeleeAttack01" {
+	"a_MeleeAttack01"
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "pickup" {
+	"a_pickup"
+	activity "ACT_PICKUP_GROUND" 1
+	{ event 2040 13 "" }
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "aimup" {
+	"a_aimup"
+
+	
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "layer_Aim_all" {
+	"a_run_aim_straight_up"
+	"a_run_aim_straight_up"
+	"a_run_aim_straight_up"
+	"a_run_aim_up_right"
+	"a_run_aim_up_center"
+	"a_run_aim_up_left"
+	"a_run_aim_mid_right"
+	"a_run_aim_mid_center"
+	"a_run_aim_mid_left"
+	"a_run_aim_down_right"
+	"a_run_aim_down_center"
+	"a_run_aim_down_left"
+	blend "aim_yaw" -45 45
+	blend "aim_pitch" -90 45
+	blendwidth 3
+	delta
+
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	  
+	
+	// weightlist "weights_layer_Aim_all"
+}
+
+$sequence "layer_walk_aiming" {
+	"a_layer_walk_aiming"
+
+	addlayer "layer_Aim_all"
+	
+	weightlist upperbodyreplace
+}
+
+$sequence "layer_walk_holding" {
+	"a_layer_walk_holding"
+
+	
+	weightlist upperbodyreplace
+}
+
+$sequence "layer_run_aiming" {
+	"a_layer_run_aiming"
+
+	addlayer "layer_Aim_all"
+	
+	weightlist upperbodyreplace
+}
+
+$sequence "layer_crouch_run_aiming" {
+	"a_layer_crouch_run_aiming"
+
+	addlayer "layer_Aim_all"
+	
+	weightlist upperbodyreplace
+}
+
+$sequence "layer_crouch_walk_aiming" {
+	"a_layer_crouch_walk_aiming"
+
+	addlayer "layer_Aim_all"
+	
+	weightlist upperbodyreplace
+}
+
+$sequence "walkAIMALL1" {
+	"a_WalkS"
+	"a_WalkSE"
+	"a_WalkE"
+	"a_WalkNE"
+	"a_WalkN_SMG"
+	"a_WalkNW"
+	"a_WalkW"
+	"a_WalkSW"
+	"a_WalkS"
+	activity "ACT_WALK_AIM_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_walk_aiming"
+	node 3
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "walkHOLDALL1" {
+	"a_WalkS"
+	"a_WalkSE"
+	"a_WalkE"
+	"a_WalkNE"
+	"a_WalkN_SMG"
+	"a_WalkNW"
+	"a_WalkW"
+	"a_WalkSW"
+	"a_WalkS"
+	activity "ACT_WALK_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_walk_holding"
+	node 3
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "run_holding_all" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_RunN_SMG"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_run_holding"
+	node 4
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "run_aiming_all" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_RunN_SMG"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_AIM_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_run_aiming"
+	node 4
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouchRUNHOLDINGALL1" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_Crouch_runN"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_CROUCH_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_crouch_run_holding"
+	node 6
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "crouchRUNAIMINGALL1" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_Crouch_runN"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_CROUCH_AIM_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_crouch_run_aiming"
+	node 6
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Crouch_walk_holding_all" {
+	"a_Crouch_walkS"
+	"a_Crouch_walkSE"
+	"a_Crouch_walkE"
+	"a_Crouch_walkNE"
+	"a_Crouch_walkN"
+	"a_Crouch_walkNW"
+	"a_Crouch_walkW"
+	"a_Crouch_walkSW"
+	"a_Crouch_walkS"
+	activity "ACT_WALK_CROUCH_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_crouch_walk_holding"
+	node 5
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "Crouch_walk_aiming_all" {
+	"a_Crouch_walkS"
+	"a_Crouch_walkSE"
+	"a_Crouch_walkE"
+	"a_Crouch_walkNE"
+	"a_Crouch_walkN"
+	"a_Crouch_walkNW"
+	"a_Crouch_walkW"
+	"a_Crouch_walkSW"
+	"a_Crouch_walkS"
+	activity "ACT_WALK_CROUCH_AIM_RIFLE" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+
+	addlayer "layer_crouch_walk_aiming"
+	node 5
+	
+	loop
+	// weightlist "weights_layer_crouch_run_holding"
+}
