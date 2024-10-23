@@ -1,5 +1,7 @@
 
 $poseparameter "move_yaw" -180 180 loop 360
+
+/*
 $poseparameter "body_trans_Y" -6.064483 5.987071 loop 0
 $poseparameter "body_trans_X" -10.14636 5.141537 loop 0
 $poseparameter "body_lift" -10.2898 2.061399 loop 0
@@ -13,6 +15,7 @@ $poseparameter "neck_trans" -0.4835 0.718452 loop 0
 $poseparameter "head_yaw" -59.74321 59.74259 loop 0
 $poseparameter "head_pitch" -29.99257 36.14042 loop 0
 $poseparameter "head_roll" -18.26293 18.27054 loop 0
+*/
 
 $ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0 0 0
 $ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0 0 0
@@ -331,7 +334,7 @@ $animation "a_crouch_runW_delta_corrective_animation" "gman_anims\a_crouch_runW_
 
 $animation "a_crouch_runSW_delta_corrective_animation" "gman_anims\a_crouch_runSW_delta_corrective_animation.smd" {
 }
-
+/*
 $animation "a_body_trans_lt_corrective_animation" "gman_anims\a_body_trans_lt_corrective_animation.smd" {
 }
 
@@ -424,6 +427,7 @@ $animation "a_head_rot_lt_corrective_animation" "gman_anims\a_head_rot_lt_correc
 
 $animation "a_head_rot_rt_corrective_animation" "gman_anims\a_head_rot_rt_corrective_animation.smd" {
 }
+*/
 
 $animation "a_WalkS" "gman_anims\a_WalkS.smd" {
 	
@@ -648,7 +652,7 @@ $animation "a_RunN_protected" "gman_anims\a_RunN_protected.smd" {
 	loop
 	walkframe 18 LX LY
 }
-
+/*
 $animation "a_pose_neutral" "gman_anims\a_pose_neutral.smd" {
 	
 }
@@ -873,6 +877,7 @@ $animation "a_head_rot_z_lt" "gman_anims\a_head_rot_z_lt.smd" {
 	subtract "a_head_rot_z_lt_corrective_animation" 0
 	weightlist "weights_neck_trans_x"
 }
+*/
 
 $sequence "G_idle01" {
 	"gman_anims\G_idle01.smd"
@@ -1384,6 +1389,7 @@ $sequence "run_protected_all" {
 	node "node3"
 }
 
+/*
 $sequence "body_trans_y" {
 	"a_body_trans_lt"
 	"a_body_trans"
@@ -1539,6 +1545,11 @@ $sequence "head_rot_x" {
 	
 	
 }
+*/
+
+$pushd "../humans/Male_animations/"
+$include "../humans/Male_animations/body_poses_lean_leak.qci"
+$popd
 
 $sequence "ragdoll" {
 	"gman_anims\ragdoll.smd"
