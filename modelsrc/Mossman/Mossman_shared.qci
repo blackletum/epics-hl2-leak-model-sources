@@ -20,6 +20,7 @@ $hbox 0 "ValveBiped.Bip01_R_Forearm" -0.82 -1.9 -1.15 11.18 1.6 1.85
 $hbox 0 "ValveBiped.Bip01_R_Hand" -0.5 -1.13 -3.25 5.5 0.63 1.75
 
 $poseparameter "move_yaw" -180 180 loop 360
+
 $poseparameter "body_trans_Y" -6.053574 6.000146 loop 0
 $poseparameter "body_trans_X" -10.16209 5.162459 loop 0
 $poseparameter "body_lift" -10.29325 2.039452 loop 0
@@ -34,6 +35,7 @@ $poseparameter "head_yaw" -59.74281 59.74252 loop 0
 $poseparameter "head_pitch" -30.00009 36.13286 loop 0
 $poseparameter "head_roll" -18.27115 18.28406 loop 0
 
+
 $ikchain "rhand" "ValveBiped.Bip01_R_Hand" knee 0 0 0
 $ikchain "lhand" "ValveBiped.Bip01_L_Hand" knee 0 0 0
 $ikchain "rfoot" "ValveBiped.Bip01_R_Foot" knee 0 0 0
@@ -45,7 +47,7 @@ $ikautoplaylock "rfoot" 1 0.1
 $ikautoplaylock "lfoot" 1 0.1
 
 $weightlist "weights_body_trans_y" {
-	 "ValveBiped.Bip01" 1
+
 	 "ValveBiped.Bip01_Pelvis" 1
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -118,7 +120,7 @@ $weightlist "weights_body_trans_y" {
 }
 
 $weightlist "weights_spine_rot_z" {
-	 "ValveBiped.Bip01" 0
+
 	 "ValveBiped.Bip01_Pelvis" 0
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -191,7 +193,7 @@ $weightlist "weights_spine_rot_z" {
 }
 
 $weightlist "weights_neck_trans_x" {
-	 "ValveBiped.Bip01" 0
+
 	 "ValveBiped.Bip01_Pelvis" 0
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -264,7 +266,7 @@ $weightlist "weights_neck_trans_x" {
 }
 
 $weightlist "weights_bodygesture01" {
-	 "ValveBiped.Bip01" 1
+
 	 "ValveBiped.Bip01_Pelvis" 1
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -337,7 +339,7 @@ $weightlist "weights_bodygesture01" {
 }
 
 $weightlist "weights_armpose01B" {
-	 "ValveBiped.Bip01" 0
+
 	 "ValveBiped.Bip01_Pelvis" 0
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -410,7 +412,7 @@ $weightlist "weights_armpose01B" {
 }
 
 $weightlist "weights_gesture01B" {
-	 "ValveBiped.Bip01" 0
+
 	 "ValveBiped.Bip01_Pelvis" 0
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -483,7 +485,7 @@ $weightlist "weights_gesture01B" {
 }
 
 $weightlist "weights_gesture01" {
-	 "ValveBiped.Bip01" 1
+
 	 "ValveBiped.Bip01_Pelvis" 1
 	 "ValveBiped.Bip01_L_Thigh" 0
 	 "ValveBiped.Bip01_L_Calf" 0
@@ -555,6 +557,7 @@ $weightlist "weights_gesture01" {
 	 "ValveBiped.Bip01_R_Bicep" 1
 }
 
+/*
 $animation "a_body_trans_lt_corrective_animation" "Mossman_anims\a_body_trans_lt_corrective_animation.smd" {
 }
 
@@ -647,6 +650,7 @@ $animation "a_head_rot_lt_corrective_animation" "Mossman_anims\a_head_rot_lt_cor
 
 $animation "a_head_rot_rt_corrective_animation" "Mossman_anims\a_head_rot_rt_corrective_animation.smd" {
 }
+*/
 
 $animation "@bodygesture01_corrective_animation" "Mossman_anims\@bodygesture01_corrective_animation.smd" {
 }
@@ -864,6 +868,7 @@ $animation "a_RunSW" "Mossman_anims\a_RunSW.smd" {
 	walkframe 18 LX LY
 }
 
+/*
 $animation "a_pose_neutral" "Mossman_anims\a_pose_neutral.smd" {
 	
 }
@@ -1088,6 +1093,7 @@ $animation "a_head_rot_z_lt" "Mossman_anims\a_head_rot_z_lt.smd" {
 	subtract "a_head_rot_z_lt_corrective_animation" 0
 	weightlist "weights_neck_trans_x"
 }
+*/
 
 $animation "a_armposeneutral" "Mossman_anims\a_armposeneutral.smd" {
 	
@@ -1666,6 +1672,7 @@ $sequence "Walk_to_stand" {
 	
 }
 
+/*
 $sequence "body_trans_y" {
 	"a_body_trans_lt"
 	"a_body_trans"
@@ -1821,6 +1828,11 @@ $sequence "head_rot_x" {
 
 	
 }
+*/
+
+$pushd "../humans/Female_animations/"
+$include "../humans/Female_animations/body_poses_lean_leak.qci"
+$popd
 
 $sequence "ragdoll" {
 	"Mossman_anims\ragdoll.smd"

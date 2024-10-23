@@ -39,7 +39,7 @@ $model Mossman "Mossman_Elena_Reference.smd" {
 $surfaceprop "flesh"
 $bbox -13 -13 0  13 13 72
 $mostlyopaque
-
+$include "../humans/standardhierarchy_leak.qci"
 //$proceduralbones "../Humans/Female.vrd"
 $proceduralbones "mossman.vrd"
 
@@ -57,9 +57,9 @@ $collisionjoints "Mossman_physics.smd"
 	$jointinertia "ValveBiped.Bip01" 0
 	$jointrotdamping "ValveBiped.Bip01" 0
 
-	$jointconstrain "ValveBiped.Bip01_Spine2" x limit -48 48 1
-	$jointconstrain "ValveBiped.Bip01_Spine2" y limit -26 26 1
-	$jointconstrain "ValveBiped.Bip01_Spine2" z limit -39 68 1
+	//$jointconstrain "ValveBiped.Bip01_Spine2" x limit -48 48 1
+	//$jointconstrain "ValveBiped.Bip01_Spine2" y limit -26 26 1
+	//$jointconstrain "ValveBiped.Bip01_Spine2" z limit -39 68 1
 
 	$jointconstrain "ValveBiped.Bip01_R_UpperArm" x limit -64 64 1
 	$jointconstrain "ValveBiped.Bip01_R_UpperArm" y limit -26 122 1
