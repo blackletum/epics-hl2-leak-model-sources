@@ -80,3 +80,4 @@ $collisionjoints "physics_fixed_old.smd" {
 }
 
 $sequence ragdoll "ragdoll_pose_fixed" FPS 30 activity ACT_DIERAGDOLL 1
+$surfaceprop "flesh"
