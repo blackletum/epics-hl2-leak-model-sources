@@ -1,0 +1,1426 @@
+$weightlist "weights_standidle01" {
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+}
+
+$weightlist "weights_armpose01B" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+}
+
+$weightlist "weights_gesture01B" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+}
+
+$weightlist "weights_gesture01" {
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+}
+
+$animation "@standidle01_corrective_animation" "kleiner_anims\@standidle01_corrective_animation.smd" {
+}
+
+$animation "@bodygesture02_corrective_animation" "kleiner_anims\@bodygesture02_corrective_animation.smd" {
+}
+
+$animation "@bodygesture03_corrective_animation" "kleiner_anims\@bodygesture03_corrective_animation.smd" {
+}
+
+$animation "@bodygesture04_corrective_animation" "kleiner_anims\@bodygesture04_corrective_animation.smd" {
+}
+
+$animation "@bodygesture05_corrective_animation" "kleiner_anims\@bodygesture05_corrective_animation.smd" {
+}
+
+$animation "@bodygesture06_corrective_animation" "kleiner_anims\@bodygesture06_corrective_animation.smd" {
+}
+
+$animation "@bodygesture07_corrective_animation" "kleiner_anims\@bodygesture07_corrective_animation.smd" {
+}
+
+$animation "@bodygesture08_corrective_animation" "kleiner_anims\@bodygesture08_corrective_animation.smd" {
+}
+
+$animation "@bodygesture09_corrective_animation" "kleiner_anims\@bodygesture09_corrective_animation.smd" {
+}
+
+$animation "@bodygesture10_corrective_animation" "kleiner_anims\@bodygesture10_corrective_animation.smd" {
+}
+
+$animation "a_armpose01A_corrective_animation" "kleiner_anims\a_armpose01A_corrective_animation.smd" {
+}
+
+$animation "a_armpose02A_corrective_animation" "kleiner_anims\a_armpose02A_corrective_animation.smd" {
+}
+
+$animation "a_armpose03A_corrective_animation" "kleiner_anims\a_armpose03A_corrective_animation.smd" {
+}
+
+$animation "a_armpose04A_corrective_animation" "kleiner_anims\a_armpose04A_corrective_animation.smd" {
+}
+
+$animation "a_armpose05A_corrective_animation" "kleiner_anims\a_armpose05A_corrective_animation.smd" {
+}
+
+$animation "a_armpose06A_corrective_animation" "kleiner_anims\a_armpose06A_corrective_animation.smd" {
+}
+
+$animation "a_armpose07A_corrective_animation" "kleiner_anims\a_armpose07A_corrective_animation.smd" {
+}
+
+$animation "a_armpose08A_corrective_animation" "kleiner_anims\a_armpose08A_corrective_animation.smd" {
+}
+
+$animation "a_armpose09A_corrective_animation" "kleiner_anims\a_armpose09A_corrective_animation.smd" {
+}
+
+$animation "a_armpose10A_corrective_animation" "kleiner_anims\a_armpose10A_corrective_animation.smd" {
+}
+
+$animation "a_gesture01A_corrective_animation" "kleiner_anims\a_gesture01A_corrective_animation.smd" {
+}
+
+$animation "a_gesture02A_corrective_animation" "kleiner_anims\a_gesture02A_corrective_animation.smd" {
+}
+
+$animation "a_gesture03A_corrective_animation" "kleiner_anims\a_gesture03A_corrective_animation.smd" {
+}
+
+$animation "a_gesture03inA_corrective_animation" "kleiner_anims\a_gesture03inA_corrective_animation.smd" {
+}
+
+$animation "a_gesture03outA_corrective_animation" "kleiner_anims\a_gesture03outA_corrective_animation.smd" {
+}
+
+$animation "a_gesture04A_corrective_animation" "kleiner_anims\a_gesture04A_corrective_animation.smd" {
+}
+
+$animation "a_gesture05A_corrective_animation" "kleiner_anims\a_gesture05A_corrective_animation.smd" {
+}
+
+$animation "a_gesture06A_corrective_animation" "kleiner_anims\a_gesture06A_corrective_animation.smd" {
+}
+
+$animation "a_gesture07A_corrective_animation" "kleiner_anims\a_gesture07A_corrective_animation.smd" {
+}
+
+$animation "a_gesture08A_corrective_animation" "kleiner_anims\a_gesture08A_corrective_animation.smd" {
+}
+
+$animation "a_gesture09A_corrective_animation" "kleiner_anims\a_gesture09A_corrective_animation.smd" {
+}
+
+$animation "a_gesture10A_corrective_animation" "kleiner_anims\a_gesture10A_corrective_animation.smd" {
+}
+
+$animation "a_worktablegesture01A_corrective_animation" "kleiner_anims\a_worktablegesture01A_corrective_animation.smd" {
+}
+
+$animation "a_typegestureA_corrective_animation" "kleiner_anims\a_typegestureA_corrective_animation.smd" {
+}
+
+$animation "a_armposeneutral" "kleiner_anims\a_armposeneutral.smd" {
+	
+}
+
+$animation "a_armposeneutral2" "kleiner_anims\a_armposeneutral2.smd" {
+	
+}
+
+$animation "a_armpose01A" "kleiner_anims\a_armpose01A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose01A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose01B" "kleiner_anims\a_armpose01B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose02A" "kleiner_anims\a_armpose02A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose02A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose02B" "kleiner_anims\a_armpose02B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose03A" "kleiner_anims\a_armpose03A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose03A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose03B" "kleiner_anims\a_armpose03B.smd" {
+	
+	ikrule "rhand" touch "ValveBiped.Bip01_Head1" contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose04A" "kleiner_anims\a_armpose04A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose04A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose04B" "kleiner_anims\a_armpose04B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose05A" "kleiner_anims\a_armpose05A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose05A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose05B" "kleiner_anims\a_armpose05B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose06A" "kleiner_anims\a_armpose06A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose06A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose06B" "kleiner_anims\a_armpose06B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose07A" "kleiner_anims\a_armpose07A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose07A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose07B" "kleiner_anims\a_armpose07B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose08A" "kleiner_anims\a_armpose08A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose08A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose08B" "kleiner_anims\a_armpose08B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose09A" "kleiner_anims\a_armpose09A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose09A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose09B" "kleiner_anims\a_armpose09B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_armpose10A" "kleiner_anims\a_armpose10A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_armpose10A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 5 5
+	weightlist "weights_body_trans_y"
+}
+
+$animation "a_armpose10B" "kleiner_anims\a_armpose10B.smd" {
+	
+	weightlist "weights_armpose01B"
+}
+
+$animation "a_gesture01A" "kleiner_anims\a_gesture01A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture01A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture01B" "kleiner_anims\a_gesture01B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture02A" "kleiner_anims\a_gesture02A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture02A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 44 44
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 44 44
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture02B" "kleiner_anims\a_gesture02B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture03A" "kleiner_anims\a_gesture03A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture03A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 50 50
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 50 50
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture03B" "kleiner_anims\a_gesture03B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture03inA" "kleiner_anims\a_gesture03inA.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture03inA_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 12 12
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 12 12
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture03inB" "kleiner_anims\a_gesture03inB.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture03outA" "kleiner_anims\a_gesture03outA.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture03outA_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 12 12
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 12 12
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture03outB" "kleiner_anims\a_gesture03outB.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture04A" "kleiner_anims\a_gesture04A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture04A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture04B" "kleiner_anims\a_gesture04B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture05A" "kleiner_anims\a_gesture05A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture05A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture05B" "kleiner_anims\a_gesture05B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture06A" "kleiner_anims\a_gesture06A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture06A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture06B" "kleiner_anims\a_gesture06B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture07A" "kleiner_anims\a_gesture07A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture07A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture07B" "kleiner_anims\a_gesture07B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture08A" "kleiner_anims\a_gesture08A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture08A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture08B" "kleiner_anims\a_gesture08B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture09A" "kleiner_anims\a_gesture09A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture09A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture09B" "kleiner_anims\a_gesture09B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_gesture10A" "kleiner_anims\a_gesture10A.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_gesture10A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 30 30
+	weightlist "weights_gesture01"
+}
+
+$animation "a_gesture10B" "kleiner_anims\a_gesture10B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_worktablegesture01A" "kleiner_anims\a_worktablegesture01A.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_worktablegesture01A_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 280 280
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 280 280
+	weightlist "weights_gesture01"
+}
+
+$animation "a_worktablegesture01B" "kleiner_anims\a_worktablegesture01B.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$animation "a_typegestureA" "kleiner_anims\a_typegestureA.smd" {
+	
+	loop
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_typegestureA_corrective_animation" 0
+	ikrule "rhand" release contact 0  floor 0 height 0  range 0 0 80 80
+	ikrule "lhand" release contact 0  floor 0 height 0  range 0 0 80 80
+	weightlist "weights_gesture01"
+}
+
+$animation "a_typegestureB" "kleiner_anims\a_typegestureB.smd" {
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "workshop1idle1" {
+	"kleiner_anims\workshop1idle1.smd" fps 10
+}
+
+$sequence "workshop1idle2" {
+	"kleiner_anims\workshop1idle2.smd"
+	
+	
+	fps 10
+}
+
+$sequence "tableidle" {
+	"kleiner_anims\tableidle.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "standidle" {
+	"kleiner_anims\standidle.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "gesture_warmup" {
+	"kleiner_anims\gesture_warmup.smd"
+	
+	
+	
+}
+
+$sequence "standpose01" {
+	"kleiner_anims\standpose01.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "standpose01_bent01" {
+	"kleiner_anims\standpose01_bent01.smd"
+	
+	
+	
+}
+
+$sequence "bentpose01" {
+	"kleiner_anims\bentpose01.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "bent01_comp01" {
+	"kleiner_anims\bent01_comp01.smd"
+	
+	
+	
+}
+
+$sequence "comppose01" {
+	"kleiner_anims\comppose01.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "posture06" {
+	"kleiner_anims\posture06.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "posture07" {
+	"kleiner_anims\posture07.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "posture08" {
+	"kleiner_anims\posture08.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "posture09" {
+	"kleiner_anims\posture09.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "posture10" {
+	"kleiner_anims\posture10.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "compturn" {
+	"kleiner_anims\compturn.smd"
+	
+	
+	
+}
+
+$sequence "compturnaround" {
+	"kleiner_anims\compturnaround.smd"
+	
+	
+	
+}
+
+$sequence "standidle01" {
+	"kleiner_anims\standidle01.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@standidle01_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture02" {
+	"kleiner_anims\bodygesture02.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture02_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture03" {
+	"kleiner_anims\bodygesture03.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture03_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture04" {
+	"kleiner_anims\bodygesture04.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture04_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture05" {
+	"kleiner_anims\bodygesture05.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture05_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture06" {
+	"kleiner_anims\bodygesture06.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture06_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture07" {
+	"kleiner_anims\bodygesture07.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture07_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture08" {
+	"kleiner_anims\bodygesture08.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture08_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture09" {
+	"kleiner_anims\bodygesture09.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture09_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "bodygesture10" {
+	"kleiner_anims\bodygesture10.smd"
+	delta
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "@bodygesture10_corrective_animation" 0
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	
+	weightlist "weights_standidle01"
+}
+
+$sequence "armpose01B" {
+	"a_armpose01B"
+	
+	
+}
+
+$sequence "armpose01" {
+	"a_armpose01A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose01B"
+}
+
+$sequence "armpose02B" {
+	"a_armpose02B"
+	
+	
+}
+
+$sequence "armpose02" {
+	"a_armpose02A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose02B"
+}
+
+$sequence "armpose03B" {
+	"a_armpose03B"
+	
+	
+}
+
+$sequence "armpose03" {
+	"a_armpose03A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose03B"
+}
+
+$sequence "armpose04B" {
+	"a_armpose04B"
+	
+	
+}
+
+$sequence "armpose04" {
+	"a_armpose04A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose04B"
+}
+
+$sequence "armpose05B" {
+	"a_armpose05B"
+	
+	
+}
+
+$sequence "armpose05" {
+	"a_armpose05A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose05B"
+}
+
+$sequence "armpose06B" {
+	"a_armpose06B"
+	
+	
+}
+
+$sequence "armpose06" {
+	"a_armpose06A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose06B"
+}
+
+$sequence "armpose07B" {
+	"a_armpose07B"
+	
+	
+}
+
+$sequence "armpose07" {
+	"a_armpose07A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose07B"
+}
+
+$sequence "armpose08B" {
+	"a_armpose08B"
+	
+	
+}
+
+$sequence "armpose08" {
+	"a_armpose08A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose08B"
+}
+
+$sequence "armpose09B" {
+	"a_armpose09B"
+	
+	
+}
+
+$sequence "armpose09" {
+	"a_armpose09A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose09B"
+}
+
+$sequence "armpose10B" {
+	"a_armpose10B"
+	
+	
+}
+
+$sequence "armpose10" {
+	"a_armpose10A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "armpose10B"
+}
+
+$sequence "gesture01B" {
+	"a_gesture01B"
+	
+	
+}
+
+$sequence "gesture01" {
+	"a_gesture01A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture01B"
+}
+
+$sequence "gesture02B" {
+	"a_gesture02B"
+	
+	
+}
+
+$sequence "gesture02" {
+	"a_gesture02A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture02B"
+}
+
+$sequence "gesture03B" {
+	"a_gesture03B"
+	
+	
+}
+
+$sequence "gesture03" {
+	"a_gesture03A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture03B"
+}
+
+$sequence "gesture03inB" {
+	"a_gesture03inB"
+	
+	
+}
+
+$sequence "gesture03in" {
+	"a_gesture03inA"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture03inB"
+}
+
+$sequence "gesture03outB" {
+	"a_gesture03outB"
+	
+	
+}
+
+$sequence "gesture03out" {
+	"a_gesture03outA"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture03outB"
+}
+
+$sequence "gesture04B" {
+	"a_gesture04B"
+	
+	
+}
+
+$sequence "gesture04" {
+	"a_gesture04A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture04B"
+}
+
+$sequence "gesture05B" {
+	"a_gesture05B"
+	
+	
+}
+
+$sequence "gesture05" {
+	"a_gesture05A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture05B"
+}
+
+$sequence "gesture06B" {
+	"a_gesture06B"
+	
+	
+}
+
+$sequence "gesture06" {
+	"a_gesture06A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture06B"
+}
+
+$sequence "gesture07B" {
+	"a_gesture07B"
+	
+	
+}
+
+$sequence "gesture07" {
+	"a_gesture07A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture07B"
+}
+
+$sequence "gesture08B" {
+	"a_gesture08B"
+	
+	
+}
+
+$sequence "gesture08" {
+	"a_gesture08A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture08B"
+}
+
+$sequence "gesture09B" {
+	"a_gesture09B"
+	
+	
+}
+
+$sequence "gesture09" {
+	"a_gesture09A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture09B"
+}
+
+$sequence "gesture10B" {
+	"a_gesture10B"
+	
+	
+}
+
+$sequence "gesture10" {
+	"a_gesture10A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "gesture10B"
+}
+
+$sequence "worktablegesture01B" {
+	"a_worktablegesture01B"
+	
+	
+}
+
+$sequence "worktablegesture01" {
+	"a_worktablegesture01A"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "worktablegesture01B"
+}
+
+$sequence "typegestureB" {
+	"a_typegestureB"
+	
+	
+}
+
+$sequence "typegesture" {
+	"a_typegestureA"
+	activity "ACT_GESTURE" 1
+	delta
+	
+	
+	iklock "rfoot" 1 0
+	iklock "lfoot" 1 0
+	addlayer "typegestureB"
+}
+
+$sequence "handgesture01" {
+	"kleiner_anims\handgesture01.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture02" {
+	"kleiner_anims\handgesture02.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture03" {
+	"kleiner_anims\handgesture03.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture04" {
+	"kleiner_anims\handgesture04.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture05" {
+	"kleiner_anims\handgesture05.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture06" {
+	"kleiner_anims\handgesture06.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture07" {
+	"kleiner_anims\handgesture07.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture08" {
+	"kleiner_anims\handgesture08.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture09" {
+	"kleiner_anims\handgesture09.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
+
+$sequence "handgesture10" {
+	"kleiner_anims\handgesture10.smd"
+	
+	
+	
+	weightlist "weights_gesture01B"
+}
