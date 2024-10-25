@@ -1547,12 +1547,7 @@ $animation "a_gesture17B" "Mossman_anims\a_gesture17B.smd" {
 	weightlist "weights_gesture01B"
 }
 
-$sequence "test" {
-	"Mossman_anims\test.smd"
 
-	
-	
-}
 
 $sequence "idle_angry" {
 	"Mossman_anims\idle_angry.smd"
@@ -1562,6 +1557,13 @@ $sequence "idle_angry" {
 	node "node0"
 	
 	loop
+}
+
+$sequence "test" {
+	"Mossman_anims\test.smd"
+
+	
+	
 }
 
 $sequence "idle_subtle" {

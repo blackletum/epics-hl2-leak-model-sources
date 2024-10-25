@@ -55,10 +55,7 @@ $includemodel Kleiner_postures.mdl
 $includemodel Kleiner_gestures.mdl
 */
 
-$pushd "..\Humans\Male"
-$include "..\Humans\Male\ragdoll.qci"
-$include "..\Humans\Male\hitbox.qci"
-$popd
+
 
 /*
 //Clipboard bodygroup
@@ -81,7 +78,10 @@ $popd
 
 $include kleiner_leakanims_temp.qci
 
-
+$pushd "..\Humans\Male"
+$include "..\Humans\Male\ragdoll.qci"
+$include "..\Humans\Male\hitbox.qci"
+$popd
 
 
 
