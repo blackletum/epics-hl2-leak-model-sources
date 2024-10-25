@@ -1,0 +1,171 @@
+$poseparameter "arm_height" -1 1 loop 0
+$poseparameter "arm_width" 0 1 loop 0
+
+$surfaceprop "flesh"
+
+$eyeposition 0 0 70
+
+$mostlyopaque
+
+$cdmaterials models\police
+
+$attachment "lefthand" "ValveBiped.Bip01_L_Hand" 0 0 0 rotate 0 0 0
+$attachment "eyes" "ValveBiped.Bip01_Head1" 3.17 -4.14 0.04 rotate 0 -80.1 -90
+
+$bbox -13 -13 0  13 13 72
+
+$hboxset "default"
+$hbox 1 "ValveBiped.Bip01_Head1" -1.25 -6.5 -3.19 8.25 3.5 3.31
+$hbox 4 "ValveBiped.Bip01_L_UpperArm" 0 -2.75 -2.75 12.51 1.75 2.25
+$hbox 4 "ValveBiped.Bip01_L_Forearm" 0 -2.19 -2.38 13 1.81 1.62
+$hbox 4 "ValveBiped.Bip01_L_Hand" 0.06 -2 -1.5 4.06 1 2.5
+$hbox 5 "ValveBiped.Bip01_R_UpperArm" 0 -3 -2.25 12.39 2 2.75
+$hbox 5 "ValveBiped.Bip01_R_Forearm" -0.5 -2.2 -1.55 12.5 1.8 2.45
+$hbox 5 "ValveBiped.Bip01_R_Hand" 0.06 -2 -2.5 4.06 1 1.5
+$hbox 6 "ValveBiped.Bip01_L_Thigh" 0 -3.75 -3.25 17.85 3.75 3.25
+$hbox 6 "ValveBiped.Bip01_L_Calf" 0 -3.51 -3.28 15.64 3.49 2.72
+$hbox 6 "ValveBiped.Bip01_L_Foot" -1.07 -2 -2.84 5.04 5 2.16
+$hbox 6 "ValveBiped.Bip01_L_Toe0" -0.5 -3 -2.19 2.5 0 2.46
+$hbox 7 "ValveBiped.Bip01_R_Thigh" 0 -3.75 -3.25 17.85 3.75 3.25
+$hbox 7 "ValveBiped.Bip01_R_Calf" 0 -3.51 -2.82 15.64 3.49 3.18
+$hbox 7 "ValveBiped.Bip01_R_Foot" -1.06 -2.01 -2.28 5.05 4.99 2.72
+$hbox 7 "ValveBiped.Bip01_R_Toe0" -0.5 -3 -2.6 2.5 0 2.1
+$hbox 0 "ValveBiped.Bip01_Pelvis" -7.5 -5.5 -6 7.5 8.5 5
+$hbox 0 "ValveBiped.Bip01_Spine2" -2.5 -2.5 -7 14.5 7.5 7
+
+$animation "a_hand_posture01_corrective_animation" "barney_anims\a_hand_posture01_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture02_corrective_animation" "barney_anims\a_hand_posture02_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture03_corrective_animation" "barney_anims\a_hand_posture03_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture04_corrective_animation" "barney_anims\a_hand_posture04_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture05_corrective_animation" "barney_anims\a_hand_posture05_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture06_corrective_animation" "barney_anims\a_hand_posture06_corrective_animation.smd" {
+}
+
+$animation "a_hand_posture_neutral" "barney_anims\a_hand_posture_neutral.smd" {
+	
+}
+
+$animation "a_hand_posture01" "barney_anims\a_hand_posture01.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture01_corrective_animation" 0
+}
+
+$animation "a_hand_posture02" "barney_anims\a_hand_posture02.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture02_corrective_animation" 0
+}
+
+$animation "a_hand_posture03" "barney_anims\a_hand_posture03.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture03_corrective_animation" 0
+}
+
+$animation "a_hand_posture04" "barney_anims\a_hand_posture04.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture04_corrective_animation" 0
+}
+
+$animation "a_hand_posture05" "barney_anims\a_hand_posture05.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture05_corrective_animation" 0
+}
+
+$animation "a_hand_posture06" "barney_anims\a_hand_posture06.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_hand_posture06_corrective_animation" 0
+}
+
+$sequence "workshop01" {
+	"barney_anims\workshop01.smd"
+
+
+	
+}
+
+$sequence "workshop02" {
+	"barney_anims\workshop02.smd"
+
+
+	
+}
+
+$sequence "SWI_Whole" {
+	"barney_anims\SWI_Whole.smd"
+	{ event 3015 30 }
+	{ event 2042 139 "attackoffcenter" }
+	{ event 2042 141 "attackoffcenter" }
+	{ event 2042 143 "attackoffcenter" }
+	{ event 2042 148 "attackoffcenter" }
+	{ event 2042 150 "attackoffcenter" }
+	{ event 2042 152 "attackoffcenter" }
+	{ event 2042 154 "attackoffcenter" }
+	{ event 2042 173 "attackoffcenter" }
+	{ event 2042 182 "attackoffcenter" }
+	{ event 2042 196 "attackoffcenter" }
+	{ event 2042 198 "attackoffcenter" }
+	{ event 2042 212 "attackoffcenter" }
+	{ event 2042 224 "attackoffcenter" }
+
+
+	
+}
+
+$sequence "SWI_peekL" {
+	"barney_anims\SWI_peekL.smd"
+
+
+	
+	loop
+}
+
+$sequence "SWI_toDelivery" {
+	"barney_anims\SWI_toDelivery.smd"
+
+
+	
+}
+
+$sequence "SWI_DeliveryPose" {
+	"barney_anims\SWI_DeliveryPose.smd"
+
+
+	
+}
+
+$sequence "SWI_postDelivery" {
+	"barney_anims\SWI_postDelivery.smd"
+
+
+	
+}
+
+$sequence "hand_posture_delta" {
+	"a_hand_posture01"
+	"a_hand_posture02"
+	"a_hand_posture03"
+	"a_hand_posture04"
+	"a_hand_posture05"
+	"a_hand_posture06"
+	blend "arm_height" -1 1
+	blend "arm_width" 0 1
+	blendwidth 3
+	delta
+
+
+}
