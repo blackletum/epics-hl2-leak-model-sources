@@ -1,0 +1,7 @@
+$sequence ss_button_push ss_button_push.smd
+$sequence ss_button_push_left ss_button_push_left.smd
+$sequence ss_chair_sitdown ss_chair_sit.smd frames 0 40
+$sequence ss_chair_sit_idle ss_chair_sit.smd frames 40 80 fps 15 loop
+$sequence ss_chair_standup ss_chair_sit.smd frames 80 120
+$sequence ss_chair_full ss_chair_sit.smd fps 20
+$sequence ss_door_open ss_door_open.smd

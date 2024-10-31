@@ -17,6 +17,7 @@ $sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 3001 18 } { event
 $sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK1 1 { event 3001 15 } { event 3003 10 }
 $sequence flinch "GetPunched" FPS 40 ACT_SMALL_FLINCH 1 frames 7 77
 
+$sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_SMG1 1 loop
 $sequence Walk_MP5 WalkN_MP5.smd ACT_WALK_RIFLE 1 loop LX
 $sequence Run_MP5 RunN_MP5.smd ACT_RUN_RIFLE 1 loop LX frame 0 21
 
@@ -73,3 +74,4 @@ $sequence coweridle "citizenanims" frames 105 134 loop FPS 30 ACT_CIT_COWERIDLE 
 $sequence cowerflinch "citizenanims" frames 135 145 FPS 30 ACT_CIT_COWERFLINCH 1 node 4
 $sequence showarmband "citizenanims" frames 160 200 FPS 30 ACT_CIT_SHOWARMBAND 1
 $sequence blinded "citizenanims" frames 200 230 FPS 30 ACT_CIT_BLINDED 1
+$include "../Bip01_Male_Animations/SS.qci"

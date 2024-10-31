@@ -29,7 +29,7 @@ $sequence Run mp5cit_anims/mp5cit_Run.smd ACT_RUN_RIFLE 1 loop LX {
 	{ event 6004 6 "NPC_Citizen" }
 	{ event 6005 16 "NPC_Citizen" }
 }
-
+$sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_SMG1 1 loop
 $sequence shoot metrocopanims frame 31 34 ACT_RANGE_ATTACK1 1 loop {
 	addlayer Aim_all
 //	{ event 3 0 } 
@@ -95,3 +95,7 @@ $sequence Aim_all  {
 $sequence deploy mp5cit_anims/mp5cit_usesmg frame 4 24 fps 20 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 { event 51 16 }
 $sequence overwatch pistol_idle ACT_METROPOLICE_OVERWATCH 1
 $sequence point metrocopanims FPS 20 frame 55 75 ACT_METROPOLICE_POINT 1
+
+$pushd "../Humans/Bip01_Male_Animations"
+$include "../Humans/Bip01_Male_Animations/SS.qci"
+$popd
