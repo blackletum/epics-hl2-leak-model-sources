@@ -1,6 +1,7 @@
 $bbox -10.349 -19.758 -0.248 7.85 13.337 72.418
 
-$controller 0 "Bip01 Head" 8 -60 60
+//$controller 0 "Bip01 Head" 8 -60 60
+$controller 0 "Bip01 Head" XR -40 40
 $poseparameter "aim_pitch" -90 90 loop 360
 
 $attachment "eyes" "Bip01 Head" -0.01 -7.09 67.25 absolute
@@ -29,7 +30,7 @@ $sequence Run mp5cit_anims/mp5cit_Run.smd ACT_RUN_RIFLE 1 loop LX {
 	{ event 6004 6 "NPC_Citizen" }
 	{ event 6005 16 "NPC_Citizen" }
 }
-$sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_SMG1 1 loop
+$sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_ANGRY_SMG1 1 loop
 $sequence shoot metrocopanims frame 31 34 ACT_RANGE_ATTACK1 1 loop {
 	addlayer Aim_all
 //	{ event 3 0 } 
