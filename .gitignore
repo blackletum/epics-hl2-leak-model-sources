@@ -3,6 +3,8 @@
 *.blend1
 *.blend2
 *.cmd
+*.zip
+*.7z
 
 modelsrc/Wastelandscanner/wscanner_pair/Projectedtextures/
 modelsrc/Wastelandscanner/wscanner_tri/Projectedtextures/
