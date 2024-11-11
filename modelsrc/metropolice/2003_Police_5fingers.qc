@@ -38,17 +38,8 @@ studio "Manhack_reference.smd"
 
 $bbox -13 -13 0 13 13 72
 
-//$include "DefineBones.qci"
-//$definebone "ValveBiped.baton_parent" "ValveBiped.Bip01_R_Hand" 2.338453 -1.535742 -6.391511 -5.407576 -114.703346 87.103622 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
-
-//$include "weaponmacros.qci"
-//$include "standardikchains.qci"
 $include "../humans/standardhierarchy_leak.qci"
-//$include "commonbones.qci"
-//$include "body_poses_lean.qci"
-
-$include "hitbox.qci"
-$include "ragdoll.qci"
-
 $include "2003_5fingerweightlists.qci"
 $include "2003_Police_shared.qci"
+$include "hitbox.qci"
+$include "ragdoll.qci"
