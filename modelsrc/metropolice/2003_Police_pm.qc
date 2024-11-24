@@ -14,7 +14,7 @@ $EyePosition 0 0 72
 
 $bbox -9.056 -12.364 -0.808 6.847 15.679 72.205
 
-$cdmaterials models\police_playermodel\
+$cdmaterials Models\Player\police
 $surfaceprop "flesh"
 $jointsurfaceprop "ValveBiped.Bip01_Head1" "no_decal"
 

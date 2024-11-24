@@ -34,7 +34,7 @@ $eyeposition 0 0 70
 
 $mostlyopaque
 
-$cdmaterials "models\citizen_17\\"
+$cdmaterials models\citizen_17
 
 $attachment "eyes" "ValveBiped.Bip01_Head1" 4.5 -4.14 0.05 rotate 0 -80.1 -90
 $attachment "forward" "ValveBiped.Bip01_Head1" 0 0 0 rotate 0 -80 -90
@@ -43,10 +43,21 @@ $cbox 0 0 0 0 0 0
 
 $bbox -13 -13 0 13 13 72
 
-$sequence idle idle ACT_IDLE 1 node 1 loop
+$include "../Humans/standardhierarchy_leak.qci"
+$include "../Humans/standardikchains_leak.qci"
 
+//Evil ass temp solution until I remake 2003 citizen anims qc myself - epicplayer
+$pushd "../Gman_XSI"
+$include "../Humans/Male_animations/playermodel_shared_TEMP.qci"
+$popd
 
-$include anims.qci
-$include citizenanims.qci
-$include anims_ss.qci
+$pushd "../gasmasksamuel"
+$include "../Humans/Male_animations/playermodel_weapons_shared_TEMP.qci"
+$popd
+
+//$include anims_ss.qci
 $include citizen_ragdoll.qci
+
+$pushd "../Humans/Male"
+$include "../Humans/Male/hitbox.qci"
+$popd

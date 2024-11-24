@@ -1,0 +1,1047 @@
+
+$poseparameter "move_yaw" -180 180 loop 360
+
+/*
+$poseparameter "body_trans_Y" -6.064483 5.987071 loop 0
+$poseparameter "body_trans_X" -10.14636 5.141537 loop 0
+$poseparameter "body_lift" -10.2898 2.061399 loop 0
+$poseparameter "body_yaw" -57.07418 56.31021 loop 0
+$poseparameter "body_pitch" -20.50072 43.01206 loop 0
+$poseparameter "body_roll" -17.93842 15.78904 loop 0
+$poseparameter "spine_yaw" -40.39836 40.31776 loop 0
+$poseparameter "spine_pitch" -28.08126 52.59907 loop 0
+$poseparameter "spine_roll" -21.82883 21.83496 loop 0
+$poseparameter "neck_trans" -0.4835 0.718452 loop 0
+$poseparameter "head_yaw" -59.74321 59.74259 loop 0
+$poseparameter "head_pitch" -29.99257 36.14042 loop 0
+$poseparameter "head_roll" -18.26293 18.27054 loop 0
+*/
+
+$ikautoplaylock "rhand" 0.5 0.8
+$ikautoplaylock "lhand" 0.5 0.8
+$ikautoplaylock "rfoot" 1 0.1
+$ikautoplaylock "lfoot" 1 0.1
+
+$weightlist "weights_layer_crouch_run_holding" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 1
+	 "ValveBiped.Bip01_L_UpperArm" 1
+	 "ValveBiped.Bip01_L_Forearm" 1
+	 "ValveBiped.Bip01_L_Hand" 1
+	 "ValveBiped.Bip01_L_Finger4" 1
+	 "ValveBiped.Bip01_L_Finger41" 1
+	 "ValveBiped.Bip01_L_Finger42" 1
+	 "ValveBiped.Bip01_L_Finger3" 1
+	 "ValveBiped.Bip01_L_Finger31" 1
+	 "ValveBiped.Bip01_L_Finger32" 1
+	 "ValveBiped.Bip01_L_Finger2" 1
+	 "ValveBiped.Bip01_L_Finger21" 1
+	 "ValveBiped.Bip01_L_Finger22" 1
+	 "ValveBiped.Bip01_L_Finger1" 1
+	 "ValveBiped.Bip01_L_Finger11" 1
+	 "ValveBiped.Bip01_L_Finger12" 1
+	 "ValveBiped.Bip01_L_Finger0" 1
+	 "ValveBiped.Bip01_L_Finger01" 1
+	 "ValveBiped.Bip01_L_Finger02" 1
+	 "ValveBiped.Bip01_R_Clavicle" 1
+	 "ValveBiped.Bip01_R_UpperArm" 1
+	 "ValveBiped.Bip01_R_Forearm" 1
+	 "ValveBiped.Bip01_R_Hand" 1
+	 "ValveBiped.Bip01_R_Finger4" 1
+	 "ValveBiped.Bip01_R_Finger41" 1
+	 "ValveBiped.Bip01_R_Finger42" 1
+	 "ValveBiped.Bip01_R_Finger3" 1
+	 "ValveBiped.Bip01_R_Finger31" 1
+	 "ValveBiped.Bip01_R_Finger32" 1
+	 "ValveBiped.Bip01_R_Finger2" 1
+	 "ValveBiped.Bip01_R_Finger21" 1
+	 "ValveBiped.Bip01_R_Finger22" 1
+	 "ValveBiped.Bip01_R_Finger1" 1
+	 "ValveBiped.Bip01_R_Finger11" 1
+	 "ValveBiped.Bip01_R_Finger12" 1
+	 "ValveBiped.Bip01_R_Finger0" 1
+	 "ValveBiped.Bip01_R_Finger01" 1
+	 "ValveBiped.Bip01_R_Finger02" 1
+}
+
+$weightlist "weights_crouch_run_all_delta" {
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 0
+	 "ValveBiped.Bip01_Spine1" 0
+	 "ValveBiped.Bip01_Spine2" 0
+	 "ValveBiped.Bip01_Spine4" 0
+	 "ValveBiped.Bip01_Neck1" 0
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+}
+
+$weightlist "weights_body_trans_y" {
+	 "ValveBiped.Bip01_Pelvis" 1
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0 
+}
+
+$weightlist "weights_spine_rot_z" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 0
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0 
+}
+
+$weightlist "weights_neck_trans_x" {
+	 "ValveBiped.Bip01_Pelvis" 0
+	 "ValveBiped.Bip01_L_Thigh" 0
+	 "ValveBiped.Bip01_L_Calf" 0
+	 "ValveBiped.Bip01_L_Foot" 0
+	 "ValveBiped.Bip01_L_Toe0" 0
+	 "ValveBiped.Bip01_R_Thigh" 0
+	 "ValveBiped.Bip01_R_Calf" 0
+	 "ValveBiped.Bip01_R_Foot" 0
+	 "ValveBiped.Bip01_R_Toe0" 0
+	 "ValveBiped.Bip01_Spine" 1
+	 "ValveBiped.Bip01_Spine1" 1
+	 "ValveBiped.Bip01_Spine2" 1
+	 "ValveBiped.Bip01_Spine4" 1
+	 "ValveBiped.Bip01_Neck1" 1
+	 "ValveBiped.Bip01_Head1" 1
+	 "ValveBiped.Bip01_L_Clavicle" 0
+	 "ValveBiped.Bip01_L_UpperArm" 0
+	 "ValveBiped.Bip01_L_Forearm" 0
+	 "ValveBiped.Bip01_L_Hand" 0
+	 "ValveBiped.Bip01_L_Finger4" 0
+	 "ValveBiped.Bip01_L_Finger41" 0
+	 "ValveBiped.Bip01_L_Finger42" 0
+	 "ValveBiped.Bip01_L_Finger3" 0
+	 "ValveBiped.Bip01_L_Finger31" 0
+	 "ValveBiped.Bip01_L_Finger32" 0
+	 "ValveBiped.Bip01_L_Finger2" 0
+	 "ValveBiped.Bip01_L_Finger21" 0
+	 "ValveBiped.Bip01_L_Finger22" 0
+	 "ValveBiped.Bip01_L_Finger1" 0
+	 "ValveBiped.Bip01_L_Finger11" 0
+	 "ValveBiped.Bip01_L_Finger12" 0
+	 "ValveBiped.Bip01_L_Finger0" 0
+	 "ValveBiped.Bip01_L_Finger01" 0
+	 "ValveBiped.Bip01_L_Finger02" 0
+	 "ValveBiped.Bip01_R_Clavicle" 0
+	 "ValveBiped.Bip01_R_UpperArm" 0
+	 "ValveBiped.Bip01_R_Forearm" 0
+	 "ValveBiped.Bip01_R_Hand" 0
+	 "ValveBiped.Bip01_R_Finger4" 0
+	 "ValveBiped.Bip01_R_Finger41" 0
+	 "ValveBiped.Bip01_R_Finger42" 0
+	 "ValveBiped.Bip01_R_Finger3" 0
+	 "ValveBiped.Bip01_R_Finger31" 0
+	 "ValveBiped.Bip01_R_Finger32" 0
+	 "ValveBiped.Bip01_R_Finger2" 0
+	 "ValveBiped.Bip01_R_Finger21" 0
+	 "ValveBiped.Bip01_R_Finger22" 0
+	 "ValveBiped.Bip01_R_Finger1" 0
+	 "ValveBiped.Bip01_R_Finger11" 0
+	 "ValveBiped.Bip01_R_Finger12" 0
+	 "ValveBiped.Bip01_R_Finger0" 0
+	 "ValveBiped.Bip01_R_Finger01" 0
+	 "ValveBiped.Bip01_R_Finger02" 0
+}
+
+$animation "a_crouch_runS_delta_corrective_animation" "gman_anims\a_crouch_runS_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runSE_delta_corrective_animation" "gman_anims\a_crouch_runSE_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runE_delta_corrective_animation" "gman_anims\a_crouch_runE_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runNE_delta_corrective_animation" "gman_anims\a_crouch_runNE_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runN_delta_corrective_animation" "gman_anims\a_crouch_runN_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runNW_delta_corrective_animation" "gman_anims\a_crouch_runNW_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runW_delta_corrective_animation" "gman_anims\a_crouch_runW_delta_corrective_animation.smd" {
+}
+
+$animation "a_crouch_runSW_delta_corrective_animation" "gman_anims\a_crouch_runSW_delta_corrective_animation.smd" {
+}
+
+$animation "a_WalkS" "gman_anims\a_WalkS.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkSE" "gman_anims\a_WalkSE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkE" "gman_anims\a_WalkE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkNE" "gman_anims\a_WalkNE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkN" "gman_anims\a_WalkN.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkNW" "gman_anims\a_WalkNW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkW" "gman_anims\a_WalkW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_WalkSW" "gman_anims\a_WalkSW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_RunS" "gman_anims\a_RunS.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunSE" "gman_anims\a_RunSE.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunE" "gman_anims\a_RunE.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunNE" "gman_anims\a_RunNE.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunN" "gman_anims\a_RunN.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunNW" "gman_anims\a_RunNW.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunW" "gman_anims\a_RunW.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunSW" "gman_anims\a_RunSW.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_Crouch_runN_smg1" "gman_anims\a_Crouch_runN_smg1.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_RunN_SMG" "gman_anims\a_RunN_SMG.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_Crouch_walkS" "gman_anims\a_Crouch_walkS.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkSE" "gman_anims\a_Crouch_walkSE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkE" "gman_anims\a_Crouch_walkE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkNE" "gman_anims\a_Crouch_walkNE.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkN" "gman_anims\a_Crouch_walkN.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkNW" "gman_anims\a_Crouch_walkNW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkW" "gman_anims\a_Crouch_walkW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_walkSW" "gman_anims\a_Crouch_walkSW.smd" {
+	
+	loop
+	walkframe 30 LX LY
+}
+
+$animation "a_Crouch_runN" "gman_anims\a_Crouch_runN.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$animation "a_crouch_runS_delta" "gman_anims\a_crouch_runS_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runS_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runSE_delta" "gman_anims\a_crouch_runSE_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runSE_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runE_delta" "gman_anims\a_crouch_runE_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runE_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runNE_delta" "gman_anims\a_crouch_runNE_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runNE_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runN_delta" "gman_anims\a_crouch_runN_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runN_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runNW_delta" "gman_anims\a_crouch_runNW_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runNW_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runW_delta" "gman_anims\a_crouch_runW_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runW_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_crouch_runSW_delta" "gman_anims\a_crouch_runSW_delta.smd" {
+	
+	// Crowbar writes this subtract option to prevent jigglebone and poseparameter problems when delta sequences are recompiled.
+	subtract "a_crouch_runSW_delta_corrective_animation" 0
+	weightlist "weights_crouch_run_all_delta"
+}
+
+$animation "a_RunN_protected" "gman_anims\a_RunN_protected.smd" {
+	
+	loop
+	walkframe 18 LX LY
+}
+
+$sequence "idle_angry" {
+	//"gman_anims\idle_angry.smd"
+	"..\gasmasksamuel\male_anims\Idle_SMG1_Aim.smd"
+	//activity "ACT_IDLE_ANGRY" 1
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "idle_subtle" {
+	"gman_anims\idle_subtle.smd"
+	//activity "ACT_IDLE" 1
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "idle01" {
+	"gman_anims\idle01.smd"
+	//activity "ACT_IDLE" 1
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "Idle02" {
+	"gman_anims\Idle02.smd"
+	//activity "ACT_IDLE" 1
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "Idle03" {
+	"gman_anims\Idle03.smd"
+	//activity "ACT_IDLE" 1
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "LineIdle01" {
+	"gman_anims\LineIdle01.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "LineIdle02" {
+	"gman_anims\LineIdle02.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "LineIdle03" {
+	"gman_anims\LineIdle03.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "LineIdle04" {
+	"gman_anims\LineIdle04.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "Crouch_idleD" {
+	"gman_anims\Crouch_idleD.smd"
+	//activity "ACT_COVER_LOW" -1
+	
+	
+	node "node1"
+	
+	loop
+}
+
+$sequence "layer_crouch_run_holding" {
+	"gman_anims\layer_crouch_run_holding.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "layer_crouch_walk_no_weapon" {
+	"gman_anims\layer_crouch_walk_no_weapon.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "layer_crouch_walk_holding" {
+	"gman_anims\layer_crouch_walk_holding.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "layer_crouch_run_no_weapon" {
+	"gman_anims\layer_crouch_run_no_weapon.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "layer_run_holding" {
+	"gman_anims\layer_run_holding.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "walk_all" {
+	"a_WalkS"
+	"a_WalkSE"
+	"a_WalkE"
+	"a_WalkNE"
+	"a_WalkN"
+	"a_WalkNW"
+	"a_WalkW"
+	"a_WalkSW"
+	"a_WalkS"
+	//activity "ACT_WALK" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	{ event 2051 9 "" }
+	{ event 2050 23 "" }
+	
+	
+	node "node2"
+}
+
+$sequence "run_all" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_RunN"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_PISTOL" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	
+	
+	node "node3"
+}
+
+$sequence "Crouch_walk_all" {
+	"a_Crouch_walkS"
+	"a_Crouch_walkSE"
+	"a_Crouch_walkE"
+	"a_Crouch_walkNE"
+	"a_Crouch_walkN"
+	"a_Crouch_walkNW"
+	"a_Crouch_walkW"
+	"a_Crouch_walkSW"
+	"a_Crouch_walkS"
+	//activity "ACT_WALK_CROUCH" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	
+	
+	node "node4"
+}
+
+$sequence "crouch_run_all_delta" {
+	"a_crouch_runS_delta"
+	"a_crouch_runSE_delta"
+	"a_crouch_runE_delta"
+	"a_crouch_runNE_delta"
+	"a_crouch_runN_delta"
+	"a_crouch_runNW_delta"
+	"a_crouch_runW_delta"
+	"a_crouch_runSW_delta"
+	"a_crouch_runS_delta"
+	blend "move_yaw" -180 180
+	blendwidth 9
+	delta
+	
+	
+	iklock "lfoot" 1 1
+	iklock "rfoot" 1 1
+}
+
+$sequence "crouchRUNALL1" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_Crouch_runN"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_CROUCH" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	
+	
+	addlayer "crouch_run_all_delta"
+	addlayer "layer_crouch_run_no_weapon"
+	node "node5"
+}
+
+$sequence "Stand_to_run" {
+	"gman_anims\Stand_to_run.smd"
+	
+	
+	
+	walkframe 30 LX
+}
+
+$sequence "Run_to_stand" {
+	"gman_anims\Run_to_stand.smd"
+	
+	
+	
+}
+
+$sequence "Stand_to_walk" {
+	"gman_anims\Stand_to_walk.smd"
+	
+	
+	
+	walkframe 32 LX
+}
+
+$sequence "Walk_to_stand" {
+	"gman_anims\Walk_to_stand.smd"
+	
+	
+	
+}
+
+$sequence "Stand_to_crouch" {
+	"gman_anims\Stand_to_crouch.smd"
+	activity "ACT_TRANSITION" 1
+	
+	
+	transition "node0" "node1"
+	
+}
+
+$sequence "Crouch_to_stand" {
+	"gman_anims\Crouch_to_stand.smd"
+	activity "ACT_TRANSITION" 1
+	
+	
+	transition "node1" "node0"
+	
+}
+
+$sequence "Crouch_to_run" {
+	"gman_anims\Crouch_to_run.smd"
+	
+	
+	
+	walkframe 24 LX
+}
+
+$sequence "Run_to_crouch" {
+	"gman_anims\Run_to_crouch.smd"
+	
+	
+	
+	walkframe 36 LX
+}
+
+$sequence "stairs_up" {
+	"gman_anims\stairs_up.smd"
+	activity "ACT_STAIRS_UP" 1
+	
+	
+	
+	walkframe 40 LX LZ
+}
+
+$sequence "stairs_down" {
+	"gman_anims\stairs_down.smd"
+	activity "ACT_STAIRS_DOWN" 1
+	
+	
+	
+	walkframe 40 LX LZ
+}
+
+$sequence "ladder_up" {
+	"gman_anims\ladder_up.smd"
+	activity "ACT_CLIMB_UP" 1
+	
+	
+	
+	walkframe 42 LZ
+}
+
+$sequence "ladder_down" {
+	"gman_anims\ladder_down.smd"
+	activity "ACT_CLIMB_DOWN" 1
+	
+	
+	
+	walkframe 42 LZ
+}
+
+$sequence "Open_door_away" {
+	"gman_anims\Open_door_away.smd"
+	
+	
+	
+}
+
+$sequence "Open_door_towards_right" {
+	"gman_anims\Open_door_towards_right.smd"
+	
+	
+	
+}
+
+$sequence "Open_door_towards_left" {
+	"gman_anims\Open_door_towards_left.smd"
+	
+	
+	
+}
+
+$sequence "Startle_behind" {
+	"gman_anims\Startle_behind.smd"
+	
+	
+	
+}
+
+$sequence "Cover_R" {
+	"gman_anims\Cover_R.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "Cover_L" {
+	"gman_anims\Cover_L.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "CoverLow_R" {
+	"gman_anims\CoverLow_R.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "CoverLow_L" {
+	"gman_anims\CoverLow_L.smd"
+	
+	
+	
+	loop
+}
+
+$sequence "ThrowItem" {
+	"gman_anims\ThrowItem.smd"
+	{ event 1 32 "" }
+	
+	
+	
+}
+
+$sequence "Heal" {
+	"gman_anims\Heal.smd"
+	activity "ACT_CIT_HEAL" 1
+	{ event 1 22 "" }
+	
+	
+	
+}
+
+$sequence "Wave" {
+	"gman_anims\Wave.smd"
+	activity "ACT_SIGNAL1" 1
+	
+	
+	
+}
+
+$sequence "DuckUnder" {
+	"gman_anims\DuckUnder.smd"
+	
+	
+	
+	walkframe 62 LX
+}
+
+$sequence "crouchidlehide" {
+	"gman_anims\crouchidlehide.smd"
+	
+	
+	node "node6"
+	
+	loop
+}
+
+$sequence "standtocrouchhide" {
+	"gman_anims\standtocrouchhide.smd"
+	
+	
+	transition "node0" "node6"
+	
+}
+
+$sequence "crouchhidetostand" {
+	"gman_anims\crouchhidetostand.smd"
+	
+	
+	transition "node6" "node0"
+	
+}
+
+$sequence "scaredidle" {
+	"gman_anims\scaredidle.smd"
+	
+	
+	node "node0"
+	
+	loop
+}
+
+$sequence "preSkewer" {
+	"gman_anims\preSkewer.smd"
+	
+	
+	
+}
+
+$sequence "Fear_Reaction" {
+	"gman_anims\Fear_Reaction.smd"
+	
+	
+	
+}
+
+$sequence "layer_run_protected" {
+	"gman_anims\layer_run_protected.smd"
+	
+	
+	
+	weightlist "weights_layer_crouch_run_holding"
+}
+
+$sequence "run_protected_all" {
+	"a_RunS"
+	"a_RunSE"
+	"a_RunE"
+	"a_RunNE"
+	"a_RunN_protected"
+	"a_RunNW"
+	"a_RunW"
+	"a_RunSW"
+	"a_RunS"
+	activity "ACT_RUN_PROTECTED" 1
+	blend "move_yaw" -180 180
+	blendwidth 9
+	
+	
+	addlayer "layer_run_protected"
+	node "node3"
+}
