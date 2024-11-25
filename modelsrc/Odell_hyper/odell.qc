@@ -4,7 +4,7 @@
 
 $modelname "Odell.mdl"
 $cdmaterials models/odell
-$scale 1.0
+$scale 0.95 //Feedback said that Odell is too tall by default, so shrinking a little
 
 // whole body
 $model "Odell" Odell.smd

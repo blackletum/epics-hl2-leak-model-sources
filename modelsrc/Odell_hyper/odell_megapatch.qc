@@ -4,7 +4,7 @@
 
 $modelname "Odell.mdl"
 $cdmaterials models/odell
-$scale 1.0
+$scale 0.95 //Feedback said that Odell is too tall by default, so shrinking a little
 
 // whole body
 $model "Odell" Odell.smd
@@ -95,10 +95,10 @@ $sequence SpinKickHi SpinKickHi alignto idle lx ly
 $sequence StaightKick StaightKick alignto idle lx ly rotate -20
 $sequence TornadoKick TornadoKick alignto idle lx ly rotate -40
 
-$sequence die01 BlownBack ACT_DIESIMPLE 1 alignto idle frame 30 74 lx ly
-$sequence die02 Banana ACT_DIESIMPLE 1 alignto idle frame 17 98 lx ly addlayer walkhandslayer
-$sequence die03 Backstab ACT_DIESIMPLE 1 alignto idle lx ly rotate 40 frame 19 140 addlayer walkhandslayer
-$sequence die04 KOed ACT_DIESIMPLE 1 alignto idle lx ly frame 55 145 addlayer walkhandslayer
+$sequence die01 BlownBack ACT_DIESIMPLE 1 alignto idle frame 30 74
+$sequence die02 Banana ACT_DIESIMPLE 1 alignto idle frame 17 98 addlayer walkhandslayer
+$sequence die03 Backstab ACT_DIESIMPLE 1 alignto idle rotate 40 frame 19 140 addlayer walkhandslayer
+$sequence die04 KOed ACT_DIESIMPLE 1 alignto idle frame 55 145 addlayer walkhandslayer
 
 $sequence idle_angry JumpRndKick ACT_IDLE_ANGRY 1 fps 25 alignto idle rotate -55 frames 0 18 fixuploop -6 1
 
