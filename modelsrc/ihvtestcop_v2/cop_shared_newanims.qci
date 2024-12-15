@@ -93,9 +93,16 @@ $sequence Aim_all  {
 	delta
 }
 
-$sequence deploy mp5cit_anims/mp5cit_usesmg frame 4 24 fps 20 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 { event 51 16 }
+//$sequence deploy mp5cit_anims/mp5cit_usesmg frame 4 24 fps 20 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 { event 51 16 }
+$sequence deploy "Manhack_release" fps 30 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 {
+{ event 51 22 }
+}
 $sequence overwatch pistol_idle ACT_METROPOLICE_OVERWATCH 1
 $sequence point metrocopanims FPS 20 frame 55 75 ACT_METROPOLICE_POINT 1
+
+$sequence swing "Siggraph_anims/HH_Punch_Right" fps 35 activity ACT_MELEE_ATTACK_SWING 1 {
+	{ event 3001 13 }
+}
 
 $pushd "../Humans/Bip01_Male_Animations"
 $include "../Humans/Bip01_Male_Animations/SS.qci"

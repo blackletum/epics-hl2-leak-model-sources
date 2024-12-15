@@ -7,6 +7,13 @@ $modelname "police.mdl"
 
 $model "police" "2001police_ep_reference.smd" 
 
+//Allows valvebiped weapons to bonemerge to us
+$bodygroup Handfix
+{
+blank
+studio "cop_handfix.smd"
+}
+
 $eyeposition 0 0 67
 
 $cdmaterials models/Police models/manhack
