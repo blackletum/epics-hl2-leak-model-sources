@@ -40,16 +40,27 @@ $model studio "Citizen" {
 	$include "../Humans/facerules.qci"
 }
 
-$sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1 node 1
-$sequence walk "WalkN" fps 30 loop LX ACT_WALK 1 node 1
-$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 node 1
-$sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
-$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
+//Allows valvebiped weapons to bonemerge to us
+$bodygroup Handfix
+{
+blank
+studio "Citizen_handfix.smd"
+}
+
+//$sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1 node 1
+$sequence Idle "Siggraph_anims/Idle1" loop FPS 30 ACT_IDLE 1 node 1
+//$sequence walk "WalkN" fps 30 loop LX ACT_WALK 1 node 1
+$sequence walk "Siggraph_anims/Walk" fps 20 loop LX ACT_WALK 1 node 1
+$sequence run "Siggraph_anims/Run" LX loop ACT_RUN 1 node 1 //fps 24
+//$sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
+$sequence throw "Siggraph_anims/Throw" ACT_RANGE_ATTACK_THROW 1 { event 3005 26 }
+//$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
+$sequence pickup "Siggraph_anims/Pick_Up" fps 25 ACT_PICKUP_GROUND 1 snap frames 0 29 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 3015 21 }
-$sequence die		"die"			fps 30							ACT_DIESIMPLE 1
+$sequence die		"die"			fps 30							//ACT_DIESIMPLE 1
 $sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 3001 18 } { event 3003 15 }
 $sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK1 1 { event 3001 15 } { event 3003 10 }
-$sequence flinch "GetPunched" FPS 40 ACT_SMALL_FLINCH 1 frames 7 77
+$sequence flinch "GetPunched" FPS 40 frames 7 77 //ACT_SMALL_FLINCH 1
 
 $sequence shoot_mp5 mp5_shoot ACT_RANGE_ATTACK1 1 loop {
 	addlayer Aim_all
@@ -94,6 +105,16 @@ $sequence coweridle "Cower_Idle" loop FPS 30 ACT_CIT_COWERIDLE 1 node 4
 $sequence cowerflinch "Cower_Flinch" FPS 30 ACT_CIT_COWERFLINCH 1 node 4
 $sequence showarmband "Show_Arm_Band" FPS 30 ACT_CIT_SHOWARMBAND 1
 $sequence blinded "Blinded" FPS 30 ACT_CIT_BLINDED 1
+
+$sequence Die_simple Die_simple FPS 50 ACT_DIESIMPLE 1
+
+//Hand-to-hand combat
+$sequence fightstance "Siggraph_anims/HH_Idle" FPS 24 ACT_HH_IDLE 1 loop
+$sequence fightapproach "Siggraph_anims/HH_Forwards" FPS 24 ACT_HH_WALK 1 LX loop //startloop 12
+$sequence punchleft "Siggraph_anims/HH_Punch_Left" FPS 24 ACT_HH_PUNCH_LEFT 1 { event 2 5 }
+$sequence punchright "Siggraph_anims/HH_Punch_Right" FPS 24 ACT_HH_PUNCH_RIGHT 1 { event 2 5 }
+$sequence clubheadblock "Siggraph_anims/HH_Block" FPS 24 ACT_HH_CLUBHEAD_BLOCK 1
+$sequence clubheaddodge "Siggraph_anims/HH_Dodge" FPS 24 ACT_HH_CLUBHEAD_DODGE 1
 
 $include "hitbox.qci"
 $include "ragdoll.qci"
