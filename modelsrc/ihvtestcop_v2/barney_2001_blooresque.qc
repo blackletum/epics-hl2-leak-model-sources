@@ -1,11 +1,11 @@
 //======================================
 //   Old 2001 Barney remake
-//	 Model edits, QCs and custom animations by Epicplayer
+//	 Model by Qleebsooru, QCs and custom animations by Epicplayer
 //======================================
 
 $modelname "barney.mdl"
 
-$model "barney" "2001barney_reference.smd" {
+$model "barney" "2001barney_blooresque_reference.smd" {
 /*
 	eyeball righteye "Bip01 Head" -1.291829 -3.821171 67.032681 "eyeball_r" 1 4 "pupil_r" 0.682
 	eyeball lefteye "Bip01 Head" 1.191179 -3.821178 67.010544 "eyeball_l" 1 -4 "pupil_l" 0.682
@@ -190,7 +190,7 @@ $eyeposition 0 0 67
 $attachment "eyes" "Bip01 Head" -0.01 -4.09 67.25 absolute
 $attachment "mouth" "Bip01 Head" 0 -5.12267 64.0053 absolute
 
-$cdmaterials models/Barney models/Police
+$cdmaterials models/Barney models/Police_Qleebsooru models/Police
 
 $ikchain "leftankle" "Bip01 L Foot"
 $ikchain "rightankle" "Bip01 R Foot"
