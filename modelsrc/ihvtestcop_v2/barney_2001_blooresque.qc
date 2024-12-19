@@ -183,6 +183,7 @@ $model "barney" "2001barney_blooresque_reference.smd" {
 $bodygroup Handfix
 {
 blank
+studio "Police_Nightstick_reference.smd"
 studio "cop_handfix.smd"
 }
 

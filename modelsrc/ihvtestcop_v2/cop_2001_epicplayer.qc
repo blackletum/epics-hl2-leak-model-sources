@@ -11,6 +11,7 @@ $model "police" "2001police_ep_reference.smd"
 $bodygroup Handfix
 {
 blank
+studio "Police_Nightstick_reference.smd"
 studio "cop_handfix.smd"
 }
 

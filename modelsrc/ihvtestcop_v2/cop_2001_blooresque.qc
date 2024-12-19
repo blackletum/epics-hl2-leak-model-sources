@@ -7,6 +7,14 @@ $modelname "police.mdl"
 
 $model "police" "2001police_blooresque_reference.smd" 
 
+//Allows valvebiped weapons to bonemerge to us
+$bodygroup Handfix
+{
+blank
+studio "Police_Nightstick_reference.smd"
+studio "cop_handfix.smd"
+}
+
 $eyeposition 0 0 67
 
 $cdmaterials models/Police_Qleebsooru models/Police models/manhack
