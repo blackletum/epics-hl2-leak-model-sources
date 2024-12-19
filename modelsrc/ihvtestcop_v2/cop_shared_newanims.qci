@@ -20,7 +20,7 @@ $sequence Idle02 ihvtest_anims\Idle02.smd ACT_IDLE 2 loop
 
 $sequence reload metrocopanims FPS 16 frame 34 55 ACT_RELOAD 1 { event 2 1 }
 $sequence reload_pistol "pistol_reload" fps 30 //activity ACT_METROPOLICE_RELOAD_PISTOL 1 { event 3015 0 }
-$sequence diesimple ihvtest_anims\die_simple activity ACT_DIESIMPLE 1
+$sequence diesimple ihvtest_anims\die_simple activity ACT_DIESIMPLE 1 fps 50
 
 $sequence Walk mp5cit_anims/mp5cit_Walk.smd ACT_WALK_RIFLE 1 loop LX {
 	{ event 6004 2 "NPC_Citizen" }
@@ -104,6 +104,17 @@ $sequence swing "Siggraph_anims/HH_Punch_Right" fps 35 activity ACT_MELEE_ATTACK
 	{ event 3001 13 }
 }
 
+//Hand-to-hand combat
+$sequence fightstance "Siggraph_anims/HH_Idle" FPS 24 ACT_HH_IDLE 1 loop addlayer batonholdfingers
+$sequence fightapproach "Siggraph_anims/HH_Forwards" FPS 24 ACT_HH_WALK 1 LX loop addlayer batonholdfingers //startloop 12
+$sequence punchleft "Siggraph_anims/HH_Punch_Left" FPS 24 ACT_HH_PUNCH_LEFT 1 { event 2 5 } addlayer batonholdfingers
+$sequence punchright "Siggraph_anims/HH_Punch_Right" FPS 35 ACT_HH_PUNCH_RIGHT 1 { event 2 13 }
+$sequence clubheadblock "Siggraph_anims/HH_Block" FPS 24 ACT_HH_CLUBHEAD_BLOCK 1 addlayer batonholdfingers
+$sequence clubheaddodge "Siggraph_anims/HH_Dodge" FPS 24 ACT_HH_CLUBHEAD_DODGE 1 addlayer batonholdfingers
+
 $pushd "../Humans/Bip01_Male_Animations"
 $include "../Humans/Bip01_Male_Animations/SS.qci"
 $popd
+
+$weightlist rightfingerssonly "Bip01 Pelvis" 0.0 "Bip01 R Hand" 0.0 "Bip01 R Finger0" 1.0 "Bip01 R Finger1" 1.0 "Bip01 R Finger2" 1.0 "Bip01 R Finger3" 1.0 "Bip01 R Finger4" 1.0 
+$sequence batonholdfingers ihvtest_anims\Idle01.smd frame 0 0 weightlist rightfingerssonly
