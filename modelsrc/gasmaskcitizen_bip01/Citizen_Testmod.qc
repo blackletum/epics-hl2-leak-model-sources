@@ -58,8 +58,8 @@ $sequence throw "Siggraph_anims/Throw" ACT_RANGE_ATTACK_THROW 1 { event 3005 26 
 $sequence pickup "Siggraph_anims/Pick_Up" fps 25 ACT_PICKUP_GROUND 1 snap frames 0 29 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 3015 21 }
 $sequence die		"die"			fps 30							//ACT_DIESIMPLE 1
-$sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 3001 18 } { event 3003 15 }
-$sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK1 1 { event 3001 15 } { event 3003 10 }
+$sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 1 18 } { event 3003 15 }
+$sequence punch02 "Punch02" FPS 30 ACT_MELEE_ATTACK_SWING 1 { event 3001 15 } { event 3003 10 }
 $sequence flinch "GetPunched" FPS 40 frames 7 77 //ACT_SMALL_FLINCH 1
 
 $sequence shoot_mp5 mp5_shoot ACT_RANGE_ATTACK1 1 loop {
