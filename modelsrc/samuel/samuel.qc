@@ -178,7 +178,7 @@ $sequence breakerstyle "../nightclub/Breakdance" fps 50 frames 60 107 loop align
 
 $pushd "../gasmaskcitizen_bip01"
 $sequence walk "WalkN" fps 30 loop LX ACT_WALK 1 node 1
-$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 node 1
+$sequence run "Siggraph_anims/Run" loop fps 30 LX loop ACT_RUN 1 node 1
 $sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
 $sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
 $sequence die		"die"			fps 30							ACT_DIESIMPLE 1

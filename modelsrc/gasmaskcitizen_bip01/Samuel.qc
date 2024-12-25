@@ -180,8 +180,13 @@ $model studio "samuel_reference.smd" {
 }
 
 $sequence Idle "Idle1" loop FPS 30 ACT_IDLE 1 node 1
+
+$sequence breakerstyle "../nightclub/Breakdance" fps 50 frames 60 107 loop alignto Idle
+//$sequence breakerstyle_start "../nightclub/Breakdance" fps 50 frames 0 60 LX LY alignto Idle
+//$sequence breakerstyle_end "../nightclub/Breakdance" fps 30 frames 107 143 LX LY alignto Idle
+
 $sequence walk "WalkN" fps 30 loop LX ACT_WALK 1 node 1
-$sequence run "Run" loop fps 24 LX loop ACT_RUN 1 node 1
+$sequence run "Siggraph_anims/Run" loop fps 30 LX ACT_RUN 1 node 1
 $sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
 $sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 3015 21 }
@@ -233,10 +238,6 @@ $sequence coweridle "Cower_Idle" loop FPS 30 ACT_CIT_COWERIDLE 1 node 4
 $sequence cowerflinch "Cower_Flinch" FPS 30 ACT_CIT_COWERFLINCH 1 node 4
 $sequence showarmband "Show_Arm_Band" FPS 30 ACT_CIT_SHOWARMBAND 1
 $sequence blinded "Blinded" FPS 30 ACT_CIT_BLINDED 1
-
-$sequence breakerstyle "../nightclub/Breakdance" fps 50 frames 60 107 loop alignto Idle
-//$sequence breakerstyle_start "../nightclub/Breakdance" fps 50 frames 0 60 LX LY alignto Idle
-//$sequence breakerstyle_end "../nightclub/Breakdance" fps 30 frames 107 143 LX LY alignto Idle
 
 $include "hitbox.qci"
 $include "ragdoll.qci"
