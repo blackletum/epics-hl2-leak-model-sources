@@ -1,0 +1,120 @@
+$bbox -10.349 -19.758 -0.248 7.85 13.337 72.418
+
+//$controller 0 "Bip01 Head" 8 -60 60
+$controller 0 "Bip01 Head" XR -40 40
+$poseparameter "aim_pitch" -90 90 loop 360
+
+$attachment "eyes" "Bip01 Head" -0.01 -7.09 67.25 absolute
+$attachment "mouth" "Bip01 Head" 0.80 -5.80 -0.15 rotate 0 -80 -90
+
+$weightlist shouldersonly "Bip01 Pelvis" 0.0 "Bip01 L Clavicle" 0.0 "Bip01 R Clavicle" 0.0  "Bip01 L Upperarm" 0.8 "Bip01 R Upperarm" 0.8 "Bip01 L Forearm" 0.0 "Bip01 R Forearm" 0.0 
+
+$surfaceprop "flesh"
+
+$sequence Idle01 ihvtest_anims\Idle01.smd ACT_IDLE 1 loop
+$sequence Idle02 ihvtest_anims\Idle02.smd ACT_IDLE 2 loop
+//$sequence Walk ihvtest_anims\Walk.smd ACT_WALK 1 loop LX
+//$sequence Run ihvtest_anims\Run.smd ACT_RUN 1 loop LX
+//$sequence reload reload	FPS 20 ACT_RELOAD 1 { event 2 8 }
+//$sequence reload_pistol reload activity ACT_METROPOLICE_RELOAD_PISTOL 1
+
+$sequence reload metrocopanims FPS 16 frame 34 55 ACT_RELOAD 1 { event 2 1 }
+$sequence reload_pistol "pistol_reload" fps 30 //activity ACT_METROPOLICE_RELOAD_PISTOL 1 { event 3015 0 }
+$sequence diesimple ihvtest_anims\die_simple activity ACT_DIESIMPLE 1 fps 50
+
+$sequence Walk mp5cit_anims/mp5cit_Walk.smd ACT_WALK_RIFLE 1 loop LX {
+	{ event 6004 2 "NPC_Citizen" }
+	{ event 6005 17 "NPC_Citizen" }
+}
+$sequence Run mp5cit_anims/mp5cit_Run.smd ACT_RUN_RIFLE 1 loop LX {
+	{ event 6004 6 "NPC_Citizen" }
+	{ event 6005 16 "NPC_Citizen" }
+}
+$sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_ANGRY_SMG1 1 loop
+$sequence shoot metrocopanims frame 31 34 ACT_RANGE_ATTACK1 1 loop {
+	addlayer Aim_all
+//	{ event 3 0 } 
+//	{ event 6001 0 "0" }
+//	{ event AE_NPC_MUZZLEFLASH 0 "SMG1 MUZZLE" }
+}
+
+$sequence shootp1 "pistol_shoot" fps 4 activity ACT_RANGE_ATTACK_PISTOL 1 {
+	addlayer Aim_all
+	{ event 3014 0 }
+}
+
+$sequence shoot_shotgun shotgun_fire frame 30 50 ACT_RANGE_ATTACK_SHOTGUN 1 loop {
+	addlayer Aim_all
+	fps 24
+}
+
+$sequence shoot_sniper shotgun_fire frame 30 40 ACT_RANGE_ATTACK_SNIPER_RIFLE 1 loop {
+	addlayer Aim_all
+	fps 10
+	{ event 3011 0 }
+}
+
+$sequence shoot_gesture metrocopanims frame 31 34 ACT_GESTURE_RANGE_ATTACK1 1 subtract shoot 3 delta
+
+$sequence shoulderlower ihvtest_anims\Idle01.smd frame 0 0 weightlist shouldersonly
+/*
+$sequence Walk_Unarmed mp5cit_anims/mp5cit_WalkUnarmed.smd ACT_WALK 1 loop LX {
+	{ event 6004 2 "NPC_Citizen" }
+	{ event 6005 17 "NPC_Citizen" }
+}
+*/
+$sequence Walk_Unarmed WalkN.smd ACT_WALK 1 loop LX {
+	{ event 6004 2 "NPC_Citizen" }
+	{ event 6005 17 "NPC_Citizen" }
+}
+
+$sequence Run_Unarmed mp5cit_anims/mp5cit_RunUnarmed.smd ACT_RUN 1 loop LX  frame 0 21 {
+	{ event 6004 6 "NPC_Citizen" }
+	{ event 6005 16 "NPC_Citizen" }
+	addlayer shoulderlower
+}
+
+$sequence draw mp5cit_anims/mp5cit_usesmg frame 0 30 ACT_ARM 1 { event 50 9 }
+$sequence draw_pistol pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 5 }
+//$sequence draw_pistol anims/pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 9 }
+$sequence flinch_small mp5cit_anims/mp5cit_usesmg frame 37 42 ACT_SMALL_FLINCH 1
+
+$animation aim_ref mp5cit_anims/mp5cit_usesmg frame 34 34
+$animation aim_straight mp5cit_anims/mp5cit_usesmg frame 34 34 subtract aim_ref 0
+$animation aim_down mp5cit_anims/mp5cit_usesmg frame 35 35 subtract aim_ref 0
+$animation aim_up mp5cit_anims/mp5cit_usesmg frame 36 36 subtract aim_ref 0
+
+$sequence Aim_all  {
+	aim_up
+	aim_straight
+	aim_down
+	blendwidth 3
+	blend aim_pitch -45 45
+	delta
+}
+
+//$sequence deploy mp5cit_anims/mp5cit_usesmg frame 4 24 fps 20 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 { event 51 16 }
+$sequence deploy "Manhack_release" fps 30 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 {
+{ event 51 22 }
+}
+$sequence overwatch pistol_idle ACT_METROPOLICE_OVERWATCH 1
+$sequence point metrocopanims FPS 20 frame 55 75 ACT_METROPOLICE_POINT 1
+
+$sequence swing "Siggraph_anims/HH_Punch_Right" fps 35 activity ACT_MELEE_ATTACK_SWING 1 {
+	{ event 3001 13 }
+}
+
+//Hand-to-hand combat
+$sequence fightstance "Siggraph_anims/HH_Idle" FPS 24 ACT_HH_IDLE 1 loop addlayer batonholdfingers
+$sequence fightapproach "Siggraph_anims/HH_Forwards" FPS 24 ACT_HH_WALK 1 LX loop addlayer batonholdfingers //startloop 12
+$sequence punchleft "Siggraph_anims/HH_Punch_Left" FPS 24 ACT_HH_PUNCH_LEFT 1 { event AE_HH_PUNCH 5 } { event 5004 1 "HHCombat.Miss" } addlayer batonholdfingers
+$sequence punchright "Siggraph_anims/HH_Punch_Right" FPS 35 ACT_HH_PUNCH_RIGHT 1 { event AE_HH_PUNCH 13 } { event 5004 4 "HHCombat.Miss" }
+$sequence clubheadblock "Siggraph_anims/HH_Block" FPS 24 ACT_HH_CLUBHEAD_BLOCK 1 addlayer batonholdfingers
+$sequence clubheaddodge "Siggraph_anims/HH_Dodge" FPS 24 ACT_HH_CLUBHEAD_DODGE 1 addlayer batonholdfingers
+
+$pushd "../Humans/Bip01_Male_Animations"
+$include "../Humans/Bip01_Male_Animations/SS.qci"
+$popd
+
+$weightlist rightfingerssonly "Bip01 Pelvis" 0.0 "Bip01 R Hand" 0.0 "Bip01 R Finger0" 1.0 "Bip01 R Finger1" 1.0 "Bip01 R Finger2" 1.0 "Bip01 R Finger3" 1.0 "Bip01 R Finger4" 1.0 
+$sequence batonholdfingers ihvtest_anims\Idle01.smd frame 0 0 weightlist rightfingerssonly
