@@ -12,7 +12,7 @@ $bodygroup Handfix
 {
 blank
 studio "Police_Nightstick_reference.smd"
-studio "cop_handfix.smd"
+//studio "cop_handfix.smd"
 }
 
 $eyeposition 0 0 67
