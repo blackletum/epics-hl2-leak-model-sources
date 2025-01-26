@@ -18,17 +18,17 @@ $sequence Idle02 ihvtest_anims\Idle02.smd ACT_IDLE 2 loop
 //$sequence reload reload	FPS 20 ACT_RELOAD 1 { event 2 8 }
 //$sequence reload_pistol reload activity ACT_METROPOLICE_RELOAD_PISTOL 1
 
-$sequence reload metrocopanims FPS 16 frame 34 55 ACT_RELOAD 1 { event 2 1 }
-$sequence reload_pistol "pistol_reload" fps 30 //activity ACT_METROPOLICE_RELOAD_PISTOL 1 { event 3015 0 }
+$sequence reload metrocopanims FPS 16 frame 34 55 ACT_RELOAD 1 { event 3017 0 } { event 3018 21 }
+$sequence reload_pistol "pistol_reload" fps 30 activity ACT_RELOAD_PISTOL 1 { event 3017 0 } { event 3018 39 }
 $sequence diesimple ihvtest_anims\die_simple activity ACT_DIESIMPLE 1 fps 50
 
 $sequence Walk mp5cit_anims/mp5cit_Walk.smd ACT_WALK_RIFLE 1 loop LX {
-	{ event 6004 2 "NPC_Citizen" }
-	{ event 6005 17 "NPC_Citizen" }
+//	{ event 6004 2 "NPC_Citizen" }
+//	{ event 6005 17 "NPC_Citizen" }
 }
 $sequence Run mp5cit_anims/mp5cit_Run.smd ACT_RUN_RIFLE 1 loop LX {
-	{ event 6004 6 "NPC_Citizen" }
-	{ event 6005 16 "NPC_Citizen" }
+//	{ event 6004 6 "NPC_Citizen" }
+//	{ event 6005 16 "NPC_Citizen" }
 }
 $sequence Idle_MP5 Idle_MP5.smd ACT_IDLE_ANGRY_SMG1 1 loop
 $sequence shoot metrocopanims frame 31 34 ACT_RANGE_ATTACK1 1 loop {
@@ -64,18 +64,18 @@ $sequence Walk_Unarmed mp5cit_anims/mp5cit_WalkUnarmed.smd ACT_WALK 1 loop LX {
 }
 */
 $sequence Walk_Unarmed WalkN.smd ACT_WALK 1 loop LX {
-	{ event 6004 2 "NPC_Citizen" }
-	{ event 6005 17 "NPC_Citizen" }
+//	{ event 6004 2 "NPC_Citizen" }
+//	{ event 6005 17 "NPC_Citizen" }
 }
 
 $sequence Run_Unarmed mp5cit_anims/mp5cit_RunUnarmed.smd ACT_RUN 1 loop LX  frame 0 21 {
-	{ event 6004 6 "NPC_Citizen" }
-	{ event 6005 16 "NPC_Citizen" }
+//	{ event 6004 6 "NPC_Citizen" }
+//	{ event 6005 16 "NPC_Citizen" }
 	addlayer shoulderlower
 }
 
-$sequence draw mp5cit_anims/mp5cit_usesmg frame 0 30 ACT_ARM 1 { event 50 9 }
-$sequence draw_pistol pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 5 }
+$sequence draw mp5cit_anims/mp5cit_usesmg frame 0 30 ACT_ARM 1 { event AE_METROPOLICE_DRAW_PISTOL 9 }
+$sequence draw_pistol pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event AE_METROPOLICE_DRAW_PISTOL 5 }
 //$sequence draw_pistol anims/pistol_draw ACT_METROPOLICE_DRAW_PISTOL 1 { event 50 9 }
 $sequence flinch_small mp5cit_anims/mp5cit_usesmg frame 37 42 ACT_SMALL_FLINCH 1
 
@@ -95,7 +95,7 @@ $sequence Aim_all  {
 
 //$sequence deploy mp5cit_anims/mp5cit_usesmg frame 4 24 fps 20 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 { event 51 16 }
 $sequence deploy "Manhack_release" fps 30 activity ACT_METROPOLICE_DEPLOY_MANHACK 1 {
-{ event 51 22 }
+{ event AE_METROPOLICE_DEPLOY_MANHACK 22 }
 }
 $sequence overwatch pistol_idle ACT_METROPOLICE_OVERWATCH 1
 $sequence point metrocopanims FPS 20 frame 55 75 ACT_METROPOLICE_POINT 1
