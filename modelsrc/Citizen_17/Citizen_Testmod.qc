@@ -11,7 +11,7 @@ $modelname Citizen.mdl
 $eyeposition 0 0 70
 
 // head controllers
-$controller 0 "Bip01 Head" XR -20 20
+$controller 0 "Bip01 Head" XR -50 50
 //$controller mouth "Line01" ZR 0 45
 $poseparameter "aim_pitch" -90 90 loop 360
 
