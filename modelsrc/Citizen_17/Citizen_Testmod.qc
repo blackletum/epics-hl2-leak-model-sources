@@ -58,7 +58,7 @@ $sequence run "Siggraph_anims/Run" LX loop ACT_RUN 1 node 1 //fps 24
 //$sequence throw "Throw_Petrol_Bomb" ACT_RANGE_ATTACK_THROW 1 { event 3005 7 }
 $sequence throw "Siggraph_anims/Throw" ACT_RANGE_ATTACK_THROW 1 { event 3005 26 }
 //$sequence pickup "Pick_Up" fps 30 ACT_PICKUP_GROUND 1 { event 2040 15 }
-$sequence pickup "Siggraph_anims/Pick_Up" fps 25 ACT_PICKUP_GROUND 1 snap frames 0 29 { event 2040 15 }
+$sequence pickup "Siggraph_anims/Pick_Up" fps 25 ACT_PICKUP_GROUND 1 frames 0 29 { event 2040 15 }
 $sequence reload			"Reload"		FPS 30					ACT_RELOAD	   1 { event 3015 21 }
 $sequence die		"die"			fps 30							//ACT_DIESIMPLE 1
 $sequence punch01 "Punch01" FPS 50 ACT_MELEE_ATTACK1 1 { event 1 18 } { event 3003 15 }
