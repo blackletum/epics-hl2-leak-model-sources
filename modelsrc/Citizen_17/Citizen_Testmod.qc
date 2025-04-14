@@ -122,3 +122,37 @@ $sequence clubheaddodge "Siggraph_anims/HH_Dodge" FPS 24 ACT_HH_CLUBHEAD_DODGE 1
 $include "../gasmaskcitizen_bip01/hitbox.qci"
 $include "../gasmaskcitizen_bip01/ragdoll.qci"
 $popd
+
+$collisiontext
+{
+	break 
+	{
+		"model" "gibs/gascit_gib_head_xinus"
+		"health" "10"
+		"fadetime" "30"
+		"burst" "20"
+		"placementbone" "Bip01 Head"
+		//"offset" 3.8 5 1
+	}
+	break 
+	{
+		"ragdoll" "gibs/gascit_gib_rightarm"
+		"health" "20"
+		"fadetime" "30"
+		"burst" "150"
+	}
+	break 
+	{
+		"ragdoll" "skeleton/skeleton_torso4_noskins"
+		"health" "20"
+		"fadetime" "30"
+		"burst" "100"
+	}
+	break 
+	{
+		"ragdoll" "gibs/gascit_gib_leftarm"
+		"health" "20"
+		"fadetime" "30"
+		"burst" "150"
+	}
+}
