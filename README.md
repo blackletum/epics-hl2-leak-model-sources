@@ -1,3 +1,7 @@
+Github mirror of this repo:
+
+https://gitlab.com/epicplayer40/epics-hl2-leak-model-sources
+
 # Epics HL2 Leak Model Sources
 
 The following are my model sources I have made over time for the HL2 leak. They are mostly made for the HL2 leak but may also function for final HL2 in some situations or if a QC is made to do so.
